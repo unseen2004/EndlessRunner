@@ -1,16 +1,21 @@
-# This file handles building each task as sub-project.
-#
-# Each task becomes an independent project in which you can experiment.
-#
-# Tasks are added as separate sub-projects so as compilation errors in
-# one task don't affect another task.
+cmake_minimum_required(VERSION 3.5)
 
-22
 project(EndlessRunner)
 
+# Set the C++ standard (optional but recommended)
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Find raylib (if installed system-wide or via CMake's find_package)
+find_package(raylib REQUIRED)
 
+# Include the EASTL headers
+# Adjust this path if EASTL is installed in a different directory
+include_directories(/usr/local/include)
+
+# Add the executable for your project
+add_executable(MyRaylibProject src/main.cpp)
+
+# Link raylib to your executable
+target_link_libraries(MyRaylibProject PRIVATE raylib)
 # Add tasks subprojects
-include(cmake/utils.cmake)
-add_subprojects(${CMAKE_SOURCE_DIR})
