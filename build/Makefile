@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyRaylibProject
+# Target rules for targets named MyExecutable
 
 # Build rule for target.
-MyRaylibProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyRaylibProject
-.PHONY : MyRaylibProject
+MyExecutable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyExecutable
+.PHONY : MyExecutable
 
 # fast build rule for target.
-MyRaylibProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibProject.dir/build.make CMakeFiles/MyRaylibProject.dir/build
-.PHONY : MyRaylibProject/fast
+MyExecutable/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
+.PHONY : MyExecutable/fast
+
+src/all_horizontal_movable.o: src/all_horizontal_movable.cpp.o
+.PHONY : src/all_horizontal_movable.o
+
+# target to build an object file
+src/all_horizontal_movable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o
+.PHONY : src/all_horizontal_movable.cpp.o
+
+src/all_horizontal_movable.i: src/all_horizontal_movable.cpp.i
+.PHONY : src/all_horizontal_movable.i
+
+# target to preprocess a source file
+src/all_horizontal_movable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.i
+.PHONY : src/all_horizontal_movable.cpp.i
+
+src/all_horizontal_movable.s: src/all_horizontal_movable.cpp.s
+.PHONY : src/all_horizontal_movable.s
+
+# target to generate assembly for a file
+src/all_horizontal_movable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.s
+.PHONY : src/all_horizontal_movable.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibProject.dir/build.make CMakeFiles/MyRaylibProject.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +166,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibProject.dir/build.make CMakeFiles/MyRaylibProject.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,8 +174,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibProject.dir/build.make CMakeFiles/MyRaylibProject.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/new_operator.o: src/new_operator.cpp.o
+.PHONY : src/new_operator.o
+
+# target to build an object file
+src/new_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o
+.PHONY : src/new_operator.cpp.o
+
+src/new_operator.i: src/new_operator.cpp.i
+.PHONY : src/new_operator.i
+
+# target to preprocess a source file
+src/new_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/new_operator.cpp.i
+.PHONY : src/new_operator.cpp.i
+
+src/new_operator.s: src/new_operator.cpp.s
+.PHONY : src/new_operator.s
+
+# target to generate assembly for a file
+src/new_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/new_operator.cpp.s
+.PHONY : src/new_operator.cpp.s
 
 # Help Target
 help:
@@ -161,10 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyRaylibProject"
+	@echo "... MyExecutable"
+	@echo "... src/all_horizontal_movable.o"
+	@echo "... src/all_horizontal_movable.i"
+	@echo "... src/all_horizontal_movable.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/new_operator.o"
+	@echo "... src/new_operator.i"
+	@echo "... src/new_operator.s"
 .PHONY : help
 
 

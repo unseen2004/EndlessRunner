@@ -1,4 +1,4 @@
-MyRaylibProject: \
+EndlessRunner: \
   /usr/lib/libm.so \
   /usr/lib/libm.so \
   /usr/lib/libgcc_s.so \
