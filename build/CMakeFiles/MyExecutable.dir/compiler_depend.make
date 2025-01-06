@@ -81,9 +81,11 @@ CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o: /home/maks/Program
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/c++/14.2.1/algorithm \
   /usr/include/c++/14.2.1/array \
   /usr/include/c++/14.2.1/backward/binders.h \
   /usr/include/c++/14.2.1/bit \
+  /usr/include/c++/14.2.1/bits/algorithmfwd.h \
   /usr/include/c++/14.2.1/bits/alloc_traits.h \
   /usr/include/c++/14.2.1/bits/allocated_ptr.h \
   /usr/include/c++/14.2.1/bits/allocator.h \
@@ -142,15 +144,18 @@ CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o: /home/maks/Program
   /usr/include/c++/14.2.1/bits/specfun.h \
   /usr/include/c++/14.2.1/bits/sstream.tcc \
   /usr/include/c++/14.2.1/bits/std_abs.h \
+  /usr/include/c++/14.2.1/bits/stl_algo.h \
   /usr/include/c++/14.2.1/bits/stl_algobase.h \
   /usr/include/c++/14.2.1/bits/stl_bvector.h \
   /usr/include/c++/14.2.1/bits/stl_construct.h \
   /usr/include/c++/14.2.1/bits/stl_function.h \
+  /usr/include/c++/14.2.1/bits/stl_heap.h \
   /usr/include/c++/14.2.1/bits/stl_iterator.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/14.2.1/bits/stl_numeric.h \
   /usr/include/c++/14.2.1/bits/stl_pair.h \
+  /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.2.1/bits/stl_vector.h \
   /usr/include/c++/14.2.1/bits/streambuf.tcc \
@@ -202,6 +207,7 @@ CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o: /home/maks/Program
   /usr/include/c++/14.2.1/numeric \
   /usr/include/c++/14.2.1/ostream \
   /usr/include/c++/14.2.1/pstl/execution_defs.h \
+  /usr/include/c++/14.2.1/pstl/glue_algorithm_defs.h \
   /usr/include/c++/14.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/14.2.1/pstl/pstl_config.h \
   /usr/include/c++/14.2.1/random \
@@ -351,9 +357,11 @@ CMakeFiles/MyExecutable.dir/src/main.cpp.o: /home/maks/Programming/EndlessRunner
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/c++/14.2.1/algorithm \
   /usr/include/c++/14.2.1/array \
   /usr/include/c++/14.2.1/backward/binders.h \
   /usr/include/c++/14.2.1/bit \
+  /usr/include/c++/14.2.1/bits/algorithmfwd.h \
   /usr/include/c++/14.2.1/bits/alloc_traits.h \
   /usr/include/c++/14.2.1/bits/allocated_ptr.h \
   /usr/include/c++/14.2.1/bits/allocator.h \
@@ -412,15 +420,18 @@ CMakeFiles/MyExecutable.dir/src/main.cpp.o: /home/maks/Programming/EndlessRunner
   /usr/include/c++/14.2.1/bits/specfun.h \
   /usr/include/c++/14.2.1/bits/sstream.tcc \
   /usr/include/c++/14.2.1/bits/std_abs.h \
+  /usr/include/c++/14.2.1/bits/stl_algo.h \
   /usr/include/c++/14.2.1/bits/stl_algobase.h \
   /usr/include/c++/14.2.1/bits/stl_bvector.h \
   /usr/include/c++/14.2.1/bits/stl_construct.h \
   /usr/include/c++/14.2.1/bits/stl_function.h \
+  /usr/include/c++/14.2.1/bits/stl_heap.h \
   /usr/include/c++/14.2.1/bits/stl_iterator.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/14.2.1/bits/stl_numeric.h \
   /usr/include/c++/14.2.1/bits/stl_pair.h \
+  /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.2.1/bits/stl_vector.h \
   /usr/include/c++/14.2.1/bits/streambuf.tcc \
@@ -472,6 +483,7 @@ CMakeFiles/MyExecutable.dir/src/main.cpp.o: /home/maks/Programming/EndlessRunner
   /usr/include/c++/14.2.1/numeric \
   /usr/include/c++/14.2.1/ostream \
   /usr/include/c++/14.2.1/pstl/execution_defs.h \
+  /usr/include/c++/14.2.1/pstl/glue_algorithm_defs.h \
   /usr/include/c++/14.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/14.2.1/pstl/pstl_config.h \
   /usr/include/c++/14.2.1/random \
@@ -628,15 +640,17 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 
 /usr/include/stdlib.h:
 
-/usr/include/c++/14.2.1/bits/parse_numbers.h:
-
-/usr/include/c++/14.2.1/bits/shared_ptr_base.h:
+/usr/include/stdc-predef.h:
 
 /usr/include/c++/14.2.1/bits/new_allocator.h:
 
 /usr/include/c++/14.2.1/bits/nested_exception.h:
 
 /usr/include/c++/14.2.1/bits/move.h:
+
+/usr/include/pthread.h:
+
+/usr/include/c++/14.2.1/string:
 
 /usr/include/c++/14.2.1/bits/memoryfwd.h:
 
@@ -659,10 +673,6 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 /usr/include/c++/14.2.1/bits/hash_bytes.h:
 
 /usr/include/c++/14.2.1/bits/istream.tcc:
-
-/usr/include/c++/14.2.1/bits/ostream_insert.h:
-
-/usr/include/c++/14.2.1/bits/stl_numeric.h:
 
 /usr/include/bits/types/struct_tm.h:
 
@@ -693,6 +703,10 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/c++/14.2.1/bits/basic_string.tcc:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/wordsize.h:
 
 /usr/include/c++/14.2.1/ext/string_conversions.h:
 
@@ -748,6 +762,14 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 
 /usr/include/bits/long-double.h:
 
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/c++/14.2.1/bits/stl_tempbuf.h:
+
 /usr/include/c++/14.2.1/bits/exception_ptr.h:
 
 /usr/lib/libc.so:
@@ -761,6 +783,10 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 /usr/include/bits/flt-eval-method.h:
 
 /home/maks/Programming/EndlessRunner/src/headers/includes.h:
+
+/usr/include/c++/14.2.1/bits/parse_numbers.h:
+
+/usr/include/c++/14.2.1/bits/shared_ptr_base.h:
 
 /usr/include/bits/errno.h:
 
@@ -870,13 +896,13 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 
 /usr/include/c++/14.2.1/bits/uses_allocator_args.h:
 
-/usr/include/bits/types/__fpos64_t.h:
-
 /usr/include/bits/waitstatus.h:
 
 /usr/include/bits/wchar.h:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/c++/14.2.1/bits/algorithmfwd.h:
 
 /usr/include/bits/select.h:
 
@@ -887,6 +913,10 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 /usr/include/c++/14.2.1/exception:
 
 /usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/c++/14.2.1/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/opt_random.h:
 
@@ -954,6 +984,12 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 
 /usr/include/c++/14.2.1/bits/stl_uninitialized.h:
 
+/usr/include/c++/14.2.1/bits/stl_numeric.h:
+
+/usr/include/c++/14.2.1/bits/ostream_insert.h:
+
+/usr/include/c++/14.2.1/algorithm:
+
 /usr/include/c++/14.2.1/bits/postypes.h:
 
 /usr/include/c++/14.2.1/bits/ptr_traits.h:
@@ -966,7 +1002,17 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 
 /usr/include/c++/14.2.1/bits/sstream.tcc:
 
+/usr/include/c++/14.2.1/bits/stl_algo.h:
+
+/usr/include/c++/14.2.1/compare:
+
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/time_members.h:
+
+/usr/include/c++/14.2.1/bits/stl_heap.h:
+
+/usr/include/c++/14.2.1/bits/stl_algobase.h:
+
+/usr/include/c++/14.2.1/cstdlib:
 
 /usr/include/c++/14.2.1/bits/stl_pair.h:
 
@@ -1010,13 +1056,7 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 
 /usr/include/c++/14.2.1/clocale:
 
-/usr/include/c++/14.2.1/compare:
-
 /usr/include/c++/14.2.1/cstdio:
-
-/usr/include/c++/14.2.1/bits/stl_algobase.h:
-
-/usr/include/c++/14.2.1/cstdlib:
 
 /usr/include/c++/14.2.1/tr1/poly_laguerre.tcc:
 
@@ -1025,10 +1065,6 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 /usr/include/bits/time.h:
 
 /usr/include/c++/14.2.1/debug/assertions.h:
-
-/usr/include/c++/14.2.1/string:
-
-/usr/include/pthread.h:
 
 /usr/include/c++/14.2.1/debug/debug.h:
 
@@ -1120,9 +1156,9 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/messages_members.h:
 
-/usr/include/c++/14.2.1/bits/ostream.tcc:
-
 /usr/include/stdint.h:
+
+/usr/include/c++/14.2.1/bits/ostream.tcc:
 
 /usr/include/endian.h:
 
@@ -1141,15 +1177,3 @@ MyExecutable: /usr/lib/ld-linux-x86-64.so.2 \
 /usr/include/c++/14.2.1/bits/uniform_int_dist.h:
 
 /usr/include/locale.h:
-
-/usr/include/wctype.h:
-
-/usr/include/bits/fp-fast.h:
-
-/usr/include/sched.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/stdio.h:

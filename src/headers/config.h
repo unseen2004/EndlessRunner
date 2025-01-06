@@ -15,6 +15,10 @@ namespace config {
     constexpr int SCREENWIDTH = 1920;
     constexpr int SCREENHEIGHT = 1080;
     constexpr int FRAMES = 60;
+
+    constexpr int PLATFORM_WIDTH = 500;
+    constexpr int JUMPS_NUMBER = 2;
+    constexpr int MAX_CLOUDS = 3;
 };
 
 

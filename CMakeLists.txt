@@ -1,21 +1,22 @@
-cmake_minimum_required(VERSION 3.5)
+# Minimum CMake version required
+cmake_minimum_required(VERSION 3.10)
 
+# Project name
 project(EndlessRunner)
 
-# Set the C++ standard (optional but recommended)
+# Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Find raylib (if installed system-wide or via CMake's find_package)
+# Find and include raylib
 find_package(raylib REQUIRED)
 
-# Include the EASTL headers
-# Adjust this path if EASTL is installed in a different directory
-include_directories(/usr/local/include)
+# Add the executable target
+add_executable(MyExecutable
+        src/main.cpp
+        src/new_operator.cpp
+        src/all_horizontal_movable.cpp)
 
-# Add the executable for your project
-add_executable(MyRaylibProject src/main.cpp)
 
-# Link raylib to your executable
-target_link_libraries(MyRaylibProject PRIVATE raylib)
-# Add tasks subprojects
+# Link the raylib and EA::StdC libraries
+target_link_libraries(MyExecutable PRIVATE raylib )

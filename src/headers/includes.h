@@ -8,5 +8,7 @@
 #include <raylib.h>
 #include "random.h"
 #include <filesystem>
+#include <algorithm>
+#include "config.h"
 
 #endif // INCLUDES_H

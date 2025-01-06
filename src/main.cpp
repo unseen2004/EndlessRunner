@@ -9,6 +9,8 @@ class Character {
     int m_currentFrame;
     int m_framesCounter;
     int m_framesSpeed;
+    int m_jumps_left;
+    bool m_is_jumping;
     int m_currentLine;
     Texture2D m_character;
     Texture2D m_explosion;
@@ -19,13 +21,19 @@ class Character {
     Rectangle m_frameRec;
 
 public:
-    Character(fs::path path1, fs::path path2, fs::path path3, float x = 100.0f,
-              float y = 200.0f, int currentFrame = 0, int framesCounter = 0,
-              int framesSpeed = 8, int currentLine = 0) : m_pathCharacter(path1), m_pathExplosion(path2),
-                                                          m_pathSound(path3), m_position{x, y},
-                                                          m_currentFrame(currentFrame),
-                                                          m_framesCounter(framesCounter), m_framesSpeed(framesSpeed),
-                                                          m_currentLine(currentLine) {
+    Character(fs::path path1, fs::path path2, fs::path path3, float x = 300,
+              float y = 800, int currentFrame = 0, int framesCounter = 0,
+              int framesSpeed = 8, int currentLine = 0, bool is_jumping = false) : m_pathCharacter(path1),
+        m_pathExplosion(path2),
+        m_pathSound(path3), m_position{x, y},
+        m_currentFrame(currentFrame),
+        m_framesCounter(framesCounter), m_framesSpeed(framesSpeed),
+        m_currentLine(0),
+        m_jumps_left(config::JUMPS_NUMBER),
+        m_is_jumping(is_jumping) {
+        if (path1.empty() || path2.empty() || path3.empty()) {
+            throw std::logic_error("File path cannot be empty");
+        }
         m_character = LoadTexture(m_pathCharacter.string().c_str());
         m_explosion = LoadTexture(m_pathExplosion.string().c_str());
         m_boom = LoadSound(m_pathSound.string().c_str());
@@ -91,7 +99,22 @@ public:
         }
     }
 
-    void jump() {}
+    bool init_jump() {
+        if (m_jumps_left < 1) {
+            return false;
+        }
+        --m_jumps_left;
+    }
+    // TO DO:
+    // change y (increase->stop->decrease)
+    // rolling movement
+    void jump() {
+
+    }
+
+    void dash() {
+
+    }
 
     void changeSpeed(int n) {
         m_framesSpeed += n;
@@ -106,70 +129,127 @@ public:
     }
 };
 
+class StateMachine {
+};
+
+class Interface {
+};
+
+class WelcomeScreen {
+};
+
+class DeathScreen {
+};
+
+class TableScreen {
+};
+
+class Game {
+};
+
+std::unique_ptr<Cloud> generateRandomCloud() {
+    std::vector<std::filesystem::path> cloudPaths = {
+        "../resources/clouds/Cloud_1.png",
+        "../resources/clouds/Cloud_2.png",
+        "../resources/clouds/Cloud_3.png"
+    };
+
+    int randomIndex = Random::get(0, 2);
+
+    return std::make_unique<Cloud>(cloudPaths[randomIndex], 8.0f, config::SCREENWIDTH, 300.0f, 1.0f);
+}
+
 int main() {
     InitWindow(config::SCREENWIDTH, config::SCREENHEIGHT, "EndlessRunner");
-    bool tmp = false;
 
-    Background bg_background("../resources/background/BG.png");
-    Background bg_foreground("../resources/background/FG.png");
-    Background bg_midground("../resources/background/MG.png");
-    Background bg_sky("../resources/background/Sky.png");
+    auto bg_background = std::make_unique<Background>(fs::path("../resources/background/BG.png"), 0.5f);
+    auto bg_foreground = std::make_unique<Background>(fs::path("../resources/background/FG.png"));
+    auto bg_midground = std::make_unique<Background>(fs::path("../resources/background/MG.png"), 0.5f);
+    auto bg_sky = std::make_unique<Background>(fs::path("../resources/background/Sky.png"), 1.0f);
 
+    Font japanese_font = LoadFont("../resources/fonts/NotoSansJP-Regular.ttf");
+    Font emoji_font = LoadFont("../resources/fonts/noto_cjk.fnt");
 
-    Character character("../resources/scarfy.png", "../resources/explosion.png", "../resources/boom.wav");
+    auto character = std::make_unique<Character>(fs::path("../resources/scarfy.png"),
+                                                 fs::path("../resources/explosion.png"),
+                                                 fs::path("../resources/boom.wav"));
+
+    Obstacles *obstacleToDel = nullptr;
+    std::vector<std::unique_ptr<Cloud> > clouds;
 
     SetTargetFPS(config::FRAMES);
 
-
     while (!WindowShouldClose()) {
-        bg_background.changeX(-0.1f);
-        bg_foreground.changeX(-1.0f);
-        bg_midground.changeX(-0.5f);
-        bg_sky.changeX(-1.0f);
+        bg_background->update();
+        bg_foreground->update();
+        bg_midground->update();
+        bg_sky->update();
 
-        bg_background.resetIfOutsite();
+        // To DO: Add time restriction
+        if (clouds.size() < config::MAX_CLOUDS && Random::get(1, 100) < 5) {
+            // 2% chance to generate a cloud each frame
+            clouds.push_back(generateRandomCloud());
+        }
+        for (auto &cloud: clouds) {
+            cloud->update();
+        }
+        // Update clouds and remove those that are off-screen
+        clouds.erase(std::remove_if(clouds.begin(), clouds.end(),
+                                    [](const std::unique_ptr<Cloud> &cloud) { return !cloud->update(); }),
+                     clouds.end());
+
+        if (!obstacleToDel) {
+            obstacleToDel = new Obstacles();
+            if (obstacleToDel->getWidth() == 0) {
+                std::cerr << "Failed to load platform texture" << std::endl;
+                delete obstacleToDel;
+                obstacleToDel = nullptr;
+                return -1;
+            }
+        }
 
         BeginDrawing();
         ClearBackground(GetColor(0x052c46ff));
-        //ClearBackground(GetColor(0x052c46ff));
+
+        bg_sky->draw(bg_sky->getX());
+        bg_sky->draw(bg_sky->getWidth() * 2 + bg_sky->getX());
 
 
-        bg_sky.draw(bg_sky.getX());
-        bg_sky.draw(bg_sky.getWidth() * 2 + bg_sky.getX());
+        bg_background->draw(bg_background->getX());
+        bg_background->draw(bg_background->getWidth() * 2 + bg_background->getX());
 
-        bg_background.draw(bg_background.getX());
-        bg_background.draw(bg_background.getWidth() * 2 + bg_background.getX());
+        bg_midground->draw(bg_midground->getX());
+        bg_midground->draw(bg_midground->getWidth() * 2 + bg_midground->getX());
 
-        bg_midground.draw(bg_midground.getX());
-        bg_midground.draw(bg_midground.getWidth() * 2 + bg_midground.getX());
-
-        //------------------------------------------------------
-        //                  Draw platforms
-
-        //---------
-        //draw character
-        //ClearBackground(RAYWHITE);
-        character.changeSpeed(1);
-        character.run();
-        /*
-        if(!tmp) {
-            tmp = true;
-            character.dead();
+        for (auto &cloud: clouds) {
+            cloud->draw();
         }
-        */
-        //------------------------------------------------------
-        //bg_foreground.draw(bg_foreground.getX());
-        //bg_foreground.draw(bg_foreground.getWidth() * 2 + bg_foreground.getX());
 
+        if (obstacleToDel->update()) {
+            obstacleToDel->draw();
+        } else {
+            delete obstacleToDel;
+            obstacleToDel = nullptr;
+            std::cout << "deleted";
+        }
 
-        DrawText("BACKGROUND SCROLLING & PARALLAX", 10, 10, 20, RED);
-        DrawText("エンドレスランナーゲーム", config::SCREENWIDTH - 330, config::SCREENWIDTH - 20, 10, RAYWHITE);
+        character->changeSpeed(1);
+        character->run();
+
+        DrawTextEx(japanese_font, "おaa", (Vector2){300, 200}, japanese_font.baseSize, 2, RAYWHITE);
 
         EndDrawing();
     }
-    CloseAudioDevice();
 
+    UnloadFont(japanese_font);
+    CloseAudioDevice();
     CloseWindow();
 
     return 0;
 }
+
+// 0,0
+// width - 100, 0
+// 0, height - 100
+// width - 100, heigth - 100
+//character: 300, w - 300

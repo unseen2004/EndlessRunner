@@ -22,10 +22,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/new_operator.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Rock Pile 15 - MOSSY - BIG.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/main.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/main.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/MyExecutable" beforeDir="false" afterPath="$PROJECT_DIR$/build/MyExecutable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/all_horizontal_movable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/all_horizontal_movable.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/all_horizontal_movable.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/all_horizontal_movable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/includes.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/includes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +44,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ClangdSettings">
+    <option name="clangTidyViaClangd" value="false" />
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExternalProjectsData">
@@ -50,6 +62,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;unseen2004&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/unseen2004/EndlessRunner.git&quot;,
+    &quot;accountId&quot;: &quot;6f461467-771a-4b50-b509-db38e8504088&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -99,7 +123,10 @@
   &quot;keyToString&quot;: {
     &quot;C/C++ File.main.cpp (1).executor&quot;: &quot;Run&quot;,
     &quot;C/C++ File.main.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.all.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.clean.executor&quot;: &quot;Run&quot;,
     &quot;Makefile Target.default_target.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.rebuild_cache.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
@@ -107,7 +134,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;trunk&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/maks/Programming/EndlessRunner/build/MyRaylibProject&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/maks/Programming/EndlessRunner/resources/fonts&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -118,13 +145,18 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/Rocks" />
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/resources/fonts" />
+      <recent name="$PROJECT_DIR$/resources/clouds" />
       <recent name="$PROJECT_DIR$/resources/background" />
-      <recent name="$PROJECT_DIR$/resources/PNG" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile Target.default_target">
+  <component name="RunManager" selected="Makefile Target.all">
     <configuration name="cmake" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" RUN_PATH="$PROJECT_DIR$/build/MyRaylibProject" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -143,20 +175,44 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/build/Makefile" target="all" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="clean" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/build/Makefile" target="clean" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <configuration name="default_target" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/build/Makefile" target="default_target" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration name="rebuild_cache" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/build/Makefile" target="rebuild_cache" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="CMake Application.cmake" />
       <item itemvalue="C/C++ File.main.cpp (1)" />
       <item itemvalue="C/C++ File.main.cpp" />
+      <item itemvalue="CMake Application.cmake" />
+      <item itemvalue="Makefile Target.all" />
+      <item itemvalue="Makefile Target.clean" />
+      <item itemvalue="Makefile Target.rebuild_cache" />
       <item itemvalue="Makefile Target.default_target" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile Target.all" />
+        <item itemvalue="Makefile Target.rebuild_cache" />
+        <item itemvalue="Makefile Target.clean" />
         <item itemvalue="Makefile Target.default_target" />
       </list>
     </recent_temporary>
@@ -171,6 +227,20 @@
       <updated>1734984183323</updated>
       <workItem from="1734984185112" duration="11000" />
       <workItem from="1734984204376" duration="9423000" />
+      <workItem from="1735036515273" duration="1541000" />
+      <workItem from="1735047206566" duration="21392000" />
+      <workItem from="1735221670265" duration="4425000" />
+      <workItem from="1735226709708" duration="338000" />
+      <workItem from="1735227289653" duration="3116000" />
+      <workItem from="1735343937272" duration="831000" />
+      <workItem from="1735496297984" duration="510000" />
+      <workItem from="1735674333706" duration="10238000" />
+      <workItem from="1735732730861" duration="4224000" />
+      <workItem from="1735753174533" duration="5842000" />
+      <workItem from="1735822992385" duration="7345000" />
+      <workItem from="1735832962394" duration="6654000" />
+      <workItem from="1735945847214" duration="2486000" />
+      <workItem from="1736169123654" duration="661000" />
     </task>
     <servers />
   </component>
