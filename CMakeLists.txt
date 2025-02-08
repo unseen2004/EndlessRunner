@@ -14,8 +14,8 @@ find_package(raylib REQUIRED)
 # Add the executable target
 add_executable(MyExecutable
         src/main.cpp
-        src/new_operator.cpp
-        src/all_horizontal_movable.cpp)
+        src/cpp/New_operator.cpp
+)
 
 
 # Link the raylib and EA::StdC libraries
