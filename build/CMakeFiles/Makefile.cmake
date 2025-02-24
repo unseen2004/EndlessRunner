@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/maks/Programming/EndlessRunner/CMakeLists.txt"
-  "CMakeFiles/3.31.3/CMakeCCompiler.cmake"
-  "CMakeFiles/3.31.3/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.31.3/CMakeSystem.cmake"
+  "CMakeFiles/3.31.5/CMakeCCompiler.cmake"
+  "CMakeFiles/3.31.5/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.31.5/CMakeSystem.cmake"
   "/usr/local/lib/cmake/raylib/raylib-config-version.cmake"
   "/usr/local/lib/cmake/raylib/raylib-config.cmake"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"

@@ -1,24 +1,20 @@
-#include "StateMachine.h"
+#include "../headers/StateMachine.h"
 
-void StateMachine::addState(const std::string &name, std::unique_ptr<State> state) {
-    states[name] = std::move(state);
+void StateMachine::changeState(std::unique_ptr<State> newState) {
+    currentState = std::move(newState);
 }
 
-void StateMachine::changeState(const std::string &name) {
-    auto it = states.find(name);
-    if (it != states.end()) {
-        currentState = it->second.get();
-    }
+void StateMachine::handleInput() {
+    if (currentState)
+        currentState->handleInput();
 }
 
 void StateMachine::update() {
-    if (currentState) {
+    if (currentState)
         currentState->update();
-    }
 }
 
-void StateMachine::draw() {
-    if (currentState) {
-        currentState->draw();
-    }
+void StateMachine::render() {
+    if (currentState)
+        currentState->render();
 }

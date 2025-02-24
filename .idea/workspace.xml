@@ -8,6 +8,7 @@
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
+    <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppFormatterOtherPage" type="string" />
   </component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
@@ -22,341 +23,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cpp/Background.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpp/Character.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpp/Cloud.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpp/DeadScreen.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpp/Game.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpp/Interface.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpp/Obstacles.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpp/Platform.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpp/StateMachine.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpp/TableScreen.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpp/WelcomeScreen.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/Background.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/Character.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/Cloud.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/DeadScreen.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/Game.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/Interface.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/Obstacles.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/Platform.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/StateMachine.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/TableScreen.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/WelcomeScreen.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EndlessRunner.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cpp/Table.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/headers/GameScreen.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/headers/State.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/headers/Table.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1311951.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1337458.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Clouds_01/Ai Resource/Clouds_01.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Clouds_01/Clouds_01_1024x512_Set_02_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Clouds_01/Clouds_01_1024x512_Set_03_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Clouds_01/Clouds_01_1024x512_Set_03_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Clouds_01/Clouds_01_1024x512_Set_03_04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Clouds_01/Clouds_01_1024x512_Set_03_05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Clouds_01/Clouds_01_1024x512_Set_04_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Rock Pile 15 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/boom.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Sound/boom.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/dejavu.fnt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/DotGothic16-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/NotoSansJP-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/NotoSansJP-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/noto_cjk.fnt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/static/NotoSansJP-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/static/NotoSansJP-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/static/NotoSansJP-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/static/NotoSansJP-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/static/NotoSansJP-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/static/NotoSansJP-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/static/NotoSansJP-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/symbola.fnt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/platforms/ai-generated-abstract-ice-background-blue-background-with-cracks-on-the-ice-surface-idea-generative-ai-photo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/platforms/images.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/platforms/jenni-rambach-playblocksiceb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/platforms/platform1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/platforms/platform2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/platforms/platform3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/platforms/platform4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/platforms/platform5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/platforms/platform6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Attack__000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Attack__001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Attack__002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Attack__003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Attack__004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Attack__005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Attack__006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Attack__007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Attack__008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Attack__009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Dead__000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Dead__001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Dead__002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Dead__003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Dead__004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Dead__005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Dead__006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Dead__007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Dead__008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Idle__000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Idle__001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Idle__002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Idle__003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Idle__004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Idle__005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Idle__006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Idle__007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Idle__008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Idle__009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Attack__000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Attack__001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Attack__002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Attack__003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Attack__004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Attack__005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Attack__006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Attack__007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Attack__008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Attack__009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Throw__000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Throw__001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Throw__002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Throw__003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Throw__004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Throw__005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Throw__006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Throw__007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Throw__008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump_Throw__009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump__000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump__001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump__002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump__003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump__004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump__005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump__006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump__007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump__008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Jump__009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Kunai.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Run__000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Run__001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Run__002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Run__003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Run__004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Run__005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Run__006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Run__007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Run__008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Run__009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Slide__000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Slide__001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Slide__002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Slide__003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Slide__004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Slide__005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Slide__006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Slide__007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Slide__008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Slide__009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Throw__000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Throw__001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Throw__002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Throw__003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Throw__004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Throw__005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Throw__006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Throw__007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Throw__008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/png/Throw__009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Pixel Art Rock Pile Pack - Read Me.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 1 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 1 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 10 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 10 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 11 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 11 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 12 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 12 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 13 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 13 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 14 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 14 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 15 - AZURE - BIG.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resources/rocks/Rock Pile 15 - AZURE - BIG.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 15 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 2 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 2 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 3 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 3 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 4 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 4 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 5 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 5 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 6 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 6 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 7 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 7 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 8 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 8 - AZURE - small.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resources/rocks/Rock Pile 8 - AZURE - small.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 9 - AZURE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - AZURE -/Rock Pile 9 - AZURE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 1 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 1 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 10 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 10 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 11 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 11 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 12 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 12 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 13 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 13 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 14 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 14 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 15 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 15 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 2 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 2 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 3 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 3 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 4 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 4 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 5 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 5 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 6 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 6 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 7 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 7 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 8 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 8 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 9 - BEIGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - BEIGE -/Rock Pile 9 - BEIGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 1 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 1 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 10 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 10 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 11 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 11 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 12 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 12 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 13 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 13 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 14 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 14 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 15 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 15 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 2 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 2 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 3 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 3 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 4 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 4 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 5 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 5 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 6 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 6 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 7 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 7 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 8 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 8 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 9 - MOSSY - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - MOSSY -/Rock Pile 9 - MOSSY - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 1 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 1 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 10 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 10 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 11 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 11 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 12 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 12 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 13 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 13 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 14 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 14 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 15 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 15 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 2 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 2 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 3 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 3 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 4 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 4 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 5 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 5 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 6 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 6 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 7 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 7 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 8 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 8 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 9 - ORANGE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - ORANGE -/Rock Pile 9 - ORANGE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 1 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 1 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 10 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 10 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 11 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 11 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 12 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 12 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 13 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 13 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 14 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 14 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 15 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 15 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 2 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 2 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 3 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 3 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 4 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 4 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 5 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 5 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 6 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 6 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 7 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 7 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 8 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 8 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 9 - SILVER - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - SILVER -/Rock Pile 9 - SILVER - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 1 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 1 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 10 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 11 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 11 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 12 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 12 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 13 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 13 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 14 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 14 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 15 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 15 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 2 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 3 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 3 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 4 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 5 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 6 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 6 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 7 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 7 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 8 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 8 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 9 - WHITE - BIG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile - WHITE -/Rock Pile 9 - WHITE - small.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/rocks/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/all_horizontal_movable.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/all_horizontal_movable.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Config.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/includes.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Includes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/new_operator.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/New_operator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/random.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Random.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/new_operator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/New_operator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/link.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/link.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/MyExecutable" beforeDir="false" afterPath="$PROJECT_DIR$/build/MyExecutable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile 15 - AZURE - BIG.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rocks/Rock Pile 8 - AZURE - small.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resources/rocks/rock_5.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Background.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Background.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Character.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Cloud.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Cloud.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/DeadScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/DeadScreen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Interface.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/New_operator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Obstacles.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Obstacle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Platform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Platform.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/StateMachine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/StateMachine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/TableScreen.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/WelcomeScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/WelcomeScreen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Background.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Background.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Character.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Character.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Cloud.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Cloud.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Config.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/DeadScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/DeadScreen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Includes.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Includes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/New_operator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Obstacles.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Obstacle.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Platform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/StateMachine.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/StateMachine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/TableScreen.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/WelcomeScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/WelcomeScreen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -395,7 +116,15 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/cpp/Game.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/cpp/Interface.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/cpp/main.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/headers/Cloud.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/headers/DeadScreen.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/headers/Game.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/headers/StateMachine.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/headers/TableScreen.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/headers/WelcomeScreen.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MakefileLocalSettings">
     <option name="availableProjects">
@@ -424,6 +153,9 @@
       </map>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2024" />
@@ -445,6 +177,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "C/C++ File.main.cpp (1).executor": "Run",
+    "C/C++ File.main.cpp (2).executor": "Run",
     "C/C++ File.main.cpp.executor": "Run",
     "Makefile Target.all.executor": "Run",
     "Makefile Target.clean.executor": "Run",
@@ -453,17 +186,20 @@
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "trunk",
-    "last_opened_file_path": "/home/maks/Programming/EndlessRunner",
+    "last_opened_file_path": "/home/maks/Programming/AlgoLib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.make",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "copyright.filetypes.C/C++",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -472,14 +208,14 @@
       <recent name="$PROJECT_DIR$/resources/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/cpp" />
       <recent name="$PROJECT_DIR$/src/headers" />
+      <recent name="$PROJECT_DIR$/src/cpp" />
       <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/resources/Sound" />
       <recent name="$PROJECT_DIR$/resources/rocks" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile Target.all">
+  <component name="RunManager" selected="C/C++ File.main.cpp (2)">
     <configuration name="cmake" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" RUN_PATH="$PROJECT_DIR$/build/MyRaylibProject" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -487,6 +223,12 @@
     </configuration>
     <configuration name="main.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="EndlessRunner" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp (1)">
       <option name="sourceFile" value="src/main.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.cpp (2)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="EndlessRunner" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
+      <option name="sourceFile" value="src/cpp/main.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -525,6 +267,7 @@
     <list>
       <item itemvalue="C/C++ File.main.cpp (1)" />
       <item itemvalue="C/C++ File.main.cpp" />
+      <item itemvalue="C/C++ File.main.cpp (2)" />
       <item itemvalue="CMake Application.cmake" />
       <item itemvalue="Makefile Target.all" />
       <item itemvalue="Makefile Target.clean" />
@@ -533,6 +276,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.main.cpp (2)" />
         <item itemvalue="Makefile Target.all" />
         <item itemvalue="Makefile Target.rebuild_cache" />
         <item itemvalue="Makefile Target.clean" />
@@ -565,7 +309,11 @@
       <workItem from="1735945847214" duration="2486000" />
       <workItem from="1736169123654" duration="661000" />
       <workItem from="1738149448183" duration="56000" />
-      <workItem from="1739030451382" duration="3108000" />
+      <workItem from="1739030451382" duration="3888000" />
+      <workItem from="1739446630929" duration="1719000" />
+      <workItem from="1739801379004" duration="6949000" />
+      <workItem from="1740421147859" duration="33000" />
+      <workItem from="1740423815443" duration="7557000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,4 @@
 #include "../headers/Background.h"
-#include "raylib.h"
-#include <stdexcept>
-#include <filesystem>
 
 Background::Background(const std::filesystem::path& path, float speed, float x, float y, float scale)
     : m_speed(speed), m_x(x), m_y(y), m_scale(scale), m_texturePath(path) {
@@ -44,3 +41,4 @@ void Background::update() {
     m_x -= m_speed;
     resetIfOutsite();
 }
+

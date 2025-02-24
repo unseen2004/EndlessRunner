@@ -13,10 +13,13 @@ find_package(raylib REQUIRED)
 
 # Add the executable target
 add_executable(MyExecutable
-        src/main.cpp
-        src/cpp/New_operator.cpp
+    src/cpp/main.cpp
+    src/cpp/Game.cpp
+    src/cpp/StateMachine.cpp
+    src/cpp/WelcomeScreen.cpp
+    src/cpp/GameScreen.cpp
+    src/cpp/DeadScreen.cpp
 )
 
-
-# Link the raylib and EA::StdC libraries
-target_link_libraries(MyExecutable PRIVATE raylib )
+# Link the raylib library
+target_link_libraries(MyExecutable PRIVATE raylib)

@@ -1,16 +1,20 @@
-//
-// Created by maks on 2/8/25.
-//
-
 #ifndef WELCOMESCREEN_H
 #define WELCOMESCREEN_H
 
+#include "State.h"
+#include "raylib.h"
+#include "StateMachine.h"
+#include "GameScreen.h"
 
+class WelcomeScreen : public State {
+    StateMachine& stateMachine;
+public:
+    WelcomeScreen(StateMachine& sm);
+    ~WelcomeScreen();
 
-class WelcomeScreen {
-
+    void handleInput() override;
+    void update() override;
+    void render() override;
 };
 
-
-
-#endif //WELCOMESCREEN_H
+#endif // WELCOMESCREEN_H

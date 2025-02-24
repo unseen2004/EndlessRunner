@@ -1,14 +1,12 @@
 #include "../headers/Platform.h"
-#include "raylib.h"
-#include "Random.h"
-#include "../headers/Config.h"
+#
 
 void Platform::draw() {
     Background::draw(m_x, m_y, 0.0f, 1.0f, WHITE);
 }
 
 bool Platform::isOutsite() {
-    return m_x < -config::PLATFORM_WIDTH;
+    return m_x < -this->m_texture.width;
 }
 
 bool Platform::update() {
@@ -19,15 +17,7 @@ bool Platform::update() {
     return false;
 }
 
-bool Platform::resetIfOutsite() {
-    if (!isOutsite()) {
-        return false;
-    }
 
-    m_x = config::SCREENWIDTH + config::PLATFORM_WIDTH;
-    m_y = Random::get(100.0f, 550.0f);
-    return true;
-}
 
 Rectangle Platform::getBounds() const {
     return {m_x, m_y, static_cast<float>(m_texture.width), static_cast<float>(m_texture.height)};

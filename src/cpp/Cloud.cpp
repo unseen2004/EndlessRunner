@@ -1,5 +1,6 @@
 #include "../headers/Cloud.h"
 
+
 bool Cloud::update() {
     m_x -= m_speed;
     return m_x > 0;

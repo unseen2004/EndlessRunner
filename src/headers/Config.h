@@ -1,26 +1,16 @@
-//
-// Created by maks on 12/23/24.
-//
-
 #ifndef CONFIG_H
 #define CONFIG_H
-#define NUM_FRAMES_PER_LINE     5
-#define NUM_LINES               5
-
-
-#define MAX_FRAME_SPEED     15
-#define MIN_FRAME_SPEED      1
 
 namespace config {
-    constexpr int SCREENWIDTH = 1920;
-    constexpr int SCREENHEIGHT = 1080;
+    constexpr int SCREEN_WIDTH = 1920;
+    constexpr int SCREEN_HEIGHT = 1080;
     constexpr int FRAMES = 60;
-
-    constexpr int PLATFORM_WIDTH = 500;
+    constexpr int MAX_FRAME_SPEED = 15;
+    constexpr int MIN_FRAME_SPEED = 1;
     constexpr int JUMPS_NUMBER = 2;
     constexpr int MAX_CLOUDS = 3;
-};
+}
 
 
+#endif // CONFIG_H
 
-#endif //CONFIG_H

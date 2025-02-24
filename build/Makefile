@@ -129,77 +129,149 @@ MyExecutable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
 .PHONY : MyExecutable/fast
 
-src/all_horizontal_movable.o: src/all_horizontal_movable.cpp.o
-.PHONY : src/all_horizontal_movable.o
+src/cpp/DeadScreen.o: src/cpp/DeadScreen.cpp.o
+.PHONY : src/cpp/DeadScreen.o
 
 # target to build an object file
-src/all_horizontal_movable.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o
-.PHONY : src/all_horizontal_movable.cpp.o
+src/cpp/DeadScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o
+.PHONY : src/cpp/DeadScreen.cpp.o
 
-src/all_horizontal_movable.i: src/all_horizontal_movable.cpp.i
-.PHONY : src/all_horizontal_movable.i
+src/cpp/DeadScreen.i: src/cpp/DeadScreen.cpp.i
+.PHONY : src/cpp/DeadScreen.i
 
 # target to preprocess a source file
-src/all_horizontal_movable.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.i
-.PHONY : src/all_horizontal_movable.cpp.i
+src/cpp/DeadScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.i
+.PHONY : src/cpp/DeadScreen.cpp.i
 
-src/all_horizontal_movable.s: src/all_horizontal_movable.cpp.s
-.PHONY : src/all_horizontal_movable.s
+src/cpp/DeadScreen.s: src/cpp/DeadScreen.cpp.s
+.PHONY : src/cpp/DeadScreen.s
 
 # target to generate assembly for a file
-src/all_horizontal_movable.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.s
-.PHONY : src/all_horizontal_movable.cpp.s
+src/cpp/DeadScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.s
+.PHONY : src/cpp/DeadScreen.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/cpp/Game.o: src/cpp/Game.cpp.o
+.PHONY : src/cpp/Game.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/cpp/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o
+.PHONY : src/cpp/Game.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/cpp/Game.i: src/cpp/Game.cpp.i
+.PHONY : src/cpp/Game.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/cpp/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.i
+.PHONY : src/cpp/Game.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/cpp/Game.s: src/cpp/Game.cpp.s
+.PHONY : src/cpp/Game.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/cpp/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.s
+.PHONY : src/cpp/Game.cpp.s
 
-src/new_operator.o: src/new_operator.cpp.o
-.PHONY : src/new_operator.o
+src/cpp/GameScreen.o: src/cpp/GameScreen.cpp.o
+.PHONY : src/cpp/GameScreen.o
 
 # target to build an object file
-src/new_operator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o
-.PHONY : src/new_operator.cpp.o
+src/cpp/GameScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o
+.PHONY : src/cpp/GameScreen.cpp.o
 
-src/new_operator.i: src/new_operator.cpp.i
-.PHONY : src/new_operator.i
+src/cpp/GameScreen.i: src/cpp/GameScreen.cpp.i
+.PHONY : src/cpp/GameScreen.i
 
 # target to preprocess a source file
-src/new_operator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/new_operator.cpp.i
-.PHONY : src/new_operator.cpp.i
+src/cpp/GameScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.i
+.PHONY : src/cpp/GameScreen.cpp.i
 
-src/new_operator.s: src/new_operator.cpp.s
-.PHONY : src/new_operator.s
+src/cpp/GameScreen.s: src/cpp/GameScreen.cpp.s
+.PHONY : src/cpp/GameScreen.s
 
 # target to generate assembly for a file
-src/new_operator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/new_operator.cpp.s
-.PHONY : src/new_operator.cpp.s
+src/cpp/GameScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.s
+.PHONY : src/cpp/GameScreen.cpp.s
+
+src/cpp/StateMachine.o: src/cpp/StateMachine.cpp.o
+.PHONY : src/cpp/StateMachine.o
+
+# target to build an object file
+src/cpp/StateMachine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o
+.PHONY : src/cpp/StateMachine.cpp.o
+
+src/cpp/StateMachine.i: src/cpp/StateMachine.cpp.i
+.PHONY : src/cpp/StateMachine.i
+
+# target to preprocess a source file
+src/cpp/StateMachine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.i
+.PHONY : src/cpp/StateMachine.cpp.i
+
+src/cpp/StateMachine.s: src/cpp/StateMachine.cpp.s
+.PHONY : src/cpp/StateMachine.s
+
+# target to generate assembly for a file
+src/cpp/StateMachine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.s
+.PHONY : src/cpp/StateMachine.cpp.s
+
+src/cpp/WelcomeScreen.o: src/cpp/WelcomeScreen.cpp.o
+.PHONY : src/cpp/WelcomeScreen.o
+
+# target to build an object file
+src/cpp/WelcomeScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o
+.PHONY : src/cpp/WelcomeScreen.cpp.o
+
+src/cpp/WelcomeScreen.i: src/cpp/WelcomeScreen.cpp.i
+.PHONY : src/cpp/WelcomeScreen.i
+
+# target to preprocess a source file
+src/cpp/WelcomeScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.i
+.PHONY : src/cpp/WelcomeScreen.cpp.i
+
+src/cpp/WelcomeScreen.s: src/cpp/WelcomeScreen.cpp.s
+.PHONY : src/cpp/WelcomeScreen.s
+
+# target to generate assembly for a file
+src/cpp/WelcomeScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.s
+.PHONY : src/cpp/WelcomeScreen.cpp.s
+
+src/cpp/main.o: src/cpp/main.cpp.o
+.PHONY : src/cpp/main.o
+
+# target to build an object file
+src/cpp/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o
+.PHONY : src/cpp/main.cpp.o
+
+src/cpp/main.i: src/cpp/main.cpp.i
+.PHONY : src/cpp/main.i
+
+# target to preprocess a source file
+src/cpp/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.i
+.PHONY : src/cpp/main.cpp.i
+
+src/cpp/main.s: src/cpp/main.cpp.s
+.PHONY : src/cpp/main.s
+
+# target to generate assembly for a file
+src/cpp/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.s
+.PHONY : src/cpp/main.cpp.s
 
 # Help Target
 help:
@@ -210,15 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyExecutable"
-	@echo "... src/all_horizontal_movable.o"
-	@echo "... src/all_horizontal_movable.i"
-	@echo "... src/all_horizontal_movable.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/new_operator.o"
-	@echo "... src/new_operator.i"
-	@echo "... src/new_operator.s"
+	@echo "... src/cpp/DeadScreen.o"
+	@echo "... src/cpp/DeadScreen.i"
+	@echo "... src/cpp/DeadScreen.s"
+	@echo "... src/cpp/Game.o"
+	@echo "... src/cpp/Game.i"
+	@echo "... src/cpp/Game.s"
+	@echo "... src/cpp/GameScreen.o"
+	@echo "... src/cpp/GameScreen.i"
+	@echo "... src/cpp/GameScreen.s"
+	@echo "... src/cpp/StateMachine.o"
+	@echo "... src/cpp/StateMachine.i"
+	@echo "... src/cpp/StateMachine.s"
+	@echo "... src/cpp/WelcomeScreen.o"
+	@echo "... src/cpp/WelcomeScreen.i"
+	@echo "... src/cpp/WelcomeScreen.s"
+	@echo "... src/cpp/main.o"
+	@echo "... src/cpp/main.i"
+	@echo "... src/cpp/main.s"
 .PHONY : help
 
 

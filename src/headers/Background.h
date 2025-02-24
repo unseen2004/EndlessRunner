@@ -1,11 +1,8 @@
-//
-// Created by maks on 2/8/25.
-//
-
 #ifndef BACKGROUND_H
 #define BACKGROUND_H
 
-
+#include "filesystem"
+#include "raylib.h"
 
 class Background {
 protected:
@@ -17,20 +14,24 @@ protected:
     std::filesystem::path m_texturePath;
 
 public:
-    explicit Background(const std::filesystem::path& path, float speed = 0.1f,float x = 0.0f, float y = 0.0f, float m_scale = 2.0f);
+    explicit Background(const std::filesystem::path &path, float speed = 0.1f, float x = 0.0f, float y = 0.0f,
+                        float m_scale = 2.0f);
+
     ~Background();
 
     void resetIfOutsite();
+
     void draw(float x = 0.0f, float y = 0.0f, float rotation = 0.0f, float scale = 2.0f, Color color = WHITE);
+
     [[nodiscard]] float getX() const;
+
     [[nodiscard]] float getY() const;
+
     void changeSpeed(const float speed);
+
     [[nodiscard]] int getWidth() const;
+
     void update();
 };
 
-
-
-
-
-#endif //BACKGROUND_H
+#endif // BACKGROUND_H

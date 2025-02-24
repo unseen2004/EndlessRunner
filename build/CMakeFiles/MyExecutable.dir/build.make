@@ -72,65 +72,113 @@ include CMakeFiles/MyExecutable.dir/flags.make
 CMakeFiles/MyExecutable.dir/codegen:
 .PHONY : CMakeFiles/MyExecutable.dir/codegen
 
-CMakeFiles/MyExecutable.dir/src/main.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
-CMakeFiles/MyExecutable.dir/src/main.cpp.o: /home/maks/Programming/EndlessRunner/src/main.cpp
-CMakeFiles/MyExecutable.dir/src/main.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyExecutable.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/main.cpp.o -MF CMakeFiles/MyExecutable.dir/src/main.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/main.cpp.o -c /home/maks/Programming/EndlessRunner/src/main.cpp
+CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
+CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o: /home/maks/Programming/EndlessRunner/src/cpp/main.cpp
+CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o -MF CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o -c /home/maks/Programming/EndlessRunner/src/cpp/main.cpp
 
-CMakeFiles/MyExecutable.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyExecutable.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maks/Programming/EndlessRunner/src/main.cpp > CMakeFiles/MyExecutable.dir/src/main.cpp.i
+CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maks/Programming/EndlessRunner/src/cpp/main.cpp > CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.i
 
-CMakeFiles/MyExecutable.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maks/Programming/EndlessRunner/src/main.cpp -o CMakeFiles/MyExecutable.dir/src/main.cpp.s
+CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maks/Programming/EndlessRunner/src/cpp/main.cpp -o CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.s
 
-CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
-CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o: /home/maks/Programming/EndlessRunner/src/new_operator.cpp
-CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o -MF CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o -c /home/maks/Programming/EndlessRunner/src/new_operator.cpp
+CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
+CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o: /home/maks/Programming/EndlessRunner/src/cpp/Game.cpp
+CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o -MF CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o -c /home/maks/Programming/EndlessRunner/src/cpp/Game.cpp
 
-CMakeFiles/MyExecutable.dir/src/new_operator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyExecutable.dir/src/new_operator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maks/Programming/EndlessRunner/src/new_operator.cpp > CMakeFiles/MyExecutable.dir/src/new_operator.cpp.i
+CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maks/Programming/EndlessRunner/src/cpp/Game.cpp > CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.i
 
-CMakeFiles/MyExecutable.dir/src/new_operator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/src/new_operator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maks/Programming/EndlessRunner/src/new_operator.cpp -o CMakeFiles/MyExecutable.dir/src/new_operator.cpp.s
+CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maks/Programming/EndlessRunner/src/cpp/Game.cpp -o CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.s
 
-CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
-CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o: /home/maks/Programming/EndlessRunner/src/all_horizontal_movable.cpp
-CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o -MF CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o -c /home/maks/Programming/EndlessRunner/src/all_horizontal_movable.cpp
+CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
+CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o: /home/maks/Programming/EndlessRunner/src/cpp/StateMachine.cpp
+CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o -MF CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o -c /home/maks/Programming/EndlessRunner/src/cpp/StateMachine.cpp
 
-CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maks/Programming/EndlessRunner/src/all_horizontal_movable.cpp > CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.i
+CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maks/Programming/EndlessRunner/src/cpp/StateMachine.cpp > CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.i
 
-CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maks/Programming/EndlessRunner/src/all_horizontal_movable.cpp -o CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.s
+CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maks/Programming/EndlessRunner/src/cpp/StateMachine.cpp -o CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.s
+
+CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
+CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: /home/maks/Programming/EndlessRunner/src/cpp/WelcomeScreen.cpp
+CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o -MF CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o -c /home/maks/Programming/EndlessRunner/src/cpp/WelcomeScreen.cpp
+
+CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maks/Programming/EndlessRunner/src/cpp/WelcomeScreen.cpp > CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.i
+
+CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maks/Programming/EndlessRunner/src/cpp/WelcomeScreen.cpp -o CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.s
+
+CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
+CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: /home/maks/Programming/EndlessRunner/src/cpp/GameScreen.cpp
+CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o -MF CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o -c /home/maks/Programming/EndlessRunner/src/cpp/GameScreen.cpp
+
+CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maks/Programming/EndlessRunner/src/cpp/GameScreen.cpp > CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.i
+
+CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maks/Programming/EndlessRunner/src/cpp/GameScreen.cpp -o CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.s
+
+CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
+CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: /home/maks/Programming/EndlessRunner/src/cpp/DeadScreen.cpp
+CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o -MF CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o -c /home/maks/Programming/EndlessRunner/src/cpp/DeadScreen.cpp
+
+CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maks/Programming/EndlessRunner/src/cpp/DeadScreen.cpp > CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.i
+
+CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maks/Programming/EndlessRunner/src/cpp/DeadScreen.cpp -o CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.s
 
 # Object files for target MyExecutable
 MyExecutable_OBJECTS = \
-"CMakeFiles/MyExecutable.dir/src/main.cpp.o" \
-"CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o" \
-"CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o"
+"CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o" \
+"CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o" \
+"CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o" \
+"CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o" \
+"CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" \
+"CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o"
 
 # External object files for target MyExecutable
 MyExecutable_EXTERNAL_OBJECTS =
 
-MyExecutable: CMakeFiles/MyExecutable.dir/src/main.cpp.o
-MyExecutable: CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o
-MyExecutable: CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o
+MyExecutable: CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o
+MyExecutable: CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o
+MyExecutable: CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o
+MyExecutable: CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o
+MyExecutable: CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o
+MyExecutable: CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o
 MyExecutable: CMakeFiles/MyExecutable.dir/build.make
 MyExecutable: CMakeFiles/MyExecutable.dir/compiler_depend.ts
 MyExecutable: /usr/lib/libraylib.so
 MyExecutable: CMakeFiles/MyExecutable.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MyExecutable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/maks/Programming/EndlessRunner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable MyExecutable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyExecutable.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

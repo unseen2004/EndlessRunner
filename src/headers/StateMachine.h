@@ -1,24 +1,27 @@
-#pragma once
+#ifndef STATEMACHINE_H
+#define STATEMACHINE_H
 
 #include <memory>
-#include <unordered_map>
-#include <string>
+#include "State.h"
 
-class State {
-public:
-    virtual ~State() = default;
-    virtual void update() = 0;
-    virtual void draw() = 0;
-};
 
 class StateMachine {
-public:
-    void addState(const std::string &name, std::unique_ptr<State> state);
-    void changeState(const std::string &name);
-    void update();
-    void draw();
-
 private:
-    std::unordered_map<std::string, std::unique_ptr<State>> states;
-    State *currentState = nullptr;
+    std::unique_ptr<State> currentState;
+
+public:
+    // Change the current state.
+    void changeState(std::unique_ptr<State> newState);
+
+    // Delegates input handling to the current state.
+    void handleInput();
+
+    // Delegates update logic to the current state.
+    void update();
+
+    // Delegates rendering to the current state.
+    void render();
 };
+
+#endif // STATEMACHINE_H
+
