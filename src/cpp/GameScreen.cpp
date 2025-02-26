@@ -14,8 +14,5 @@ void GameScreen::update() {
 }
 
 void GameScreen::render() {
-    BeginDrawing();
-    ClearBackground(RAYWHITE);
     DrawText("Game Screen - Press Enter to Die", 200, 200, 20, BLACK);
-    EndDrawing();
 }

@@ -14,8 +14,5 @@ void WelcomeScreen::update() {
 }
 
 void WelcomeScreen::render() {
-    BeginDrawing();
-    ClearBackground(BLACK);
-    DrawText("Press Enter to Start Game", 200, 200, 20, WHITE);
-    EndDrawing();
+    DrawText("Press Enter to Start Game", 200, 200, 20, BLACK);
 }
