@@ -30,7 +30,7 @@ float Background::getY() const {
 }
 
 void Background::changeSpeed(const float speed) {
-    m_speed += speed;
+    m_speed = speed;
 }
 
 int Background::getWidth() const {
@@ -38,7 +38,7 @@ int Background::getWidth() const {
 }
 
 void Background::update() {
-    m_x -= m_speed;
+  	m_x -= m_speed ;
     resetIfOutsite();
 }
 

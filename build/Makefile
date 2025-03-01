@@ -129,6 +129,78 @@ MyExecutable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
 .PHONY : MyExecutable/fast
 
+src/cpp/Background.o: src/cpp/Background.cpp.o
+.PHONY : src/cpp/Background.o
+
+# target to build an object file
+src/cpp/Background.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o
+.PHONY : src/cpp/Background.cpp.o
+
+src/cpp/Background.i: src/cpp/Background.cpp.i
+.PHONY : src/cpp/Background.i
+
+# target to preprocess a source file
+src/cpp/Background.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.i
+.PHONY : src/cpp/Background.cpp.i
+
+src/cpp/Background.s: src/cpp/Background.cpp.s
+.PHONY : src/cpp/Background.s
+
+# target to generate assembly for a file
+src/cpp/Background.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.s
+.PHONY : src/cpp/Background.cpp.s
+
+src/cpp/Character.o: src/cpp/Character.cpp.o
+.PHONY : src/cpp/Character.o
+
+# target to build an object file
+src/cpp/Character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o
+.PHONY : src/cpp/Character.cpp.o
+
+src/cpp/Character.i: src/cpp/Character.cpp.i
+.PHONY : src/cpp/Character.i
+
+# target to preprocess a source file
+src/cpp/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.i
+.PHONY : src/cpp/Character.cpp.i
+
+src/cpp/Character.s: src/cpp/Character.cpp.s
+.PHONY : src/cpp/Character.s
+
+# target to generate assembly for a file
+src/cpp/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.s
+.PHONY : src/cpp/Character.cpp.s
+
+src/cpp/Cloud.o: src/cpp/Cloud.cpp.o
+.PHONY : src/cpp/Cloud.o
+
+# target to build an object file
+src/cpp/Cloud.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.o
+.PHONY : src/cpp/Cloud.cpp.o
+
+src/cpp/Cloud.i: src/cpp/Cloud.cpp.i
+.PHONY : src/cpp/Cloud.i
+
+# target to preprocess a source file
+src/cpp/Cloud.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.i
+.PHONY : src/cpp/Cloud.cpp.i
+
+src/cpp/Cloud.s: src/cpp/Cloud.cpp.s
+.PHONY : src/cpp/Cloud.s
+
+# target to generate assembly for a file
+src/cpp/Cloud.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.s
+.PHONY : src/cpp/Cloud.cpp.s
+
 src/cpp/DeadScreen.o: src/cpp/DeadScreen.cpp.o
 .PHONY : src/cpp/DeadScreen.o
 
@@ -201,6 +273,78 @@ src/cpp/GameScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.s
 .PHONY : src/cpp/GameScreen.cpp.s
 
+src/cpp/Interface.o: src/cpp/Interface.cpp.o
+.PHONY : src/cpp/Interface.o
+
+# target to build an object file
+src/cpp/Interface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o
+.PHONY : src/cpp/Interface.cpp.o
+
+src/cpp/Interface.i: src/cpp/Interface.cpp.i
+.PHONY : src/cpp/Interface.i
+
+# target to preprocess a source file
+src/cpp/Interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.i
+.PHONY : src/cpp/Interface.cpp.i
+
+src/cpp/Interface.s: src/cpp/Interface.cpp.s
+.PHONY : src/cpp/Interface.s
+
+# target to generate assembly for a file
+src/cpp/Interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.s
+.PHONY : src/cpp/Interface.cpp.s
+
+src/cpp/Obstacle.o: src/cpp/Obstacle.cpp.o
+.PHONY : src/cpp/Obstacle.o
+
+# target to build an object file
+src/cpp/Obstacle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o
+.PHONY : src/cpp/Obstacle.cpp.o
+
+src/cpp/Obstacle.i: src/cpp/Obstacle.cpp.i
+.PHONY : src/cpp/Obstacle.i
+
+# target to preprocess a source file
+src/cpp/Obstacle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.i
+.PHONY : src/cpp/Obstacle.cpp.i
+
+src/cpp/Obstacle.s: src/cpp/Obstacle.cpp.s
+.PHONY : src/cpp/Obstacle.s
+
+# target to generate assembly for a file
+src/cpp/Obstacle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.s
+.PHONY : src/cpp/Obstacle.cpp.s
+
+src/cpp/Platform.o: src/cpp/Platform.cpp.o
+.PHONY : src/cpp/Platform.o
+
+# target to build an object file
+src/cpp/Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o
+.PHONY : src/cpp/Platform.cpp.o
+
+src/cpp/Platform.i: src/cpp/Platform.cpp.i
+.PHONY : src/cpp/Platform.i
+
+# target to preprocess a source file
+src/cpp/Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.i
+.PHONY : src/cpp/Platform.cpp.i
+
+src/cpp/Platform.s: src/cpp/Platform.cpp.s
+.PHONY : src/cpp/Platform.s
+
+# target to generate assembly for a file
+src/cpp/Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.s
+.PHONY : src/cpp/Platform.cpp.s
+
 src/cpp/StateMachine.o: src/cpp/StateMachine.cpp.o
 .PHONY : src/cpp/StateMachine.o
 
@@ -224,6 +368,30 @@ src/cpp/StateMachine.s: src/cpp/StateMachine.cpp.s
 src/cpp/StateMachine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.s
 .PHONY : src/cpp/StateMachine.cpp.s
+
+src/cpp/Table.o: src/cpp/Table.cpp.o
+.PHONY : src/cpp/Table.o
+
+# target to build an object file
+src/cpp/Table.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o
+.PHONY : src/cpp/Table.cpp.o
+
+src/cpp/Table.i: src/cpp/Table.cpp.i
+.PHONY : src/cpp/Table.i
+
+# target to preprocess a source file
+src/cpp/Table.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.i
+.PHONY : src/cpp/Table.cpp.i
+
+src/cpp/Table.s: src/cpp/Table.cpp.s
+.PHONY : src/cpp/Table.s
+
+# target to generate assembly for a file
+src/cpp/Table.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.s
+.PHONY : src/cpp/Table.cpp.s
 
 src/cpp/WelcomeScreen.o: src/cpp/WelcomeScreen.cpp.o
 .PHONY : src/cpp/WelcomeScreen.o
@@ -282,6 +450,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyExecutable"
+	@echo "... src/cpp/Background.o"
+	@echo "... src/cpp/Background.i"
+	@echo "... src/cpp/Background.s"
+	@echo "... src/cpp/Character.o"
+	@echo "... src/cpp/Character.i"
+	@echo "... src/cpp/Character.s"
+	@echo "... src/cpp/Cloud.o"
+	@echo "... src/cpp/Cloud.i"
+	@echo "... src/cpp/Cloud.s"
 	@echo "... src/cpp/DeadScreen.o"
 	@echo "... src/cpp/DeadScreen.i"
 	@echo "... src/cpp/DeadScreen.s"
@@ -291,9 +468,21 @@ help:
 	@echo "... src/cpp/GameScreen.o"
 	@echo "... src/cpp/GameScreen.i"
 	@echo "... src/cpp/GameScreen.s"
+	@echo "... src/cpp/Interface.o"
+	@echo "... src/cpp/Interface.i"
+	@echo "... src/cpp/Interface.s"
+	@echo "... src/cpp/Obstacle.o"
+	@echo "... src/cpp/Obstacle.i"
+	@echo "... src/cpp/Obstacle.s"
+	@echo "... src/cpp/Platform.o"
+	@echo "... src/cpp/Platform.i"
+	@echo "... src/cpp/Platform.s"
 	@echo "... src/cpp/StateMachine.o"
 	@echo "... src/cpp/StateMachine.i"
 	@echo "... src/cpp/StateMachine.s"
+	@echo "... src/cpp/Table.o"
+	@echo "... src/cpp/Table.i"
+	@echo "... src/cpp/Table.s"
 	@echo "... src/cpp/WelcomeScreen.o"
 	@echo "... src/cpp/WelcomeScreen.i"
 	@echo "... src/cpp/WelcomeScreen.s"

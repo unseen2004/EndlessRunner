@@ -21,7 +21,7 @@ Obstacle::~Obstacle() {
 
 void Obstacle::update() {
     // Update the obstacle position based on the platform's movement
-    m_obstacle_position.x = m_platform.getX() + (m_obstacle_position.x - m_platform.getX());
+    m_obstacle_position.x = (m_platform.getX() + (m_obstacle_position.x - m_platform.getX()) ) * GetFrameTime();
 }
 
 void Obstacle::draw() {

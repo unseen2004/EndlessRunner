@@ -2,8 +2,8 @@
 
 
 bool Cloud::update() {
-    m_x -= m_speed;
-    return m_x > 0;
+    m_x -= m_speed * m_random_val;
+    return m_x > -m_texture.width;
 }
 
 void Cloud::draw() {

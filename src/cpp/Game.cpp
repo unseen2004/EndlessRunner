@@ -23,9 +23,7 @@ void Game::run() {
         m_stateMachine.update();
 
         // Render game state
-        BeginDrawing();
-        ClearBackground(RAYWHITE);
+ //To DO: change local to 3 screens
         m_stateMachine.render();
-        EndDrawing();
     }
 }

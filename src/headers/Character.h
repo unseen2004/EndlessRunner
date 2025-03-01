@@ -26,31 +26,41 @@ class Character {
     std::filesystem::path m_path_explosion;
     std::filesystem::path m_path_sound;
     Rectangle m_frame_rec;
+    float m_speed{1};
+    bool m_input_jump{};
+    bool m_input_dash{};
+    bool m_is_alive{true};
+    int m_prev_jump{};
+
 
 public:
-    Character(std::filesystem::path path1, std::filesystem::path path2, std::filesystem::path path3, float x = 300,
+    Character(std::filesystem::path path1, std::filesystem::path path2, std::filesystem::path path3,float m_speed = 0.1f ,float x = 300,
               float y = 800, int currentFrame = 0, int framesCounter = 0,
               int framesSpeed = 8, int currentLine = 0, bool is_jumping = false);
 
     ~Character();
-
+private:
     void run();
 
     void die();
 
-    bool init_jump();
+    void go_up();
 
-    void jump();
+    void go_down();
 
     void dash();
 
-    void draw();
-
     bool checkCollision();
+public:
+    bool update(bool input_jump, bool input_dash);
+
+    void draw();
 
     void changeSpeed(int n);
 
     void newSpeed(int n);
+
+    void resetJump();
 };
 
 #endif // CHARACTER_H

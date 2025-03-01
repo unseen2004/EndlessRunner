@@ -13,12 +13,19 @@ find_package(raylib REQUIRED)
 
 # Add the executable target
 add_executable(MyExecutable
-    src/cpp/main.cpp
-    src/cpp/Game.cpp
-    src/cpp/StateMachine.cpp
-    src/cpp/WelcomeScreen.cpp
-    src/cpp/GameScreen.cpp
-    src/cpp/DeadScreen.cpp
+        src/cpp/main.cpp
+        src/cpp/Game.cpp
+        src/cpp/StateMachine.cpp
+        src/cpp/WelcomeScreen.cpp
+        src/cpp/GameScreen.cpp
+        src/cpp/DeadScreen.cpp
+        src/cpp/Background.cpp
+        src/cpp/Character.cpp
+        src/cpp/Cloud.cpp
+        src/cpp/Interface.cpp
+        src/cpp/Obstacle.cpp
+        src/cpp/Platform.cpp
+        src/cpp/Table.cpp
 )
 
 # Link the raylib library

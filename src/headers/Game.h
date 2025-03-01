@@ -8,6 +8,7 @@
 class Game {
     StateMachine m_stateMachine;
 public:
+
     Game();
     ~Game();
 

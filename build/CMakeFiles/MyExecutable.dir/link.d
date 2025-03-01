@@ -8,6 +8,13 @@ MyExecutable: \
   CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o \
+  CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o \
+  CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o \
+  CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.o \
+  CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o \
+  CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o \
+  CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o \
+  CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o \
   /usr/lib/libraylib.so \
   /usr/lib/libraylib.so \
   /usr/lib/libstdc++.so \
@@ -55,6 +62,20 @@ CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o:
 CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o:
 
 CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o:
+
+CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o:
+
+CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o:
+
+CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.o:
+
+CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o:
+
+CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o:
+
+CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o:
+
+CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o:
 
 /usr/lib/libraylib.so:
 

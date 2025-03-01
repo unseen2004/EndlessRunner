@@ -14,5 +14,10 @@ void DeadScreen::update() {
 }
 
 void DeadScreen::render() {
+
+          BeginDrawing();
+        ClearBackground(GetColor(0x052c46ff));
     DrawText("Dead Screen - Press Enter to Restart", 200, 200, 20, BLACK);
+
+        EndDrawing();
 }

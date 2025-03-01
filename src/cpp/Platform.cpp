@@ -5,8 +5,10 @@ void Platform::draw() {
     Background::draw(m_x, m_y, 0.0f, 1.0f, WHITE);
 }
 
+
+
 bool Platform::isOutsite() {
-    return m_x < -this->m_texture.width;
+    return m_x < -m_texture.width;
 }
 
 bool Platform::update() {
@@ -49,5 +51,5 @@ bool Platform::touchUp(const Rectangle& other) {
 
 std::filesystem::path Platform::getRandomPlatformPath() {
     int platformIndex = Random::get(1, 5);
-    return std::filesystem::path("../resources/platforms/platform_" + std::to_string(platformIndex) + ".png");
+    return std::filesystem::path("resources/platforms/platform_" + std::to_string(platformIndex) + ".png");
 }

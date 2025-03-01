@@ -9,15 +9,16 @@
 
 class Platform : public Background {
 public:
-    Platform(const std::filesystem::path &path, float speed = 0.1f, float x = 0.0f, float y = 70.0f, float scale = 1.0f)
-        : Background(path, speed, x, y, scale) {
+    Platform(float speed = 0.1f, float x = 0.0f, float y = 70.0f, float scale = 1.0f)
+        : Background(getRandomPlatformPath(), speed, x, y, scale) {
     }
+
+
 
     void draw();
 
     bool update();
 
-    bool isOutsite();
 
     bool touchLeft(const Rectangle &other);
 
@@ -33,8 +34,9 @@ public:
 private:
     Rectangle getBounds() const;
 
-protected:
-    static std::filesystem::path getRandomPlatformPath();
+    bool isOutsite();
+
+    std::filesystem::path getRandomPlatformPath();
 };
 
 #endif // PLATFORM_H
