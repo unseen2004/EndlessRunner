@@ -1,6 +1,6 @@
 #include "../headers/Obstacle.h"
 
-Obstacle::Obstacle(const Platform& platform)
+Obstacle::Obstacle(const Platform& platform, float speed, int scale)
     : m_platform(platform) {
     std::filesystem::path obstacle_path = getRandomObstaclePath();
     if (obstacle_path.empty()) {
@@ -13,22 +13,29 @@ Obstacle::Obstacle(const Platform& platform)
     // Set the obstacle position relative to the platform's position and size
     m_obstacle_position.x = platform.getX() + Random::get(0.0f, static_cast<float>(platform.getWidth() - m_obstacle_texture.width));
     m_obstacle_position.y = platform.getY(); // Ensure the obstacle is on the surface of the platform
+    std::cout << "Obstacle created at: " << m_obstacle_position.x << ", " << m_obstacle_position.y << std::endl;//del
+    m_speed = speed;
+    m_scale = scale;
 }
 
 Obstacle::~Obstacle() {
     UnloadTexture(m_obstacle_texture);
+    std::cout << "Obstacle destroyed" << std::endl;//del
 }
 
 void Obstacle::update() {
-    // Update the obstacle position based on the platform's movement
-    m_obstacle_position.x = (m_platform.getX() + (m_obstacle_position.x - m_platform.getX()) ) * GetFrameTime();
+    m_obstacle_position.x -= m_speed;
+}
+
+void Obstacle::changeSpeed(float speed) {
+    m_speed = speed;
 }
 
 void Obstacle::draw() {
-    DrawTextureEx(m_obstacle_texture, m_obstacle_position, 0.0f, 1.0f, WHITE);
+    DrawTextureEx(m_obstacle_texture, m_obstacle_position, 0.0f, m_scale, WHITE);
 }
 
 std::filesystem::path Obstacle::getRandomObstaclePath() {
-    int obstacleIndex = Random::get(1, 4);
-    return std::filesystem::path("../resources/rocks/rock_" + std::to_string(obstacleIndex) + ".PNG");
+    int obstacleIndex = Random::get(1, 5);
+    return std::filesystem::path("resources/rocks/rock_" + std::to_string(obstacleIndex) + ".PNG");
 }

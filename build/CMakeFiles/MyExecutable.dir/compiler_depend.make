@@ -723,6 +723,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: /home/maks/Programming/End
   /home/maks/Programming/EndlessRunner/src/headers/Config.h \
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.h \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.h \
+  /home/maks/Programming/EndlessRunner/src/headers/Obstacle.h \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.h \
   /home/maks/Programming/EndlessRunner/src/headers/Random.h \
   /home/maks/Programming/EndlessRunner/src/headers/State.h \
@@ -825,6 +826,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: /home/maks/Programming/End
   /usr/include/c++/14.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.2.1/bits/erase_if.h \
   /usr/include/c++/14.2.1/bits/exception.h \
   /usr/include/c++/14.2.1/bits/exception_defines.h \
   /usr/include/c++/14.2.1/bits/exception_ptr.h \
@@ -851,6 +853,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: /home/maks/Programming/End
   /usr/include/c++/14.2.1/bits/move.h \
   /usr/include/c++/14.2.1/bits/nested_exception.h \
   /usr/include/c++/14.2.1/bits/new_allocator.h \
+  /usr/include/c++/14.2.1/bits/node_handle.h \
   /usr/include/c++/14.2.1/bits/ostream.tcc \
   /usr/include/c++/14.2.1/bits/ostream_insert.h \
   /usr/include/c++/14.2.1/bits/parse_numbers.h \
@@ -878,10 +881,13 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: /home/maks/Programming/End
   /usr/include/c++/14.2.1/bits/stl_iterator.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.2.1/bits/stl_map.h \
+  /usr/include/c++/14.2.1/bits/stl_multimap.h \
   /usr/include/c++/14.2.1/bits/stl_numeric.h \
   /usr/include/c++/14.2.1/bits/stl_pair.h \
   /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
+  /usr/include/c++/14.2.1/bits/stl_tree.h \
   /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.2.1/bits/stl_vector.h \
   /usr/include/c++/14.2.1/bits/streambuf.tcc \
@@ -928,6 +934,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: /home/maks/Programming/End
   /usr/include/c++/14.2.1/istream \
   /usr/include/c++/14.2.1/limits \
   /usr/include/c++/14.2.1/locale \
+  /usr/include/c++/14.2.1/map \
   /usr/include/c++/14.2.1/memory \
   /usr/include/c++/14.2.1/new \
   /usr/include/c++/14.2.1/numeric \
@@ -1012,6 +1019,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o: /home/maks/Programming/EndlessRu
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.h \
   /home/maks/Programming/EndlessRunner/src/headers/Game.h \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.h \
+  /home/maks/Programming/EndlessRunner/src/headers/Obstacle.h \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.h \
   /home/maks/Programming/EndlessRunner/src/headers/Random.h \
   /home/maks/Programming/EndlessRunner/src/headers/State.h \
@@ -1114,6 +1122,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o: /home/maks/Programming/EndlessRu
   /usr/include/c++/14.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.2.1/bits/erase_if.h \
   /usr/include/c++/14.2.1/bits/exception.h \
   /usr/include/c++/14.2.1/bits/exception_defines.h \
   /usr/include/c++/14.2.1/bits/exception_ptr.h \
@@ -1140,6 +1149,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o: /home/maks/Programming/EndlessRu
   /usr/include/c++/14.2.1/bits/move.h \
   /usr/include/c++/14.2.1/bits/nested_exception.h \
   /usr/include/c++/14.2.1/bits/new_allocator.h \
+  /usr/include/c++/14.2.1/bits/node_handle.h \
   /usr/include/c++/14.2.1/bits/ostream.tcc \
   /usr/include/c++/14.2.1/bits/ostream_insert.h \
   /usr/include/c++/14.2.1/bits/parse_numbers.h \
@@ -1167,10 +1177,13 @@ CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o: /home/maks/Programming/EndlessRu
   /usr/include/c++/14.2.1/bits/stl_iterator.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.2.1/bits/stl_map.h \
+  /usr/include/c++/14.2.1/bits/stl_multimap.h \
   /usr/include/c++/14.2.1/bits/stl_numeric.h \
   /usr/include/c++/14.2.1/bits/stl_pair.h \
   /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
+  /usr/include/c++/14.2.1/bits/stl_tree.h \
   /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.2.1/bits/stl_vector.h \
   /usr/include/c++/14.2.1/bits/streambuf.tcc \
@@ -1217,6 +1230,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o: /home/maks/Programming/EndlessRu
   /usr/include/c++/14.2.1/istream \
   /usr/include/c++/14.2.1/limits \
   /usr/include/c++/14.2.1/locale \
+  /usr/include/c++/14.2.1/map \
   /usr/include/c++/14.2.1/memory \
   /usr/include/c++/14.2.1/new \
   /usr/include/c++/14.2.1/numeric \
@@ -1300,6 +1314,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: /home/maks/Programming/End
   /home/maks/Programming/EndlessRunner/src/headers/Config.h \
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.h \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.h \
+  /home/maks/Programming/EndlessRunner/src/headers/Obstacle.h \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.h \
   /home/maks/Programming/EndlessRunner/src/headers/Random.h \
   /home/maks/Programming/EndlessRunner/src/headers/State.h \
@@ -1402,6 +1417,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: /home/maks/Programming/End
   /usr/include/c++/14.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.2.1/bits/erase_if.h \
   /usr/include/c++/14.2.1/bits/exception.h \
   /usr/include/c++/14.2.1/bits/exception_defines.h \
   /usr/include/c++/14.2.1/bits/exception_ptr.h \
@@ -1428,6 +1444,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: /home/maks/Programming/End
   /usr/include/c++/14.2.1/bits/move.h \
   /usr/include/c++/14.2.1/bits/nested_exception.h \
   /usr/include/c++/14.2.1/bits/new_allocator.h \
+  /usr/include/c++/14.2.1/bits/node_handle.h \
   /usr/include/c++/14.2.1/bits/ostream.tcc \
   /usr/include/c++/14.2.1/bits/ostream_insert.h \
   /usr/include/c++/14.2.1/bits/parse_numbers.h \
@@ -1455,10 +1472,13 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: /home/maks/Programming/End
   /usr/include/c++/14.2.1/bits/stl_iterator.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.2.1/bits/stl_map.h \
+  /usr/include/c++/14.2.1/bits/stl_multimap.h \
   /usr/include/c++/14.2.1/bits/stl_numeric.h \
   /usr/include/c++/14.2.1/bits/stl_pair.h \
   /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
+  /usr/include/c++/14.2.1/bits/stl_tree.h \
   /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.2.1/bits/stl_vector.h \
   /usr/include/c++/14.2.1/bits/streambuf.tcc \
@@ -1505,6 +1525,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: /home/maks/Programming/End
   /usr/include/c++/14.2.1/istream \
   /usr/include/c++/14.2.1/limits \
   /usr/include/c++/14.2.1/locale \
+  /usr/include/c++/14.2.1/map \
   /usr/include/c++/14.2.1/memory \
   /usr/include/c++/14.2.1/new \
   /usr/include/c++/14.2.1/numeric \
@@ -1778,6 +1799,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o: /home/maks/Programming/Endle
   /usr/include/c++/14.2.1/iomanip \
   /usr/include/c++/14.2.1/ios \
   /usr/include/c++/14.2.1/iosfwd \
+  /usr/include/c++/14.2.1/iostream \
   /usr/include/c++/14.2.1/istream \
   /usr/include/c++/14.2.1/limits \
   /usr/include/c++/14.2.1/locale \
@@ -2270,6 +2292,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: /home/maks/Programming/
   /home/maks/Programming/EndlessRunner/src/headers/Config.h \
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.h \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.h \
+  /home/maks/Programming/EndlessRunner/src/headers/Obstacle.h \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.h \
   /home/maks/Programming/EndlessRunner/src/headers/Random.h \
   /home/maks/Programming/EndlessRunner/src/headers/State.h \
@@ -2372,6 +2395,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: /home/maks/Programming/
   /usr/include/c++/14.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.2.1/bits/erase_if.h \
   /usr/include/c++/14.2.1/bits/exception.h \
   /usr/include/c++/14.2.1/bits/exception_defines.h \
   /usr/include/c++/14.2.1/bits/exception_ptr.h \
@@ -2398,6 +2422,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: /home/maks/Programming/
   /usr/include/c++/14.2.1/bits/move.h \
   /usr/include/c++/14.2.1/bits/nested_exception.h \
   /usr/include/c++/14.2.1/bits/new_allocator.h \
+  /usr/include/c++/14.2.1/bits/node_handle.h \
   /usr/include/c++/14.2.1/bits/ostream.tcc \
   /usr/include/c++/14.2.1/bits/ostream_insert.h \
   /usr/include/c++/14.2.1/bits/parse_numbers.h \
@@ -2425,10 +2450,13 @@ CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: /home/maks/Programming/
   /usr/include/c++/14.2.1/bits/stl_iterator.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.2.1/bits/stl_map.h \
+  /usr/include/c++/14.2.1/bits/stl_multimap.h \
   /usr/include/c++/14.2.1/bits/stl_numeric.h \
   /usr/include/c++/14.2.1/bits/stl_pair.h \
   /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
+  /usr/include/c++/14.2.1/bits/stl_tree.h \
   /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.2.1/bits/stl_vector.h \
   /usr/include/c++/14.2.1/bits/streambuf.tcc \
@@ -2475,6 +2503,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: /home/maks/Programming/
   /usr/include/c++/14.2.1/istream \
   /usr/include/c++/14.2.1/limits \
   /usr/include/c++/14.2.1/locale \
+  /usr/include/c++/14.2.1/map \
   /usr/include/c++/14.2.1/memory \
   /usr/include/c++/14.2.1/new \
   /usr/include/c++/14.2.1/numeric \
@@ -2559,6 +2588,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o: /home/maks/Programming/EndlessRu
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.h \
   /home/maks/Programming/EndlessRunner/src/headers/Game.h \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.h \
+  /home/maks/Programming/EndlessRunner/src/headers/Obstacle.h \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.h \
   /home/maks/Programming/EndlessRunner/src/headers/Random.h \
   /home/maks/Programming/EndlessRunner/src/headers/State.h \
@@ -2661,6 +2691,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o: /home/maks/Programming/EndlessRu
   /usr/include/c++/14.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.2.1/bits/erase_if.h \
   /usr/include/c++/14.2.1/bits/exception.h \
   /usr/include/c++/14.2.1/bits/exception_defines.h \
   /usr/include/c++/14.2.1/bits/exception_ptr.h \
@@ -2687,6 +2718,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o: /home/maks/Programming/EndlessRu
   /usr/include/c++/14.2.1/bits/move.h \
   /usr/include/c++/14.2.1/bits/nested_exception.h \
   /usr/include/c++/14.2.1/bits/new_allocator.h \
+  /usr/include/c++/14.2.1/bits/node_handle.h \
   /usr/include/c++/14.2.1/bits/ostream.tcc \
   /usr/include/c++/14.2.1/bits/ostream_insert.h \
   /usr/include/c++/14.2.1/bits/parse_numbers.h \
@@ -2714,10 +2746,13 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o: /home/maks/Programming/EndlessRu
   /usr/include/c++/14.2.1/bits/stl_iterator.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.2.1/bits/stl_map.h \
+  /usr/include/c++/14.2.1/bits/stl_multimap.h \
   /usr/include/c++/14.2.1/bits/stl_numeric.h \
   /usr/include/c++/14.2.1/bits/stl_pair.h \
   /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
+  /usr/include/c++/14.2.1/bits/stl_tree.h \
   /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.2.1/bits/stl_vector.h \
   /usr/include/c++/14.2.1/bits/streambuf.tcc \
@@ -2764,6 +2799,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o: /home/maks/Programming/EndlessRu
   /usr/include/c++/14.2.1/istream \
   /usr/include/c++/14.2.1/limits \
   /usr/include/c++/14.2.1/locale \
+  /usr/include/c++/14.2.1/map \
   /usr/include/c++/14.2.1/memory \
   /usr/include/c++/14.2.1/new \
   /usr/include/c++/14.2.1/numeric \
@@ -2920,17 +2956,29 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o:
 
 /usr/include/c++/14.2.1/memory:
 
+/usr/include/c++/14.2.1/map:
+
 /usr/include/c++/14.2.1/bits/stl_tempbuf.h:
+
+/usr/include/c++/14.2.1/bits/stl_multimap.h:
+
+/usr/include/c++/14.2.1/bits/stl_map.h:
 
 /usr/include/c++/14.2.1/bits/stl_algo.h:
 
 /usr/include/c++/14.2.1/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/14.2.1/bits/node_handle.h:
+
+/usr/include/c++/14.2.1/bits/erase_if.h:
 
 /usr/lib/crtn.o:
 
 /usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h:
 
 /usr/lib/libgcc_s.so:
+
+/usr/include/c++/14.2.1/bits/stl_tree.h:
 
 /usr/include/c++/14.2.1/bits/atomic_base.h:
 

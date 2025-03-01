@@ -17,6 +17,8 @@
 #include <chrono>
 #include "Platform.h"
 #include "Config.h"
+#include "Obstacle.h"
+#include <map>
 
 namespace fs = std::filesystem;
 
@@ -34,6 +36,7 @@ class GameScreen : public State {
     std::vector<std::unique_ptr<Cloud>> m_clouds;
     std::vector<std::unique_ptr<Platform>> m_platforms_bottom{};
     std::vector<std::unique_ptr<Platform>> m_platforms_top{};
+    std::map<Platform*, std::unique_ptr<Obstacle>> m_obstacles{};
 
 public:
     explicit GameScreen(StateMachine& sm);

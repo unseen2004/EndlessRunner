@@ -220,4 +220,10 @@ CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: \
  /usr/include/c++/14.2.1/bits/algorithmfwd.h \
  /usr/include/c++/14.2.1/bits/stl_heap.h \
  /usr/include/c++/14.2.1/pstl/glue_algorithm_defs.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.h
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Obstacle.h \
+ /usr/include/c++/14.2.1/map /usr/include/c++/14.2.1/bits/stl_tree.h \
+ /usr/include/c++/14.2.1/bits/node_handle.h \
+ /usr/include/c++/14.2.1/bits/stl_map.h \
+ /usr/include/c++/14.2.1/bits/stl_multimap.h \
+ /usr/include/c++/14.2.1/bits/erase_if.h

@@ -74,15 +74,17 @@ void GameScreen::updateSpeedBasedOnTime( std::chrono::steady_clock::time_point s
     }
     for (auto &platform: m_platforms_bottom) {
         platform->changeSpeed(m_speed);
+        m_obstacles[platform.get()]->changeSpeed(m_speed);
     }
     for (auto &platform: m_platforms_top) {
         platform->changeSpeed(m_speed);
+        m_obstacles[platform.get()]->changeSpeed(m_speed);
     }
     //std::cout << "Speed: " << m_speed << std::endl;//del
 }
 
 // za nisko, za gesto
-void GameScreen::spawnClouds() {
+void GameScreen::spawnClouds() {//usun randomval
     if (m_clouds.size() < config::MAX_CLOUDS) {
         int lastX = m_clouds.empty() ? 0 : m_clouds.back()->getX();
 
@@ -114,6 +116,9 @@ void GameScreen::spawnPlatforms(std::vector<std::unique_ptr<Platform>>& platform
                 	 spawnY = Random::get(0, 100);
                 }
                 platform.push_back(std::make_unique<Platform>(m_speed, config::SCREEN_WIDTH, spawnY, 1.0f));
+                if(Random::get(0,10) < 100){
+	                    	m_obstacles[platform.back().get()] = std::make_unique<Obstacle>(*platform.back(), m_speed, Random::get(2, 4));
+                }
 
             } catch (const std::exception& e) {
                 std::cerr << "Error: " << e.what() << std::endl;
@@ -135,6 +140,8 @@ void GameScreen::update() {
 
 
 
+
+
 m_clouds.erase(
     std::remove_if(
         m_clouds.begin(), m_clouds.end(),
@@ -153,8 +160,10 @@ m_platforms_bottom.erase(
         m_platforms_bottom.begin(), m_platforms_bottom.end(),
         [this](const std::unique_ptr<Platform>& platform) -> bool {
             if (!platform->update()) {
-                return true;
+              m_obstacles.erase(platform.get());
+              return true;
             }
+            m_obstacles[platform.get()]->update();
             return false;
         }
     ),
@@ -166,8 +175,10 @@ m_platforms_top.erase(
         m_platforms_top.begin(), m_platforms_top.end(),
         [this](const std::unique_ptr<Platform>& platform) -> bool {
             if (!platform->update()) {
-                return true;
+              m_obstacles.erase(platform.get());
+              return true;
             }
+            m_obstacles[platform.get()]->update();
             return false;
         }
     ),
@@ -216,10 +227,12 @@ void GameScreen::render() {
 
            for (auto &platform: m_platforms_bottom) {
             platform->draw();
+            m_obstacles[platform.get()]->draw();
                }
 
             for (auto &platform: m_platforms_top) {
             platform->draw();
+            m_obstacles[platform.get()]->draw();
                }
 
        EndDrawing();
