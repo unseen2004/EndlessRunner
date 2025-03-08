@@ -4,7 +4,6 @@ Game::Game() {
     InitWindow(config::SCREEN_WIDTH, config::SCREEN_HEIGHT, "Endless Runner");
     SetTargetFPS(config::FRAMES);
 
-	StateMachine stateMachine;
     m_stateMachine.changeState(std::make_unique<WelcomeScreen>(m_stateMachine));
 
 }
@@ -23,7 +22,8 @@ void Game::run() {
         m_stateMachine.update();
 
         // Render game state
- //To DO: change local to 3 screens
         m_stateMachine.render();
+        m_stateMachine.processPendingState();
+
     }
 }

@@ -7,14 +7,20 @@
 #include "GameScreen.h"
 
 class WelcomeScreen : public State {
-    StateMachine& stateMachine;
+    StateMachine &stateMachine;
+
 public:
-    WelcomeScreen(StateMachine& sm);
+    WelcomeScreen(StateMachine &sm);
+
     ~WelcomeScreen();
 
     void handleInput() override;
+
     void update() override;
+
     void render() override;
+
+    const char *getName() const override { return "WelcomeScreen"; }
 };
 
 #endif // WELCOMESCREEN_H

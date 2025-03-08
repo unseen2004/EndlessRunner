@@ -9,3 +9,7 @@ bool Cloud::update() {
 void Cloud::draw() {
     Background::draw(m_x, m_y, 0.0f, m_scale);
 }
+
+void Cloud::changeSpeed(float speed) {
+    m_speed = speed;
+}

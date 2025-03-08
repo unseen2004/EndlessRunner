@@ -27,7 +27,7 @@ public:
 
     [[nodiscard]] float getY() const;
 
-    void changeSpeed(const float speed);
+    void changeSpeed(float speed);
 
     [[nodiscard]] int getWidth() const;
 

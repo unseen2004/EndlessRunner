@@ -1,43 +1,45 @@
-#ifndef PLATFORM_H
-#define PLATFORM_H
+#pragma once
 
 #include <filesystem>
+#include <iostream>
+#include <memory>
+#include <vector>
 #include "raylib.h"
 #include "Background.h"
-#include "Config.h"
 #include "Random.h"
 
+// Forward declaration to avoid circular dependency
+class Obstacle;
+
 class Platform : public Background {
+    static std::filesystem::path getRandomPlatformPath();
+
+    // Flag to indicate if an obstacle has been spawned on this platform
+    bool m_hasObstacle;
+    // Unique pointer to the obstacle object
 public:
-    Platform(float speed = 0.1f, float x = 0.0f, float y = 70.0f, float scale = 1.0f)
-        : Background(getRandomPlatformPath(), speed, x, y, scale) {
-    }
+    Platform(bool has_obstacle, float speed, float x, float y, float scale = 1.0f);
 
+    ~Platform();
 
-
-    void draw();
-
+    // Update platform logic and update obstacle if present
     bool update();
 
+    // Draw the platform and its obstacle (if exists)
+    void draw();
 
-    bool touchLeft(const Rectangle &other);
+    // Check collision with platform texture using per-pixel collision
+    bool checkCollision(Vector2 point);
 
-    bool touchRight(const Rectangle &other);
+    [[nodiscard]] bool hasObstacle() const;
 
-    bool touchDown(const Rectangle &other);
+    // Access the obstacle pointer (could be null)
+    Obstacle *get_obstacle() const;
 
-    bool touchUp(const Rectangle &other);
+    void changeSpeed(float speed);
 
-    bool isTouching(const Rectangle &other);
-
+    std::unique_ptr<Obstacle> m_obstacle;
 
 private:
-    Rectangle getBounds() const;
-
     bool isOutsite();
-
-    std::filesystem::path getRandomPlatformPath();
 };
-
-#endif // PLATFORM_H
-
