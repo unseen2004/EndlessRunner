@@ -17,6 +17,7 @@
 #include "StateMachine.h"
 #include "Config.h"
 #include "Character.h"
+#include "Obstacle.h"
 
 namespace fs = std::filesystem;
 
@@ -65,6 +66,7 @@ private:
     std::vector<std::unique_ptr<Platform> > m_platforms_bottom;
     std::vector<std::unique_ptr<Platform> > m_platforms_top;
     std::unique_ptr<Character> m_character;
+    std::map<Platform *, std::unique_ptr<Obstacle> > m_obstacles{};
 
 
     void spawnClouds();

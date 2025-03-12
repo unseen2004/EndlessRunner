@@ -812,6 +812,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: /home/maks/Programming/End
   /home/maks/Programming/EndlessRunner/src/headers/Config.h \
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.h \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.h \
+  /home/maks/Programming/EndlessRunner/src/headers/Obstacle.h \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.h \
   /home/maks/Programming/EndlessRunner/src/headers/Random.h \
   /home/maks/Programming/EndlessRunner/src/headers/State.h \
@@ -1120,6 +1121,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o: /home/maks/Programming/EndlessRu
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.h \
   /home/maks/Programming/EndlessRunner/src/headers/Game.h \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.h \
+  /home/maks/Programming/EndlessRunner/src/headers/Obstacle.h \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.h \
   /home/maks/Programming/EndlessRunner/src/headers/Random.h \
   /home/maks/Programming/EndlessRunner/src/headers/State.h \
@@ -1427,6 +1429,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: /home/maks/Programming/End
   /home/maks/Programming/EndlessRunner/src/headers/Config.h \
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.h \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.h \
+  /home/maks/Programming/EndlessRunner/src/headers/Obstacle.h \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.h \
   /home/maks/Programming/EndlessRunner/src/headers/Random.h \
   /home/maks/Programming/EndlessRunner/src/headers/State.h \
@@ -2550,6 +2553,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: /home/maks/Programming/
   /home/maks/Programming/EndlessRunner/src/headers/Config.h \
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.h \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.h \
+  /home/maks/Programming/EndlessRunner/src/headers/Obstacle.h \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.h \
   /home/maks/Programming/EndlessRunner/src/headers/Random.h \
   /home/maks/Programming/EndlessRunner/src/headers/State.h \
@@ -2858,6 +2862,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o: /home/maks/Programming/EndlessRu
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.h \
   /home/maks/Programming/EndlessRunner/src/headers/Game.h \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.h \
+  /home/maks/Programming/EndlessRunner/src/headers/Obstacle.h \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.h \
   /home/maks/Programming/EndlessRunner/src/headers/Random.h \
   /home/maks/Programming/EndlessRunner/src/headers/State.h \

@@ -4,32 +4,26 @@
 Obstacle::Obstacle(const Platform &platform, float speed, int scale)
     : m_platform(platform), m_speed(speed), m_scale(scale)
 {
-    // Load obstacle image and texture
     m_obstaclePath = getRandomObstaclePath();
     m_obstacle_image = LoadImage(m_obstaclePath.string().c_str());
     m_obstacle_texture = LoadTextureFromImage(m_obstacle_image);
     m_pixel_data = static_cast<Color*>(m_obstacle_image.data);
 
-    // Load platform image and extract colors
+    // Load platform image to determine a valid starting point
     Image platformImg = LoadImageFromTexture(m_platform.getTexture());
     Color *platformPixels = LoadImageColors(platformImg);
-
     int pTexW = static_cast<int>(m_platform.getTexture().width * m_platform.getScale());
     int pTexH = static_cast<int>(m_platform.getTexture().height * m_platform.getScale());
 
-    // Try random samples to find a non-transparent platform pixel
     const int MAX_TRIES = 50;
     for (int i = 0; i < MAX_TRIES; i++) {
         float randX = Random::get(0.0f, static_cast<float>(pTexW));
         float randY = Random::get(0.0f, static_cast<float>(pTexH));
         int px = static_cast<int>(randX / m_platform.getScale());
         int py = static_cast<int>(randY / m_platform.getScale());
-
-        if (px >= 0 && px < platformImg.width &&
-            py >= 0 && py < platformImg.height) {
+        if (px >= 0 && px < platformImg.width && py >= 0 && py < platformImg.height) {
             Color c = platformPixels[py * platformImg.width + px];
             if (c.a > 0) {
-                // Place obstacle so its bottom aligns with this point
                 m_obstacle_position.x = m_platform.getX() + randX - (m_obstacle_texture.width * m_scale * 0.5f);
                 m_obstacle_position.y = m_platform.getY() + randY - (m_obstacle_texture.height * m_scale);
                 break;
@@ -37,31 +31,27 @@ Obstacle::Obstacle(const Platform &platform, float speed, int scale)
         }
     }
 
+    // Save the position relative to the platform
+    m_relative_offset.x = m_obstacle_position.x - m_platform.getX();
+    m_relative_offset.y = m_obstacle_position.y - m_platform.getY();
+
     UnloadImageColors(platformPixels);
     UnloadImage(platformImg);
-
-    std::cout << "Obstacle created at: "
-              << m_obstacle_position.x << ", "
-              << m_obstacle_position.y << std::endl;
 }
 
 Obstacle::~Obstacle() {
-    // Free resources.
     UnloadTexture(m_obstacle_texture);
     UnloadImage(m_obstacle_image);
-    // m_pixel_data is part of m_obstacle_image and does not need separate cleanup.
-    std::cout << "Obstacle destroyed" << std::endl;
 }
 
-
-
 void Obstacle::update() {
-    // Update the obstacle position (e.g., moving with the platform's speed).
-    m_obstacle_position.x -= m_speed;
+    // Update the obstacle position so that it remains at the relative offset
+    m_obstacle_position.x = m_platform.getX() + m_relative_offset.x;
+    m_obstacle_position.y = m_platform.getY() + m_relative_offset.y;
+    // Optionally update m_speed if needed; here we rely on platform movement.
 }
 
 void Obstacle::draw() {
-    // Render the obstacle.
     DrawTextureEx(m_obstacle_texture, m_obstacle_position, 0.0f, m_scale, WHITE);
 }
 

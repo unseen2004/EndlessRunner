@@ -19,6 +19,10 @@ public:
     bool update();
 
     void changeSpeed(float speed);
+
+    void applyDashBoost(float dashBoost) {
+        m_x -= dashBoost;
+    }
 };
 
 #endif // CLOUD_H

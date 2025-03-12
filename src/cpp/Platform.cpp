@@ -1,31 +1,17 @@
 #include "../headers/Platform.h"
 #include "../headers/Obstacle.h"
 
-Platform::Platform(bool has_obstacle, float speed, float x, float y, float scale)
-    : Background(getRandomPlatformPath(), speed, x, y, scale),
-      m_hasObstacle{has_obstacle}
+Platform::Platform( float speed, float x, float y, float scale)
+    : Background(getRandomPlatformPath(), speed, x, y, scale)
 {
-    if(m_hasObstacle) {
-    	m_obstacle = std::make_unique<Obstacle>(*this, speed, 4.0F);
-    }
 }
 
-Platform::~Platform() {
-    if (m_hasObstacle && m_obstacle) {
-        m_obstacle.reset();
-    }
-    std::cout<<"Platform destroyed"<<std::endl;
-}
+
 
 bool Platform::update() {
     // Example: Move the platform to the left at the given speed.
     m_x -= m_speed;
 
-    // Update the obstacle if one is present.
-    if(m_hasObstacle && m_obstacle) {
-        m_obstacle->update();
-    }
-    std::cout<<"Platform x: "<<m_x<<std::endl;
     // Return false when the platform has moved completely offscreen.
     return !isOutsite();
 }
@@ -35,15 +21,8 @@ void Platform::draw() {
     // Draw the platform using the Background's draw method.
 	Background::draw(m_x, m_y, 0.0f, 1.0f, WHITE);
 
-    // Draw the obstacle if it exists.
-    if(m_hasObstacle && m_obstacle) {
-        m_obstacle->draw();
-    }
 }
 
-bool Platform::hasObstacle() const {
-    return m_hasObstacle;
-}
 
 bool Platform::checkCollision(Vector2 point) {
     // Translate global point to local platform coordinates
@@ -77,9 +56,6 @@ bool Platform::isOutsite() {
 }
 
 
-Obstacle* Platform::get_obstacle() const {
-    return m_obstacle.get();
-}
 
 // Dummy implementation for getRandomPlatformPath.
 // Ideally, this calls a function from Random.h/cpp to get a valid platform texture path.
@@ -90,7 +66,4 @@ std::filesystem::path Platform::getRandomPlatformPath() {
 
 void Platform::changeSpeed(float speed) {
     m_speed = speed;
-	if(m_hasObstacle && m_obstacle) {
-        m_obstacle->changeSpeed(speed);
-    }
 }

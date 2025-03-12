@@ -32,6 +32,10 @@ public:
     [[nodiscard]] int getWidth() const;
 
     void update();
+
+    void applyDashBoost(float dashBoost) {
+        m_x -= dashBoost;
+    }
 };
 
 #endif // BACKGROUND_H

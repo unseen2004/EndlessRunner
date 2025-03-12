@@ -8,7 +8,6 @@
 #include "Config.h"
 #include "Platform.h"
 
-
 namespace character_const {
     constexpr int NUM_FRAMES_PER_LINE = 5;
     constexpr int NUM_LINES = 5;
@@ -55,7 +54,10 @@ public:
 
     void changeSpeed(int n);
 
-    // Add to Character.h
+    // Dash accessors
+    bool isDashing() const { return m_is_dashing; }
+    float getDashBoost(float dt) const { return m_is_dashing ? m_dash_speed * dt : 0.0f; }
+
 private:
     float m_vertical_velocity{0.0f};
     bool m_is_grounded{true};
@@ -65,13 +67,24 @@ private:
     int m_jumps_left{config::JUMPS_NUMBER};
     float m_gravity{config::BASE_GRAVITY};
 
+    // Dash variables
+    bool m_is_dashing{false};
+    float m_dash_timer{0.0f};
+    const float m_max_dash_time{0.2f};
+    const float m_dash_speed{10.0f};
+    // New cooldown variables
+    float m_dash_cooldown_timer{0.0f};
+    const float m_max_dash_cooldown{1.0f};
+
 public:
-    // Add new method declarations
     bool checkGrounded(const std::vector<std::unique_ptr<Platform> > &platforms);
 
     void applyGravity();
 
     void handleJump(bool input_jump);
+
+    // Updated dash handling method; no longer moves m_position.x but triggers dash state
+    void handleDash(bool input_dash);
 
     bool isAlive() const { return m_is_alive; }
 };
