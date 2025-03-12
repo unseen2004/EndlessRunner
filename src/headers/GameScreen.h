@@ -16,6 +16,7 @@
 #include "DeadScreen.h"
 #include "StateMachine.h"
 #include "Config.h"
+#include "Character.h"
 
 namespace fs = std::filesystem;
 
@@ -63,6 +64,7 @@ private:
     std::vector<std::unique_ptr<Cloud> > m_clouds;
     std::vector<std::unique_ptr<Platform> > m_platforms_bottom;
     std::vector<std::unique_ptr<Platform> > m_platforms_top;
+    std::unique_ptr<Character> m_character;
 
 
     void spawnClouds();

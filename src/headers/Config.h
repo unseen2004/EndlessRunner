@@ -10,11 +10,9 @@ namespace config {
     constexpr int MAX_CLOUDS = 5;
     constexpr float PLATFORM_WIDTH = 300.0f;
     constexpr int JUMPS_NUMBER = 2;
-    constexpr float BASE_GRAVITY = 0.5f;
-    constexpr float BASE_JUMP_FORCE = -10.0f;
+    constexpr float BASE_GRAVITY = 0.4f;
+    constexpr float BASE_JUMP_FORCE = -15.0f;
     constexpr int BASE_CHARACTER_FRAME_SPEED = 8;
-    constexpr int MAX_CHARACTER_FRAME_SPEED = 12;
-    constexpr int MIN_CHARACTER_FRAME_SPEED = 4;
     constexpr float e = 0.05f;
     constexpr bool DEBUG_COLLISION = false;
 }

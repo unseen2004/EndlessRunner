@@ -228,4 +228,5 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: \
  /usr/include/c++/14.2.1/pstl/glue_numeric_defs.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Cloud.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/DeadScreen.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.h
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Character.h

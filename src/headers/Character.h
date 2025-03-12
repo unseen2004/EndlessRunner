@@ -1,97 +1,79 @@
-#include <iostream>
-#include <vector>
-#include <map>
-#include <memory>
+#ifndef CHARACTER_H
+#define CHARACTER_H
 
+#include <iostream>
+#include <filesystem>
+#include <vector>
 #include "raylib.h"
+#include "Config.h"
 #include "Platform.h"
-#include "Obstacle.h"
+
+
+namespace character_const {
+    constexpr int NUM_FRAMES_PER_LINE = 5;
+    constexpr int NUM_LINES = 5;
+    constexpr int MAX_SPEED = 10;
+    constexpr int GRAVITY = 1;
+};
 
 class Character {
+    Vector2 m_position;
+    int m_currentFrame;
+    int m_framesCounter;
+    int m_framesSpeed;
+    bool m_is_jumping{false};
+    int m_currentLine;
+    Texture2D m_character;
+    Texture2D m_explosion;
+    Sound m_boom;
+    std::filesystem::path m_path_character;
+    std::filesystem::path m_path_explosion;
+    std::filesystem::path m_path_sound;
+    Rectangle m_frame_rec;
+    float m_speed{1};
+    bool m_input_jump{};
+    bool m_input_dash{};
+    bool m_is_alive{true};
+    int m_prev_jump{};
+
 public:
     Character(std::filesystem::path path1, std::filesystem::path path2, std::filesystem::path path3,
-              float speed, float x, float y, int currentFrame = 0, int framesCounter = 0,
+              float m_speed = 0.1f, float x = config::CHARACTER_START_X,
+              float y = 0, int currentFrame = 0, int framesCounter = 0,
               int framesSpeed = 8, int currentLine = 0, bool is_jumping = false);
 
     ~Character();
 
-    bool update(bool input_jump, bool input_dash);
+private:
+    void run();
+
+public:
+    bool update(bool input_jump, bool input_dash, const std::vector<std::unique_ptr<Platform> > &bottomPlatforms,
+                const std::vector<std::unique_ptr<Platform> > &topPlatforms);
 
     void draw();
 
-    void run();
+    void changeSpeed(int n);
 
-    void die();
-
-    void changeSpeed(float speed);
-
-    bool isDead() const { return m_is_dead; }
-
-    float getX() const { return m_position.x; }
-    float getY() const { return m_position.y; }
-    float getWidth() const { return m_frame_rec.width; }
-    float getHeight() const { return m_frame_rec.height; }
-
-    void setPosition(float x, float y) {
-        m_position.x = x;
-        m_position.y = y;
-    }
-
-    Rectangle getBounds() const;
-
-    bool checkPlatformCollisions(const std::vector<std::unique_ptr<Platform> > &platforms,
-                                 std::map<Platform *, std::unique_ptr<Obstacle> > &obstacles);
-
+    // Add to Character.h
 private:
-    // Assets
-    std::filesystem::path m_path_character;
-    std::filesystem::path m_path_explosion;
-    std::filesystem::path m_path_sound;
-    Texture2D m_character;
-    Texture2D m_explosion;
-    Sound m_boom;
+    float m_vertical_velocity{0.0f};
+    bool m_is_grounded{true};
+    float m_jump_timer{0.0f};
+    float m_max_jump_time{0.6f};
+    float m_jump_force{config::BASE_JUMP_FORCE};
+    int m_jumps_left{config::JUMPS_NUMBER};
+    float m_gravity{config::BASE_GRAVITY};
 
-    // Character state
-    Vector2 m_position;
-    Rectangle m_frame_rec;
-    int m_currentFrame;
-    int m_framesCounter;
-    int m_framesSpeed;
-    int m_currentLine;
-    bool m_is_dead = false;
-    Vector2 m_death_position;
+public:
+    // Add new method declarations
+    bool checkGrounded(const std::vector<std::unique_ptr<Platform> > &platforms);
 
-    // Physics & movement
-    float m_vertical_velocity = 0.0f;
-    float m_gravity = config::BASE_GRAVITY;
-    float m_jump_force = config::BASE_JUMP_FORCE;
-    float m_max_jump_height = 300.0f;
-    bool m_is_jumping;
-    bool m_prev_jump = false;
-    int m_jumps_left;
-    bool m_is_on_ground = false;
+    void applyGravity();
 
-    // Dash mechanics
-    bool m_is_dashing = false;
-    float m_dash_duration = 0.0f;
-    float m_dash_max_duration = 0.3f;
-    float m_dash_cooldown = 0.0f;
-    float m_dash_max_cooldown = 1.0f;
-    float m_dash_distance = 30.0f;
-    float m_dash_offset = 0.0f;
-    float m_dash_return_speed = 60.0f;
+    void handleJump(bool input_jump);
 
-    // Collision detection
-    Image m_character_image;
-    Color *m_pixel_data = nullptr;
-
-    // Private methods
-    void resetJump();
-
-    bool checkCollisions(const Platform *platform, const Obstacle *obstacle);
-
-    float GetCollisionDepth(Rectangle rec1, Rectangle rec2);
-
-    bool checkPixelCollision(const Rectangle &bounds1, const Color *pixels1, int width1, int height1,
-                             const Rectangle &bounds2, const Color *pixels2, int width2, int height2);
+    bool isAlive() const { return m_is_alive; }
 };
+
+#endif // CHARACTER_H

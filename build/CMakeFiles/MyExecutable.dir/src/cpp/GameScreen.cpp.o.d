@@ -230,4 +230,5 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/State.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/StateMachine.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/WelcomeScreen.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.h
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Character.h

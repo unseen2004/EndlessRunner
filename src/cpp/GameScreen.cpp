@@ -19,11 +19,21 @@ GameScreen::GameScreen(StateMachine& sm) : m_stateMachine(sm) {
         m_bg_sky = std::make_unique<Background>(fs::path("resources/background/Sky.png"), m_speed);
         if (!m_bg_sky) throw std::runtime_error("Failed to load sky");
 
+        m_character = std::make_unique<Character>(fs::path("resources/scarfy.png"), fs::path("resources/explosion.png"), fs::path("resources/sound/boom.wav"), m_speed);
+        if(!m_character) throw std::runtime_error("Failed to load character");
 
     } catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;
     }
-
+    float platformX = 300;  // Start a bit left of character
+    float platformY = 300;  // Just below character's feet
+    m_platforms_bottom.push_back(std::make_unique<Platform>(
+        false,  // No obstacle on first platform
+        m_speed,
+        platformX,
+        platformY,
+        1.0f    // Normal scale
+    ));
     m_startTime = std::chrono::steady_clock::now();
     SetConfigFlags(FLAG_VSYNC_HINT);
     SetTargetFPS(config::FRAMES);
@@ -35,10 +45,11 @@ GameScreen::~GameScreen() {
     m_bg_foreground.reset();
     m_bg_midground.reset();
     m_bg_sky.reset();
+    m_character.reset();
 }
 
 void GameScreen::handleInput() {
-    if (IsKeyPressed(KEY_ENTER)) {
+    if (IsKeyPressed(KEY_ENTER) || !m_character->isAlive()) {
         m_stateMachine.changeState(std::make_unique<DeadScreen>(m_stateMachine));
     }
 
@@ -63,6 +74,8 @@ void GameScreen::updateSpeedBasedOnTime(std::chrono::steady_clock::time_point st
     m_bg_foreground->changeSpeed(m_speed);
     m_bg_midground->changeSpeed(m_speed);
     m_bg_sky->changeSpeed(m_speed);
+
+    m_character->changeSpeed(m_speed);
 
     for (auto &cloud: m_clouds) {
         cloud->changeSpeed(m_speed);
@@ -149,6 +162,8 @@ void GameScreen::update() {
     spawnPlatforms(m_platforms_bottom, true);
     spawnPlatforms(m_platforms_top, false);
 
+    m_character->update(m_input_jump, m_input_dash, m_platforms_bottom, m_platforms_top);
+
     // Update clouds and remove off-screen ones
     m_clouds.erase(
         std::remove_if(
@@ -192,7 +207,7 @@ void GameScreen::update() {
 void GameScreen::render() {
     BeginDrawing();
     ClearBackground(GetColor(0x052c46ff));
-
+/*
     // Draw backgrounds with parallax effect
     m_bg_sky->draw(m_bg_sky->getX());
     m_bg_sky->draw(m_bg_sky->getWidth() * 2 + m_bg_sky->getX());
@@ -210,8 +225,7 @@ void GameScreen::render() {
     for (auto &cloud: m_clouds) {
         cloud->draw();
     }
-
-    // Draw bottom platforms and their obstacles
+*/   // Draw bottom platforms and their obstacles
     for (auto &platform: m_platforms_bottom) {
         platform->draw();
     }
@@ -220,6 +234,9 @@ void GameScreen::render() {
     for (auto &platform: m_platforms_top) {
         platform->draw();
     }
+
+
+    m_character->draw();
 
     // Draw FPS counter and game info
     DrawText(TextFormat("SPEED: %.1f", m_speed), 20, 20, 20, GREEN);

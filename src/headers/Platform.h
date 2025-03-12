@@ -39,6 +39,8 @@ public:
     void changeSpeed(float speed);
 
     std::unique_ptr<Obstacle> m_obstacle;
+    [[nodiscard]] inline const Texture2D &getTexture() const { return m_texture; }
+    [[nodiscard]] inline float getScale() const { return m_scale; }
 
 private:
     bool isOutsite();

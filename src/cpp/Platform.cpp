@@ -6,7 +6,7 @@ Platform::Platform(bool has_obstacle, float speed, float x, float y, float scale
       m_hasObstacle{has_obstacle}
 {
     if(m_hasObstacle) {
-    	m_obstacle = std::make_unique<Obstacle>(*this, speed, scale);
+    	m_obstacle = std::make_unique<Obstacle>(*this, speed, 4.0F);
     }
 }
 
