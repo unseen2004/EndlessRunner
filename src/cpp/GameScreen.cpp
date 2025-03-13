@@ -342,6 +342,11 @@ for(auto &star : m_stars) {
         if (config::snow && m_snow) {
         m_snow->draw();
     }
+       if (config::fog) {
+        Color fogColor = Fade(LIGHTGRAY, 0.4f);
+        DrawRectangle(0, 0, config::SCREEN_WIDTH, config::SCREEN_HEIGHT, fogColor);
+    }
+
     m_interface->draw(m_speed, m_stars_collected);
 
   if (!m_character->isAlive()) {
