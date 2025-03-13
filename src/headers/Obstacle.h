@@ -18,13 +18,20 @@ class Obstacle {
     std::filesystem::path m_obstaclePath;
     Image m_obstacle_image;
     Color *m_pixel_data = nullptr;
+
 public:
     Obstacle(const Platform &platform, float speed, int scale);
+
     ~Obstacle();
+
     void update();
+
     void draw();
+
     void changeSpeed(float speed);
-    bool checkCollision(Vector2 point);
+
+    bool checkCollision(Vector2 point) const;
+
 private:
     std::filesystem::path getRandomObstaclePath();
 };

@@ -26,6 +26,7 @@ add_executable(MyExecutable
         src/cpp/Obstacle.cpp
         src/cpp/Platform.cpp
         src/cpp/Table.cpp
+        src/cpp/Star.cpp
 )
 
 # Link the raylib library

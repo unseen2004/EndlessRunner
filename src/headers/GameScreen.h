@@ -18,6 +18,7 @@
 #include "Config.h"
 #include "Character.h"
 #include "Obstacle.h"
+#include "Star.hpp"
 
 namespace fs = std::filesystem;
 
@@ -45,6 +46,7 @@ private:
     bool m_game_over = false;
     float m_death_timer = 0.0f;
     float m_death_delay = 2.0f;
+    std::vector<std::unique_ptr<Star> > m_stars;
 
     // Invulnerability timer for game start
     float m_invulnerability_timer = 0.5f;
@@ -67,7 +69,9 @@ private:
     std::vector<std::unique_ptr<Platform> > m_platforms_top;
     std::unique_ptr<Character> m_character;
     std::map<Platform *, std::unique_ptr<Obstacle> > m_obstacles{};
+    int m_stars_collected = 0;
 
+    void spawnStars();
 
     void spawnClouds();
 

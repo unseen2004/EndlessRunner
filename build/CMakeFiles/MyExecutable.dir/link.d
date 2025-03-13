@@ -15,6 +15,7 @@ MyExecutable: \
   CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o \
+  CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o \
   /usr/lib/libraylib.so \
   /usr/lib/libraylib.so \
   /usr/lib/libstdc++.so \
@@ -76,6 +77,8 @@ CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o:
 CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o:
 
 CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o:
+
+CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o:
 
 /usr/lib/libraylib.so:
 

@@ -105,7 +105,31 @@ void GameScreen::spawnClouds() {//usun randomval
         }
     }
 }
+    // ---------- Handle Stars ----------
 
+    // Spawn stars if below maximum count.
+// File: `src/cpp/GameScreen.cpp`
+void GameScreen::spawnStars() {
+    // Only attempt to spawn if we have fewer than the maximum stars,
+    // and use a random chance (e.g., 10% chance) each update frame.
+    if (m_stars.size() < config::MAX_STARS && GetRandomValue(0, 100) < 5) {
+        // Define spawn area starting out of screen to the right.
+        // x starts at SCREEN_WIDTH, and spawnWidth is an extra margin.
+        float spawnX = static_cast<float>(config::SCREEN_WIDTH);
+        float spawnWidth = 300.0f; // extra margin
+        Rectangle spawnArea = { spawnX, 0, spawnWidth, static_cast<float>(config::SCREEN_HEIGHT) };
+
+        // Star::SpawnRandom checks against platforms to avoid collisions.
+        Star* newStar = Star::SpawnRandom(spawnArea, m_platforms_bottom);
+        if (newStar) {
+            m_stars.push_back(std::unique_ptr<Star>(newStar));
+        }
+    }
+}
+    // Update stars and check collision with the character.
+
+
+    // ---------- End Stars ----------
 void GameScreen::spawnPlatforms(std::vector<std::unique_ptr<Platform>>& platforms, bool bottom) {
     if (platforms.size() < config::MAX_PLATFORMS) {
         int lastX = platforms.empty() ? 0 : platforms.back()->getX();
@@ -141,8 +165,34 @@ void GameScreen::update() {
     spawnClouds();
     spawnPlatforms(m_platforms_bottom, true);
     spawnPlatforms(m_platforms_top, false);
+    spawnStars();
     m_character->update(m_input_jump, m_input_dash, m_platforms_bottom, m_platforms_top);
-
+    for (auto it = m_obstacles.begin(); it != m_obstacles.end(); ) {
+        if (m_character->checkObstacleCollision(*it->second)) {
+            if (m_character->isDashing()) {
+                // If dashing, destroy the obstacle.
+                it = m_obstacles.erase(it);
+                continue;
+            } else {
+                // If not dashing, kill the character.
+                m_character->kill();
+                break;
+            }
+        }
+        ++it;
+    }
+       Rectangle characterRect = m_character->getCollisionRect();
+for (auto it = m_stars.begin(); it != m_stars.end(); ) {
+    (*it)->update();
+    // Move the star with the current game speed and dash boost.
+    (*it)->applyMovement(m_speed + m_character->getDashBoost(GetFrameTime()));
+    if (CheckCollisionRecs(m_character->getCollisionRect(), (*it)->getBoundingBox())) {
+        m_stars_collected++;
+        it = m_stars.erase(it);
+    } else {
+        ++it;
+    }
+}
     // Apply dash boost to world objects when dashing.
     float dt = GetFrameTime();
     float dashBoost = m_character->getDashBoost(dt);
@@ -254,11 +304,17 @@ for (auto &platform : m_platforms_top) {
         it->second->draw();
     }
 }
+for(auto &star : m_stars) {
+    star->draw();
+    }
     m_character->draw();
     DrawText(TextFormat("SPEED: %.1f", m_speed), 20, 20, 20, GREEN);
     DrawText(TextFormat("FPS: %i", (int)(1.0f / GetFrameTime())), 20, 50, 20, GREEN);
+        DrawText(TextFormat("Stars: %i", m_stars_collected), 20, 80, 20, GREEN);
+
     DrawText("SPACE: Jump (Double Jump Available)", config::SCREEN_WIDTH - 320, 20, 16, GREEN);
     DrawText("SHIFT: Dash", config::SCREEN_WIDTH - 320, 40, 16, GREEN);
+
     if (m_game_over) {
         DrawText("GAME OVER!", config::SCREEN_WIDTH / 2 - 100, config::SCREEN_HEIGHT / 2 - 50, 40, RED);
     }

@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o"
   "CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o.d"
+  "CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o"
+  "CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o"
   "CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o"

@@ -15,4 +15,5 @@ namespace config {
     constexpr int BASE_CHARACTER_FRAME_SPEED = 8;
     constexpr float e = 0.05f;
     constexpr bool DEBUG_COLLISION = false;
+    constexpr int MAX_STARS = 1;
 }

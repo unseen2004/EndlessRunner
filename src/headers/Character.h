@@ -7,6 +7,7 @@
 #include "raylib.h"
 #include "Config.h"
 #include "Platform.h"
+#include "Obstacle.h"
 
 namespace character_const {
     constexpr int NUM_FRAMES_PER_LINE = 5;
@@ -57,7 +58,11 @@ public:
     // Dash accessors
     bool isDashing() const { return m_is_dashing; }
 
+    bool checkObstacleCollision(const class Obstacle &obstacle) const;
+
     float getDashBoost(float dt) const;
+
+    Rectangle getCollisionRect() const;
 
 private:
     float m_vertical_velocity{0.0f};
@@ -86,6 +91,7 @@ public:
     void handleDash(bool input_dash);
 
     bool isAlive() const { return m_is_alive; }
+    void kill() { m_is_alive = false; }
 
 private:
     bool checkGrounded(const std::vector<std::unique_ptr<Platform> > &platforms);

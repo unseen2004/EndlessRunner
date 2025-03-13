@@ -59,37 +59,29 @@ void Obstacle::changeSpeed(float speed) {
     m_speed = speed;
 }
 
-bool Obstacle::checkCollision(Vector2 point) {
-    // Convert the global point to local obstacle coordinates
+bool Obstacle::checkCollision(Vector2 point) const {
     float localX = point.x - m_obstacle_position.x;
     float localY = point.y - m_obstacle_position.y;
 
-    // Calculate scaled dimensions
     int texWidth = static_cast<int>(m_obstacle_texture.width * m_scale);
     int texHeight = static_cast<int>(m_obstacle_texture.height * m_scale);
 
-    // Check bounds first
     if (localX < 0 || localY < 0 || localX >= texWidth || localY >= texHeight) {
         return false;
     }
 
-    // Convert to pixel coordinates in the original image
     int pixelX = static_cast<int>(localX / m_scale);
     int pixelY = static_cast<int>(localY / m_scale);
 
-    // Bounds check for the image coordinates
-    if (pixelX < 0 || pixelY < 0 ||
-        pixelX >= m_obstacle_image.width || pixelY >= m_obstacle_image.height) {
+    if (pixelX < 0 || pixelY < 0 || pixelX >= m_obstacle_image.width || pixelY >= m_obstacle_image.height) {
         return false;
     }
 
-    // Get the pixel color
     int index = pixelY * m_obstacle_image.width + pixelX;
     Color pixelColor = m_pixel_data[index];
-
-    // Return true if pixel is not transparent
     return pixelColor.a > 0;
 }
+
 
 std::filesystem::path Obstacle::getRandomObstaclePath() {
     int obstacleIdx = Random::get(1, 5);
