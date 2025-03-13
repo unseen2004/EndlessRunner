@@ -56,7 +56,8 @@ public:
 
     // Dash accessors
     bool isDashing() const { return m_is_dashing; }
-    float getDashBoost(float dt) const { return m_is_dashing ? m_dash_speed * dt : 0.0f; }
+
+    float getDashBoost(float dt) const;
 
 private:
     float m_vertical_velocity{0.0f};

@@ -28,7 +28,9 @@ bool Character::update(bool input_jump, bool input_dash,
 {
     bool was_grounded = m_is_grounded;
     if (!m_is_jumping) {
-        m_is_grounded = checkGrounded(bottomPlatforms);
+        auto m_is_grounded_bottom = checkGrounded(bottomPlatforms);
+        auto m_is_grounded_top= checkGrounded(topPlatforms);
+    	        m_is_grounded = m_is_grounded_bottom || m_is_grounded_top;
     }
     if (!was_grounded && m_is_grounded) {
         m_jumps_left = config::JUMPS_NUMBER;
@@ -141,7 +143,11 @@ void Character::handleDash(bool input_dash) {
         }
     }
 }
-
+// Increase the dash boost multiplier for more noticeable effect.
+float Character::getDashBoost(float dt) const {
+    // Multiply dt with a larger constant (e.g. 100) for testing.
+    return m_is_dashing ? 1000.0f * dt : 0.0f;
+}
 void Character::run() {
     ++m_framesCounter;
     if (m_framesCounter > m_framesSpeed) {

@@ -4,6 +4,7 @@
 Platform::Platform( float speed, float x, float y, float scale)
     : Background(getRandomPlatformPath(), speed, x, y, scale)
 {
+    m_cachedImage = LoadImageFromTexture(m_texture);
 }
 
 
@@ -16,6 +17,9 @@ bool Platform::update() {
     return !isOutsite();
 }
 
+Platform::~Platform() {
+    UnloadImage(m_cachedImage);
+}
 
 void Platform::draw() {
     // Draw the platform using the Background's draw method.
@@ -24,6 +28,8 @@ void Platform::draw() {
 }
 
 
+// Language: cpp
+// In src/cpp/Platform.cpp, update checkCollision():
 bool Platform::checkCollision(Vector2 point) {
     // Translate global point to local platform coordinates
     float localX = point.x - m_x;
@@ -33,7 +39,6 @@ bool Platform::checkCollision(Vector2 point) {
     int texWidth = static_cast<int>(m_texture.width * m_scale);
     int texHeight = static_cast<int>(m_texture.height * m_scale);
 
-    // If the point lies outside the texture bounds, no collision
     if (localX < 0 || localY < 0 || localX >= texWidth || localY >= texHeight) {
         return false;
     }
@@ -41,13 +46,8 @@ bool Platform::checkCollision(Vector2 point) {
     // Convert to pixel coordinates in the original image
     int pixelX = static_cast<int>(localX / m_scale);
     int pixelY = static_cast<int>(localY / m_scale);
-
-    // Get the pixel color at this position
-    Image img = LoadImageFromTexture(m_texture);
-    Color pixel = GetImageColor(img, pixelX, pixelY);
-    UnloadImage(img);
-
-    // Check if the pixel is not transparent
+    // Use the cached image for pixel collision
+    Color pixel = GetImageColor(m_cachedImage, pixelX, pixelY);
     return pixel.a > 0;
 }
 

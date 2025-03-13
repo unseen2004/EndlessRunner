@@ -17,6 +17,7 @@ class Platform : public Background {
 public:
     Platform(float speed, float x, float y, float scale = 1.0f);
 
+    ~Platform();
 
     // Update platform logic and update obstacle if present
     bool update();
@@ -41,4 +42,6 @@ public:
 
 private:
     bool isOutsite();
+
+    Image m_cachedImage;
 };

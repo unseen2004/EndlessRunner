@@ -32,6 +32,9 @@ GameScreen::GameScreen(StateMachine &sm) : m_stateMachine(sm) {
     float platformY = 300;
     m_platforms_bottom.push_back(std::make_unique<Platform>(
          m_speed, platformX, platformY, 1.0f));
+
+    m_platforms_bottom.push_back(std::make_unique<Platform>(
+         m_speed, platformX+600, platformY, 1.0f));
     m_startTime = std::chrono::steady_clock::now();
     SetConfigFlags(FLAG_VSYNC_HINT);
     SetTargetFPS(config::FRAMES);

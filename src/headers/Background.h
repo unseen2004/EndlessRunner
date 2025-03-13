@@ -3,6 +3,7 @@
 
 #include "filesystem"
 #include "raylib.h"
+#include <iostream>
 
 class Background {
 protected:
@@ -34,6 +35,7 @@ public:
     void update();
 
     void applyDashBoost(float dashBoost) {
+        std::cout << "Applying dash boost to background" << std::endl;
         m_x -= dashBoost;
     }
 };
