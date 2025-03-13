@@ -345,6 +345,30 @@ src/cpp/Platform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.s
 .PHONY : src/cpp/Platform.cpp.s
 
+src/cpp/Snow.o: src/cpp/Snow.cpp.o
+.PHONY : src/cpp/Snow.o
+
+# target to build an object file
+src/cpp/Snow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o
+.PHONY : src/cpp/Snow.cpp.o
+
+src/cpp/Snow.i: src/cpp/Snow.cpp.i
+.PHONY : src/cpp/Snow.i
+
+# target to preprocess a source file
+src/cpp/Snow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.i
+.PHONY : src/cpp/Snow.cpp.i
+
+src/cpp/Snow.s: src/cpp/Snow.cpp.s
+.PHONY : src/cpp/Snow.s
+
+# target to generate assembly for a file
+src/cpp/Snow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.s
+.PHONY : src/cpp/Snow.cpp.s
+
 src/cpp/Star.o: src/cpp/Star.cpp.o
 .PHONY : src/cpp/Star.o
 
@@ -501,6 +525,9 @@ help:
 	@echo "... src/cpp/Platform.o"
 	@echo "... src/cpp/Platform.i"
 	@echo "... src/cpp/Platform.s"
+	@echo "... src/cpp/Snow.o"
+	@echo "... src/cpp/Snow.i"
+	@echo "... src/cpp/Snow.s"
 	@echo "... src/cpp/Star.o"
 	@echo "... src/cpp/Star.i"
 	@echo "... src/cpp/Star.s"

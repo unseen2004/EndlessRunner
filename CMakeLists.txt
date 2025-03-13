@@ -27,6 +27,7 @@ add_executable(MyExecutable
         src/cpp/Platform.cpp
         src/cpp/Table.cpp
         src/cpp/Star.cpp
+        src/cpp/Snow.cpp
 )
 
 # Link the raylib library

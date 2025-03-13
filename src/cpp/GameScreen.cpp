@@ -36,6 +36,9 @@ GameScreen::GameScreen(StateMachine &sm) : m_stateMachine(sm) {
     m_platforms_bottom.push_back(std::make_unique<Platform>(
          m_speed, platformX+600, platformY, 1.0f));
     m_startTime = std::chrono::steady_clock::now();
+    if (config::snow) {
+        m_snow = std::make_unique<Snow>(100, config::SCREEN_WIDTH, config::SCREEN_HEIGHT);
+    }
     SetConfigFlags(FLAG_VSYNC_HINT);
     SetTargetFPS(config::FRAMES);
 }
@@ -47,6 +50,19 @@ GameScreen::~GameScreen() {
     m_bg_sky.reset();
     m_character.reset();
     m_interface.reset();
+    for(auto &cloud : m_clouds) {
+        cloud.reset();
+    }
+    for(auto &platform : m_platforms_bottom) {
+        platform.reset();
+    }
+    for(auto &platform : m_platforms_top) {
+        platform.reset();
+    }
+    for(auto &star : m_stars) {
+        star.reset();
+    }
+    m_snow.reset();
 }
 // File: src/cpp/GameScreen.cpp
 // This helper function stops other world updates and only processes the character’s death animation.
@@ -172,6 +188,9 @@ void GameScreen::update() {
     if (!m_character->isAlive()) {
         handleDeathTransition();
         return;
+    }
+       if (config::snow && m_snow) {
+        m_snow->update();
     }
     updateSpeedBasedOnTime(m_startTime);
     spawnClouds();
@@ -320,6 +339,9 @@ for(auto &star : m_stars) {
     star->draw();
     }
     m_character->draw();
+        if (config::snow && m_snow) {
+        m_snow->draw();
+    }
     m_interface->draw(m_speed, m_stars_collected);
 
   if (!m_character->isAlive()) {

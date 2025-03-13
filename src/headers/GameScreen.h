@@ -20,6 +20,7 @@
 #include "Obstacle.h"
 #include "Star.hpp"
 #include "Interface.h"
+#include "Snow.h"
 
 namespace fs = std::filesystem;
 
@@ -72,6 +73,7 @@ private:
     std::map<Platform *, std::unique_ptr<Obstacle> > m_obstacles{};
     int m_stars_collected = 0;
     std::unique_ptr<Interface> m_interface;
+    std::unique_ptr<Snow> m_snow;
 
     void spawnStars();
 
