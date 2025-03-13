@@ -47,6 +47,8 @@ public:
 private:
     void run();
 
+    void roll();
+
 public:
     bool update(bool input_jump, bool input_dash, const std::vector<std::unique_ptr<Platform> > &bottomPlatforms,
                 const std::vector<std::unique_ptr<Platform> > &topPlatforms);
@@ -81,6 +83,7 @@ private:
     // New cooldown variables
     float m_dash_cooldown_timer{0.0f};
     const float m_max_dash_cooldown{1.0f};
+    float m_rotation{0.0f};
 
 public:
     void applyGravity();

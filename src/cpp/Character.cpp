@@ -52,12 +52,19 @@ bool Character::update(bool input_jump, bool input_dash,
     m_position.y += m_vertical_velocity;
     if (m_is_grounded)
         run();
+    else
+        roll();
     if (m_position.y > config::SCREEN_HEIGHT) {
         m_is_alive = false;
         return false;
     }
     return true;
 }
+
+void Character::roll() {
+    m_rotation += 10.0F;
+}
+
 Rectangle Character::getCollisionRect() const {
     // Return a rectangle based on m_position and the frame rectangle dimensions.
     Rectangle rec;
@@ -174,6 +181,8 @@ float Character::getDashBoost(float dt) const {
     return m_is_dashing ? 1000.0f * dt : 0.0f;
 }
 void Character::run() {
+    // Reset rotation when running so the character stays upright
+    m_rotation = 0.0f;
     ++m_framesCounter;
     if (m_framesCounter > m_framesSpeed) {
         m_framesCounter = 0;
@@ -181,12 +190,16 @@ void Character::run() {
         if (m_currentFrame > 5) {
             m_currentFrame = 0;
         }
-        m_frame_rec.x = (float)m_currentFrame * (float)m_character.width / 6;
+        m_frame_rec.x = (float)m_currentFrame * (float)m_character.width / 6.0f;
     }
 }
 
 void Character::draw() {
-    DrawTextureRec(m_character, m_frame_rec, m_position, WHITE);
+    // Draw character with rotation using DrawTexturePro.
+    // Set the origin at the center of the frame so rotation occurs about the center.
+    Vector2 origin = { m_frame_rec.width / 2.0f, m_frame_rec.height / 2.0f };
+    Rectangle dest = { m_position.x + origin.x, m_position.y + origin.y, m_frame_rec.width, m_frame_rec.height };
+    DrawTexturePro(m_character, m_frame_rec, dest, origin, m_rotation, WHITE);
 }
 
 void Character::changeSpeed(int speed) {
