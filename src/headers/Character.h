@@ -78,8 +78,6 @@ private:
     const float m_max_dash_cooldown{1.0f};
 
 public:
-    bool checkGrounded(const std::vector<std::unique_ptr<Platform> > &platforms);
-
     void applyGravity();
 
     void handleJump(bool input_jump);
@@ -88,6 +86,13 @@ public:
     void handleDash(bool input_dash);
 
     bool isAlive() const { return m_is_alive; }
+
+private:
+    bool checkGrounded(const std::vector<std::unique_ptr<Platform> > &platforms);
+
+    bool checkRightCollision(const std::vector<std::unique_ptr<Platform> > &platforms);
+
+    bool checkTopCollision(const std::vector<std::unique_ptr<Platform> > &platforms);
 };
 
 #endif // CHARACTER_H

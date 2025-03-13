@@ -10,7 +10,6 @@
     <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppFormatterOtherPage" type="string" />
     <option name="/Default/CodeEditing/CppCodeGeneration/KeepDefaultArgumentsInOverridingFunctions/@EntryValue" value="true" type="bool" />
     <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="3" type="long" />
-    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
   </component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
@@ -24,35 +23,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/MyExecutable" beforeDir="false" afterPath="$PROJECT_DIR$/build/MyExecutable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Sound/boom.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sound/boom.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Character.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/Obstacle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Obstacle.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/Platform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Platform.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/Character.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Character.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/Config.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Config.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/GameScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/GameScreen.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/Platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Platform.h" afterDir="false" />
-    </list>
+    <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +141,7 @@
     "cidr.known.project.marker": "true",
     "code.cleanup.on.save": "true",
     "git-widget-placeholder": "trunk",
-    "last_opened_file_path": "/home/maks/Programming/Private/Studies/SEM4/Algo/lab1/z2",
+    "last_opened_file_path": "/home/maks/Programming/AlgoLib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -294,10 +265,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="CMake Application.cmake" />
       <item itemvalue="C/C++ File.main.cpp (1)" />
-      <item itemvalue="C/C++ File.main.cpp (2)" />
       <item itemvalue="C/C++ File.main.cpp" />
+      <item itemvalue="C/C++ File.main.cpp (2)" />
+      <item itemvalue="CMake Application.cmake" />
       <item itemvalue="Makefile Target.all" />
       <item itemvalue="Makefile Target.clean" />
       <item itemvalue="Makefile Target.default_target" />
@@ -357,6 +328,7 @@
       <workItem from="1741475093789" duration="24000" />
       <workItem from="1741521063865" duration="4474000" />
       <workItem from="1741564506886" duration="49000" />
+      <workItem from="1741812031887" duration="11066000" />
     </task>
     <servers />
   </component>

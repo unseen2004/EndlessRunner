@@ -23,31 +23,35 @@ Character::~Character() {
 }
 
 bool Character::update(bool input_jump, bool input_dash,
-                      const std::vector<std::unique_ptr<Platform>>& bottomPlatforms,
-                      const std::vector<std::unique_ptr<Platform>>& topPlatforms)
-{
+                         const std::vector<std::unique_ptr<Platform>> &bottomPlatforms,
+                         const std::vector<std::unique_ptr<Platform>> &topPlatforms) {
     bool was_grounded = m_is_grounded;
     if (!m_is_jumping) {
-        auto m_is_grounded_bottom = checkGrounded(bottomPlatforms);
-        auto m_is_grounded_top= checkGrounded(topPlatforms);
-    	        m_is_grounded = m_is_grounded_bottom || m_is_grounded_top;
+        bool isGroundedBottom = checkGrounded(bottomPlatforms);
+        bool isGroundedTop = checkGrounded(topPlatforms);
+        m_is_grounded = isGroundedBottom || isGroundedTop;
     }
     if (!was_grounded && m_is_grounded) {
         m_jumps_left = config::JUMPS_NUMBER;
     }
     handleJump(input_jump);
-    // Update dash cooldown timer
     float dt = GetFrameTime();
-    if(m_dash_cooldown_timer > 0)
+    if (m_dash_cooldown_timer > 0)
         m_dash_cooldown_timer -= dt;
     handleDash(input_dash);
-    if (!m_is_grounded) {
+    if (!m_is_grounded)
         applyGravity();
+
+    // Check for side/top collisions: if either occurs, mark character as dead.
+    if (checkRightCollision(bottomPlatforms) || checkRightCollision(topPlatforms) ||
+        checkTopCollision(bottomPlatforms) || checkTopCollision(topPlatforms)) {
+        m_is_alive = false;
+        return false;
     }
+
     m_position.y += m_vertical_velocity;
-    if (m_is_grounded) {
+    if (m_is_grounded)
         run();
-    }
     if (m_position.y > config::SCREEN_HEIGHT) {
         m_is_alive = false;
         return false;
@@ -170,4 +174,63 @@ void Character::changeSpeed(int speed) {
     } else {
         m_framesSpeed = (character_const::MAX_SPEED - speed) - speed;
     }
+}
+
+
+// Language: cpp
+bool Character::checkRightCollision(const std::vector<std::unique_ptr<Platform>> &platforms) {
+    float characterRight = m_position.x + m_frame_rec.width;
+    float characterTop = m_position.y;
+    float headRegionHeight = m_frame_rec.height / 5.0f; // top 1/5 as head region
+    const int numSamples = 5; // sample points in head region
+    const int collisionThreshold = 1; // if one sample collides then head is touched
+
+    for (const auto &platform : platforms) {
+        float platformTop = platform->getY();
+        float platformBottom = platform->getY() + platform->getTexture().height * platform->getScale();
+
+        // Skip if there's no vertical overlap with the head region.
+        if ( (characterTop + headRegionHeight) < platformTop || characterTop > platformBottom ) {
+            continue;
+        }
+
+        int collidingSamples = 0;
+        for (int i = 0; i < numSamples; i++) {
+            float sampleY = characterTop + i * (headRegionHeight / (numSamples - 1));
+            Vector2 samplePoint = { characterRight, sampleY };
+            if (platform->checkCollision(samplePoint)) {
+                collidingSamples++;
+            }
+        }
+        if (collidingSamples >= collisionThreshold) {
+            return true;
+        }
+    }
+    return false;
+}
+
+bool Character::checkTopCollision(const std::vector<std::unique_ptr<Platform>> &platforms) {
+    float characterTop = m_position.y;
+    float characterLeft = m_position.x;
+    float characterRight = m_position.x + m_frame_rec.width;
+    const int numSamples = 5;
+    // Use a small offset to sample above the character's top
+    const float sampleOffset = -1.0f;
+
+    for (const auto &platform : platforms) {
+        // Check for horizontal overlap before sampling
+        if (characterRight < platform->getX() ||
+            characterLeft > platform->getX() + platform->getTexture().width * platform->getScale()) {
+            continue;
+        }
+        for (int i = 0; i < numSamples; i++) {
+            float sampleX = characterLeft + i * (m_frame_rec.width / (numSamples - 1));
+            // Apply the offset so that the sampling point is slightly above the top edge.
+            Vector2 samplePoint = { sampleX, characterTop + sampleOffset };
+            if (platform->checkCollision(samplePoint)) {
+                return true;
+            }
+        }
+    }
+    return false;
 }
