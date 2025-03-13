@@ -65,6 +65,27 @@ void Character::roll() {
     m_rotation += 10.0F;
 }
 
+// File: src/cpp/Character.cpp
+// This function updates the explosion (death) animation when the character is dead.
+void Character::updateDeadAnimation() {
+    int explosionFPS = 2; // frames to wait before switching frame
+    float dt = GetFrameTime();
+    m_explosionFramesCounter++;
+    if (m_explosionFramesCounter > explosionFPS) {
+        m_explosionFramesCounter = 0;
+        m_explosionCurrentFrame++;
+        if (m_explosionCurrentFrame >= 5) {
+            m_explosionCurrentFrame = 0;
+            m_explosionCurrentLine++;
+            if (m_explosionCurrentLine >= 5) {
+                m_explosionCurrentLine = 4; // stay on the final explosion frame
+                m_deadAnimationFinished = true;
+            }
+        }
+    }
+}
+
+
 Rectangle Character::getCollisionRect() const {
     // Return a rectangle based on m_position and the frame rectangle dimensions.
     Rectangle rec;

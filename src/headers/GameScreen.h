@@ -73,6 +73,10 @@ private:
 
     void spawnStars();
 
+    void handleDeathTransition();
+
+    bool isDeadAnimationFinished();
+
     void spawnClouds();
 
     void spawnPlatforms(std::vector<std::unique_ptr<Platform> > &platform, bool bottom);

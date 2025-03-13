@@ -47,9 +47,23 @@ GameScreen::~GameScreen() {
     m_bg_sky.reset();
     m_character.reset();
 }
+// File: src/cpp/GameScreen.cpp
+// This helper function stops other world updates and only processes the character’s death animation.
+// Once finished, it transitions to the next game screen.
+// Language: cpp
+// File: src/cpp/GameScreen.cpp
 
+void GameScreen::handleDeathTransition() {
+    // Update the dead animation of the character.
+    m_character->updateDeadAnimation();
+
+    // When the explosion animation finishes, change state.
+    if (m_character->isDeadAnimationFinished()) {
+        m_stateMachine.changeState(std::make_unique<DeadScreen>(m_stateMachine));
+    }
+}
 void GameScreen::handleInput() {
-    if (IsKeyPressed(KEY_ENTER) || !m_character->isAlive()) {
+    if (IsKeyPressed(KEY_ENTER) && !m_character->isAlive()) {
         m_stateMachine.changeState(std::make_unique<DeadScreen>(m_stateMachine));
     }
     m_input_jump = IsKeyPressed(KEY_SPACE);
@@ -154,11 +168,8 @@ void GameScreen::spawnPlatforms(std::vector<std::unique_ptr<Platform>>& platform
 
 void GameScreen::update() {
     handleInput();
-    if (m_game_over) {
-        m_death_timer += GetFrameTime();
-        if (m_death_timer > m_death_delay) {
-            m_stateMachine.changeState(std::make_unique<DeadScreen>(m_stateMachine));
-        }
+    if (!m_character->isAlive()) {
+        handleDeathTransition();
         return;
     }
     updateSpeedBasedOnTime(m_startTime);

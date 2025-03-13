@@ -88,6 +88,10 @@ private:
 public:
     void applyGravity();
 
+    bool isDeadAnimationFinished() const { return m_deadAnimationFinished; }
+
+    void updateDeadAnimation();
+
     void handleJump(bool input_jump);
 
     // Updated dash handling method; no longer moves m_position.x but triggers dash state
@@ -102,6 +106,11 @@ private:
     bool checkRightCollision(const std::vector<std::unique_ptr<Platform> > &platforms);
 
     bool checkTopCollision(const std::vector<std::unique_ptr<Platform> > &platforms);
+
+    int m_explosionCurrentFrame{0};
+    int m_explosionCurrentLine{0};
+    int m_explosionFramesCounter{0};
+    bool m_deadAnimationFinished{false};
 };
 
 #endif // CHARACTER_H
