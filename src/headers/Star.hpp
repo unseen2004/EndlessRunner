@@ -40,6 +40,10 @@ public:
     // Returns the total number of stars collected.
     static int getCollectedCount();
 
+    void changeSpeed(float n);
+
+    void applyDashBoost(float dashBoost);
+
 private:
     Vector2 m_position;
     Texture2D m_texture;
@@ -50,7 +54,7 @@ private:
     float m_animationInterval; // seconds per frame.
     bool m_collected;
     float m_scale; // scale factor
-
+    float m_speed;
     // Added members for spin animation
     float m_rotation; // current rotation angle
     float m_spinSpeed; // degrees per second

@@ -17,6 +17,7 @@ MyExecutable: \
   CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o \
+  CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o \
   /usr/lib/libraylib.so \
   /usr/lib/libraylib.so \
   /usr/lib/libstdc++.so \
@@ -82,6 +83,8 @@ CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o:
 CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o:
 
 CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o:
+
+CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o:
 
 /usr/lib/libraylib.so:
 

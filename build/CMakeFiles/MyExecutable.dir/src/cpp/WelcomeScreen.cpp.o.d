@@ -234,4 +234,5 @@ CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Obstacle.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Star.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Interface.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Snow.h
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Snow.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/StarPopout.h

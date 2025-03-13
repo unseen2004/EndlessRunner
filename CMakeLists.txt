@@ -28,6 +28,7 @@ add_executable(MyExecutable
         src/cpp/Table.cpp
         src/cpp/Star.cpp
         src/cpp/Snow.cpp
+        src/cpp/StarPopout.cpp
 )
 
 # Link the raylib library

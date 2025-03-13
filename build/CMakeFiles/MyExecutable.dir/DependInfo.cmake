@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/maks/Programming/EndlessRunner/src/cpp/Platform.cpp" "CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o" "gcc" "CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o.d"
   "/home/maks/Programming/EndlessRunner/src/cpp/Snow.cpp" "CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o" "gcc" "CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o.d"
   "/home/maks/Programming/EndlessRunner/src/cpp/Star.cpp" "CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o" "gcc" "CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o.d"
+  "/home/maks/Programming/EndlessRunner/src/cpp/StarPopout.cpp" "CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o" "gcc" "CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o.d"
   "/home/maks/Programming/EndlessRunner/src/cpp/StateMachine.cpp" "CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o" "gcc" "CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o.d"
   "/home/maks/Programming/EndlessRunner/src/cpp/Table.cpp" "CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o" "gcc" "CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o.d"
   "/home/maks/Programming/EndlessRunner/src/cpp/WelcomeScreen.cpp" "CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o" "gcc" "CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o.d"

@@ -21,6 +21,7 @@
 #include "Star.hpp"
 #include "Interface.h"
 #include "Snow.h"
+#include "StarPopout.h"
 
 namespace fs = std::filesystem;
 
@@ -49,6 +50,7 @@ private:
     float m_death_timer = 0.0f;
     float m_death_delay = 2.0f;
     std::vector<std::unique_ptr<Star> > m_stars;
+    std::vector<std::unique_ptr<StarPopout> > m_popouts;
 
     // Invulnerability timer for game start
     float m_invulnerability_timer = 0.5f;

@@ -4,7 +4,7 @@
 #include "../headers/Platform.h"
 #include "raylib.h"
 #include <cstdlib>
-
+#include <iostream>
 int Star::s_collectedStars = 0;
 
 Star::Star(Vector2 position)
@@ -18,16 +18,12 @@ Star::Star(Vector2 position)
 }
 
 void Star::update() {
-    if(m_collected) return;
-    float dt = GetFrameTime();
-    m_animationTimer += dt;
-    if(m_animationTimer >= m_animationInterval) {
-        m_animationTimer = 0.0f;
-        m_currentFrame = (m_currentFrame + 1) % m_numFrames;
-        m_frameRec.x = m_currentFrame * m_frameRec.width;
-    }
+    applyMovement(m_speed);
+    std::cout<<m_speed<<" "<< m_position.x<<std::endl;
 }
-
+void Star::changeSpeed(float n) {
+    m_speed = n;
+}
 void Star::draw() {
 
     DrawTextureEx(m_texture, m_position, 0.0f, m_scale, WHITE);
@@ -46,7 +42,9 @@ Star::~Star() {
 Rectangle Star::getBoundingBox() const {
     return Rectangle{ m_position.x, m_position.y, m_frameRec.width * m_scale, m_frameRec.height * m_scale };
 }
-
+void Star::applyDashBoost(float dashBoost) {
+    m_position.x -= dashBoost;
+}
 bool Star::isCollected() const {
     return m_collected;
 }

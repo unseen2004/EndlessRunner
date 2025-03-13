@@ -117,7 +117,11 @@ void GameScreen::updateSpeedBasedOnTime(std::chrono::steady_clock::time_point st
         if (it != m_obstacles.end() && it->second) {
             it->second->changeSpeed(m_speed);
         }
+
     }
+    for (auto &star : m_stars) {
+        star->changeSpeed(m_speed);
+     }
 }
 
 void GameScreen::spawnClouds() {//usun randomval
@@ -143,7 +147,7 @@ void GameScreen::spawnClouds() {//usun randomval
 void GameScreen::spawnStars() {
     // Only attempt to spawn if we have fewer than the maximum stars,
     // and use a random chance (e.g., 10% chance) each update frame.
-    if (m_stars.size() < config::MAX_STARS && GetRandomValue(0, 100) < 5) {
+    if (m_stars.size() < config::MAX_STARS && GetRandomValue(0, 100) < 100) {
         // Define spawn area starting out of screen to the right.
         // x starts at SCREEN_WIDTH, and spawnWidth is an extra margin.
         float spawnX = static_cast<float>(config::SCREEN_WIDTH);
@@ -213,13 +217,23 @@ void GameScreen::update() {
         ++it;
     }
        Rectangle characterRect = m_character->getCollisionRect();
-for (auto it = m_stars.begin(); it != m_stars.end(); ) {
+for (auto it = m_stars.begin(); it != m_stars.end();) {
     (*it)->update();
-    // Move the star with the current game speed and dash boost.
-    (*it)->applyMovement(m_speed + m_character->getDashBoost(GetFrameTime()));
     if (CheckCollisionRecs(m_character->getCollisionRect(), (*it)->getBoundingBox())) {
         m_stars_collected++;
+        Vector2 popPos{m_character->getCollisionRect().x, m_character->getCollisionRect().y};
+        m_popouts.push_back(std::make_unique<StarPopout>(popPos, "i")); // Japanese "star"
         it = m_stars.erase(it);
+    } else {
+        ++it;
+    }
+}
+
+// Update and remove expired popouts:
+for (auto it = m_popouts.begin(); it != m_popouts.end();) {
+    (*it)->update();
+    if ((*it)->isExpired()) {
+        it = m_popouts.erase(it);
     } else {
         ++it;
     }
@@ -236,6 +250,9 @@ for (auto it = m_stars.begin(); it != m_stars.end(); ) {
         }
         for (auto &platform : m_platforms_top) {
             platform->applyDashBoost(dashBoost);
+        }
+        for (auto &star : m_stars) {
+            star->applyDashBoost(dashBoost);
         }
         m_bg_background->applyDashBoost(dashBoost);
         m_bg_foreground->applyDashBoost(dashBoost);
@@ -348,7 +365,12 @@ for(auto &star : m_stars) {
     }
 
     m_interface->draw(m_speed, m_stars_collected);
+/*
+    for (auto &popout : m_popouts) {
+    popout->draw();
+}
 
+ */
   if (!m_character->isAlive()) {
     const char *msg = "You died";
     int fontSize = 40;

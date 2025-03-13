@@ -393,6 +393,30 @@ src/cpp/Star.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.s
 .PHONY : src/cpp/Star.cpp.s
 
+src/cpp/StarPopout.o: src/cpp/StarPopout.cpp.o
+.PHONY : src/cpp/StarPopout.o
+
+# target to build an object file
+src/cpp/StarPopout.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o
+.PHONY : src/cpp/StarPopout.cpp.o
+
+src/cpp/StarPopout.i: src/cpp/StarPopout.cpp.i
+.PHONY : src/cpp/StarPopout.i
+
+# target to preprocess a source file
+src/cpp/StarPopout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.i
+.PHONY : src/cpp/StarPopout.cpp.i
+
+src/cpp/StarPopout.s: src/cpp/StarPopout.cpp.s
+.PHONY : src/cpp/StarPopout.s
+
+# target to generate assembly for a file
+src/cpp/StarPopout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.s
+.PHONY : src/cpp/StarPopout.cpp.s
+
 src/cpp/StateMachine.o: src/cpp/StateMachine.cpp.o
 .PHONY : src/cpp/StateMachine.o
 
@@ -531,6 +555,9 @@ help:
 	@echo "... src/cpp/Star.o"
 	@echo "... src/cpp/Star.i"
 	@echo "... src/cpp/Star.s"
+	@echo "... src/cpp/StarPopout.o"
+	@echo "... src/cpp/StarPopout.i"
+	@echo "... src/cpp/StarPopout.s"
 	@echo "... src/cpp/StateMachine.o"
 	@echo "... src/cpp/StateMachine.i"
 	@echo "... src/cpp/StateMachine.s"

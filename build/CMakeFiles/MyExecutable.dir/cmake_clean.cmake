@@ -22,6 +22,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o"
   "CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o.d"
+  "CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o"
+  "CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o"
   "CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o"
