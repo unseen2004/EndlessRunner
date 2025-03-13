@@ -233,4 +233,5 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Character.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Obstacle.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Star.hpp
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Star.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Interface.h

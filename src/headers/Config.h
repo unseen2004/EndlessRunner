@@ -16,4 +16,7 @@ namespace config {
     constexpr float e = 0.05f;
     constexpr bool DEBUG_COLLISION = false;
     constexpr int MAX_STARS = 1;
+
+    inline bool fog = false;
+    inline bool snow = false;
 }

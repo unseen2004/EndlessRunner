@@ -1,13 +1,19 @@
+// Language: cpp
+// File: `src/cpp/Interface.cpp`
 #include "../headers/Interface.h"
+#include "../headers/Config.h"
 
 Interface::Interface() {}
 Interface::~Interface() {}
 
 void Interface::update() {
-    // Update UI logic
+    // Optional: add UI logic update if needed.
 }
 
-void Interface::draw() {
-    // Draw UI on screen; for example, display a placeholder score.
-    DrawText("Score: 0", 10, 10, 20, BLACK);
+void Interface::draw(float speed, int stars) {
+    DrawText(TextFormat("SPEED: %.1f", speed), 20, 20, 20, GREEN);
+    DrawText(TextFormat("FPS: %i", (int)(1.0f / GetFrameTime())), 20, 50, 20, GREEN);
+    DrawText(TextFormat("Stars: %i", stars), 20, 80, 20, GREEN);
+    DrawText("SPACE: Jump (Double Jump Available)", config::SCREEN_WIDTH - 320, 20, 16, GREEN);
+    DrawText("SHIFT: Dash", config::SCREEN_WIDTH - 320, 40, 16, GREEN);
 }

@@ -46,6 +46,7 @@ GameScreen::~GameScreen() {
     m_bg_midground.reset();
     m_bg_sky.reset();
     m_character.reset();
+    m_interface.reset();
 }
 // File: src/cpp/GameScreen.cpp
 // This helper function stops other world updates and only processes the character’s death animation.
@@ -319,15 +320,25 @@ for(auto &star : m_stars) {
     star->draw();
     }
     m_character->draw();
-    DrawText(TextFormat("SPEED: %.1f", m_speed), 20, 20, 20, GREEN);
-    DrawText(TextFormat("FPS: %i", (int)(1.0f / GetFrameTime())), 20, 50, 20, GREEN);
-        DrawText(TextFormat("Stars: %i", m_stars_collected), 20, 80, 20, GREEN);
+    m_interface->draw(m_speed, m_stars_collected);
 
-    DrawText("SPACE: Jump (Double Jump Available)", config::SCREEN_WIDTH - 320, 20, 16, GREEN);
-    DrawText("SHIFT: Dash", config::SCREEN_WIDTH - 320, 40, 16, GREEN);
+  if (!m_character->isAlive()) {
+    const char *msg = "You died";
+    int fontSize = 40;
+    Color borderColor = BLACK;
+    Color mainColor = RED;
+    Vector2 pos = { config::SCREEN_WIDTH / 2 - 100, config::SCREEN_HEIGHT / 2 - 50 };
 
-    if (m_game_over) {
-        DrawText("GAME OVER!", config::SCREEN_WIDTH / 2 - 100, config::SCREEN_HEIGHT / 2 - 50, 40, RED);
+    // Draw border by drawing text with slight offsets
+    for (int dx = -2; dx <= 2; dx++) {
+        for (int dy = -2; dy <= 2; dy++) {
+            // Skip drawing the main text position
+            if (dx == 0 && dy == 0) continue;
+            DrawText(msg, pos.x + dx, pos.y + dy, fontSize, borderColor);
+        }
     }
+    // Draw the main text
+    DrawText(msg, pos.x, pos.y, fontSize, mainColor);
+}
     EndDrawing();
 }

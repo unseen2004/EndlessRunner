@@ -1,3 +1,5 @@
+// Language: cpp
+// File: `src/headers/WelcomeScreen.h`
 #ifndef WELCOMESCREEN_H
 #define WELCOMESCREEN_H
 
@@ -8,6 +10,7 @@
 
 class WelcomeScreen : public State {
     StateMachine &stateMachine;
+    float m_animationTimer; // for text animation
 
 public:
     WelcomeScreen(StateMachine &sm);

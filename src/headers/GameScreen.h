@@ -19,6 +19,7 @@
 #include "Character.h"
 #include "Obstacle.h"
 #include "Star.hpp"
+#include "Interface.h"
 
 namespace fs = std::filesystem;
 
@@ -70,6 +71,7 @@ private:
     std::unique_ptr<Character> m_character;
     std::map<Platform *, std::unique_ptr<Obstacle> > m_obstacles{};
     int m_stars_collected = 0;
+    std::unique_ptr<Interface> m_interface;
 
     void spawnStars();
 
