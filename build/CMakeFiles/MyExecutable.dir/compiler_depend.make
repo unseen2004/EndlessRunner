@@ -3,6 +3,7 @@
 
 CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o: /home/maks/Programming/EndlessRunner/src/cpp/Background.cpp \
   /home/maks/Programming/EndlessRunner/src/headers/Background.hpp \
+  /home/maks/Programming/EndlessRunner/src/headers/Constants.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -242,6 +243,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o: /home/maks/Programming/Endl
   /home/maks/Programming/EndlessRunner/src/headers/Background.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Character.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Config.hpp \
+  /home/maks/Programming/EndlessRunner/src/headers/Constants.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Random.hpp \
   /usr/include/alloca.h \
@@ -771,7 +773,9 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: /home/maks/Programming/End
   /home/maks/Programming/EndlessRunner/src/headers/Character.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Cloud.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Config.hpp \
+  /home/maks/Programming/EndlessRunner/src/headers/Constants.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.hpp \
+  /home/maks/Programming/EndlessRunner/src/headers/DebugLog.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Interface.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.hpp \
@@ -4336,6 +4340,8 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o:
 
 /home/maks/Programming/EndlessRunner/src/headers/Interface.hpp:
 
+/home/maks/Programming/EndlessRunner/src/headers/DebugLog.hpp:
+
 /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.hpp:
 
 CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o:
@@ -4446,6 +4452,8 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o:
 
 /usr/include/c++/14.2.1/bits/memory_resource.h:
 
+/home/maks/Programming/EndlessRunner/src/headers/Constants.hpp:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h:
 
 /usr/include/c++/14.2.1/bits/locale_classes.h:
@@ -4500,10 +4508,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o:
 
 /usr/include/c++/14.2.1/bits/locale_facets.h:
 
-/usr/include/c++/14.2.1/bits/refwrap.h:
-
-/usr/include/c++/14.2.1/bits/quoted_string.h:
-
 /usr/include/bits/types/struct_timespec.h:
 
 /usr/include/bits/waitflags.h:
@@ -4521,18 +4525,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o:
 /usr/include/bits/libc-header-start.h:
 
 /usr/include/c++/14.2.1/ext/aligned_buffer.h:
-
-/usr/include/c++/14.2.1/vector:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/lib/libm.so.6:
-
-/usr/include/c++/14.2.1/bits/parse_numbers.h:
-
-/usr/include/c++/14.2.1/bits/shared_ptr_base.h:
-
-/usr/include/bits/types/mbstate_t.h:
 
 /usr/include/bits/errno.h:
 
@@ -4564,8 +4556,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o:
 
 /usr/include/bits/cpu-set.h:
 
-/home/maks/Programming/EndlessRunner/src/headers/Config.hpp:
-
 /usr/include/bits/byteswap.h:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
@@ -4573,6 +4563,20 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o:
 /usr/include/bits/time64.h:
 
 /usr/include/bits/stdlib-float.h:
+
+/usr/include/c++/14.2.1/vector:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/lib/libm.so.6:
+
+/usr/include/c++/14.2.1/bits/parse_numbers.h:
+
+/usr/include/c++/14.2.1/bits/shared_ptr_base.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/home/maks/Programming/EndlessRunner/src/headers/Config.hpp:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
@@ -4590,13 +4594,21 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o:
 
 /usr/include/bits/types/__fpos_t.h:
 
-/usr/include/c++/14.2.1/bits/fs_ops.h:
-
 /usr/include/c++/14.2.1/bits/random.tcc:
+
+/usr/include/c++/14.2.1/bits/fs_ops.h:
 
 /usr/include/bits/types/clock_t.h:
 
 /usr/include/bits/mathcalls.h:
+
+/home/maks/Programming/EndlessRunner/src/headers/Star.hpp:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/14.2.1/initializer_list:
+
+/usr/include/c++/14.2.1/ext/type_traits.h:
 
 /usr/include/alloca.h:
 
@@ -4609,6 +4621,26 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o:
 /usr/include/c++/14.2.1/tr1/ell_integral.tcc:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/14.2.1/bits/unique_ptr.h:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/c++/14.2.1/bits/version.h:
+
+/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/c++/14.2.1/algorithm:
+
+/usr/include/c++/14.2.1/bits/postypes.h:
+
+/usr/include/c++/14.2.1/bits/basic_ios.tcc:
+
+/usr/include/asm/posix_types_64.h:
 
 /usr/include/c++/14.2.1/limits:
 
@@ -4632,17 +4664,9 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o:
 
 /usr/include/stdc-predef.h:
 
-/usr/include/asm-generic/int-ll64.h:
+/usr/include/c++/14.2.1/bits/quoted_string.h:
 
-/usr/include/c++/14.2.1/bits/unique_ptr.h:
-
-/usr/include/bits/mathcalls-macros.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/c++/14.2.1/bits/version.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+/usr/include/c++/14.2.1/bits/refwrap.h:
 
 /home/maks/Programming/EndlessRunner/src/cpp/ReplayScreen.cpp:
 
@@ -4651,14 +4675,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o:
 /usr/include/c++/14.2.1/bits/cxxabi_forced.h:
 
 /usr/include/asm/bitsperlong.h:
-
-/usr/include/c++/14.2.1/algorithm:
-
-/usr/include/c++/14.2.1/bits/postypes.h:
-
-/usr/include/c++/14.2.1/bits/basic_ios.tcc:
-
-/usr/include/asm/posix_types_64.h:
 
 /usr/include/c++/14.2.1/filesystem:
 
@@ -4745,14 +4761,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o:
 /usr/include/bits/types/clockid_t.h:
 
 /usr/include/c++/14.2.1/string_view:
-
-/usr/include/c++/14.2.1/ext/type_traits.h:
-
-/home/maks/Programming/EndlessRunner/src/headers/Star.hpp:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/c++/14.2.1/initializer_list:
 
 /usr/include/c++/14.2.1/tr1/bessel_function.tcc:
 

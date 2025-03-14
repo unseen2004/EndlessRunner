@@ -239,4 +239,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplayScreen.hpp \
  /usr/include/c++/14.2.1/utility \
  /usr/include/c++/14.2.1/bits/stl_relops.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.hpp
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Constants.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/DebugLog.hpp

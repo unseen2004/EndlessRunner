@@ -4,6 +4,7 @@
 CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o
  /home/maks/Programming/EndlessRunner/src/cpp/Background.cpp
  /home/maks/Programming/EndlessRunner/src/headers/Background.hpp
+ /home/maks/Programming/EndlessRunner/src/headers/Constants.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -244,6 +245,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o
  /home/maks/Programming/EndlessRunner/src/headers/Background.hpp
  /home/maks/Programming/EndlessRunner/src/headers/Character.hpp
  /home/maks/Programming/EndlessRunner/src/headers/Config.hpp
+ /home/maks/Programming/EndlessRunner/src/headers/Constants.hpp
  /home/maks/Programming/EndlessRunner/src/headers/Platform.hpp
  /home/maks/Programming/EndlessRunner/src/headers/Random.hpp
  /usr/include/alloca.h
@@ -775,7 +777,9 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o
  /home/maks/Programming/EndlessRunner/src/headers/Character.hpp
  /home/maks/Programming/EndlessRunner/src/headers/Cloud.hpp
  /home/maks/Programming/EndlessRunner/src/headers/Config.hpp
+ /home/maks/Programming/EndlessRunner/src/headers/Constants.hpp
  /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.hpp
+ /home/maks/Programming/EndlessRunner/src/headers/DebugLog.hpp
  /home/maks/Programming/EndlessRunner/src/headers/GameScreen.hpp
  /home/maks/Programming/EndlessRunner/src/headers/Interface.hpp
  /home/maks/Programming/EndlessRunner/src/headers/Platform.hpp
