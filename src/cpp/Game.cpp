@@ -1,7 +1,8 @@
 #include "../headers/Game.hpp"
-#include "../headers/DebugLog.hpp"  // include debug log macros
+#include "../headers/DebugLog.hpp"
 
 bool g_exitGame = false;
+
 Game::Game() {
     InitWindow(config::SCREEN_WIDTH, config::SCREEN_HEIGHT, "Endless Runner");
     SetTargetFPS(config::FRAMES);
@@ -22,7 +23,7 @@ Game::~Game() {
     CloseWindow();
 }
 
-void Game::run() {
+auto Game::run() -> void {
     while (!WindowShouldClose() && !g_exitGame) {
         m_stateMachine.handleInput();
         m_stateMachine.update();

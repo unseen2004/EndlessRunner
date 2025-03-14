@@ -22,20 +22,19 @@
 
 namespace fs = std::filesystem;
 
-
 class GameScreen : public State {
 public:
     GameScreen(StateMachine &sm);
 
     virtual ~GameScreen();
 
-    virtual void handleInput() override;
+    auto handleInput() -> void override;
 
-    virtual void update() override;
+    auto update() -> void override;
 
-    virtual void render() override;
+    auto render() -> void override;
 
-    virtual const char *getName() const override { return "GameScreen"; }
+    auto getName() const -> const char * override { return "GameScreen"; }
 
 protected:
     StateMachine &m_stateMachine;
@@ -55,9 +54,7 @@ private:
     Font font;
     float m_invulnerability_timer = 0.5F;
     static bool s_invulnerability_active;
-
     std::chrono::steady_clock::time_point m_startTime;
-
     std::unique_ptr<Background> m_bg_background;
     std::unique_ptr<Background> m_bg_foreground;
     std::unique_ptr<Background> m_bg_midground;
@@ -78,7 +75,7 @@ private:
 
     void spawnClouds();
 
-    void spawnPlatforms(std::vector<std::unique_ptr<Platform> > &platform, bool bottom);
+    void spawnPlatforms(std::vector<std::unique_ptr<Platform> > &platforms, bool bottom);
 
     void updateSpeedBasedOnTime(std::chrono::steady_clock::time_point start_time);
 };

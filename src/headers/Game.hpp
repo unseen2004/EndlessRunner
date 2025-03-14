@@ -6,6 +6,7 @@
 #include "Config.hpp"
 
 class Game {
+private:
     StateMachine m_stateMachine;
 
 public:
@@ -13,7 +14,7 @@ public:
 
     ~Game();
 
-    void run();
+    auto run() -> void;
 };
 
 #endif // GAME_HPP
