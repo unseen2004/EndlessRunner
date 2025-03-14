@@ -35,6 +35,26 @@ namespace constants {
     constexpr float HEAD_REGION_DIVISOR = 5.0f;
     constexpr int COLLISION_THRESHOLD = 1;
     constexpr float TOP_SAMPLE_OFFSET = -1.0f;
+
+    // StarPopout.cpp constants
+    constexpr float STAR_POPOUT_DURATION = 3.0f;
+    constexpr float STAR_POPOUT_SPACING = 2.0f;
+
+    // Star.cpp constants
+    constexpr int STAR_FRAMES = 4;
+    constexpr float STAR_ANIMATION_INTERVAL = 0.1f;
+    constexpr float STAR_SCALE = 0.1f;
+    constexpr float STAR_ROTATION = 0.0f;
+    constexpr int STAR_SPAWN_MAX_ATTEMPTS = 50;
+
+    // Snow.cpp constants
+    constexpr int SNOW_MIN_SPEED = 50;
+    constexpr int SNOW_MAX_SPEED = 150;
+    constexpr float SNOW_SPEED_DIVISOR = 100.0f;
+    constexpr float SNOW_RESET_Y_OFFSET = -3.0f;
+    constexpr float SNOW_PARTICLE_RADIUS = 3.0f;
+    constexpr float SNOW_PARTICLE_ALPHA = 0.8f;
+
 }
 
 #endif // CONSTANTS_HPP

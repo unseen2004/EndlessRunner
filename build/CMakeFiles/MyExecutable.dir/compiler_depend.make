@@ -3382,6 +3382,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o: /home/maks/Programming/End
   /usr/local/include/raylib.h
 
 CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o: /home/maks/Programming/EndlessRunner/src/cpp/StateMachine.cpp \
+  /home/maks/Programming/EndlessRunner/src/headers/DebugLog.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/State.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/StateMachine.hpp \
   /usr/include/alloca.h \
