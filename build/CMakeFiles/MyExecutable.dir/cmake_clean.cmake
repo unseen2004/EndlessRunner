@@ -30,8 +30,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o"
   "CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o.d"
-  "CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o"
-  "CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o"
   "CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o"

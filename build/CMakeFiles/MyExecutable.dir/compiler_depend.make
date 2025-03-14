@@ -3672,12 +3672,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o: /home/maks/Programming/E
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h
 
-CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o: /home/maks/Programming/EndlessRunner/src/cpp/Table.cpp \
-  /home/maks/Programming/EndlessRunner/src/headers/Table.h \
-  /usr/include/stdc-predef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
-  /usr/local/include/raylib.h
-
 CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o: /home/maks/Programming/EndlessRunner/src/cpp/WelcomeScreen.cpp \
   /home/maks/Programming/EndlessRunner/src/headers/Background.h \
   /home/maks/Programming/EndlessRunner/src/headers/Character.h \
@@ -4578,8 +4572,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o:
 
 /usr/include/bits/pthreadtypes.h:
 
-/home/maks/Programming/EndlessRunner/src/headers/Table.h:
-
 /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h:
 
 /usr/include/linux/errno.h:
@@ -4933,8 +4925,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o:
 /usr/include/c++/14.2.1/string:
 
 /usr/include/pthread.h:
-
-/home/maks/Programming/EndlessRunner/src/cpp/Table.cpp:
 
 /usr/include/c++/14.2.1/debug/debug.h:
 

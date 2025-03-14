@@ -24,7 +24,6 @@ add_executable(MyExecutable
         src/cpp/Cloud.cpp
         src/cpp/Interface.cpp
         src/cpp/Platform.cpp
-        src/cpp/Table.cpp
         src/cpp/Star.cpp
         src/cpp/Snow.cpp
         src/cpp/StarPopout.cpp
