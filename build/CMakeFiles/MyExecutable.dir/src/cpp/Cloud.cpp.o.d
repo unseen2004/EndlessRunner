@@ -172,5 +172,4 @@ CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.o: \
  /usr/include/c++/14.2.1/bits/unique_ptr.h \
  /usr/include/c++/14.2.1/ext/aligned_buffer.h \
  /usr/include/c++/14.2.1/bits/fs_dir.h \
- /usr/include/c++/14.2.1/bits/fs_ops.h /usr/include/c++/14.2.1/iostream \
- /usr/local/include/raylib.h
+ /usr/include/c++/14.2.1/bits/fs_ops.h /usr/local/include/raylib.h

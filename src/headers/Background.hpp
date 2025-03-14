@@ -1,8 +1,6 @@
 #ifndef BACKGROUND_HPP
 #define BACKGROUND_HPP
-
 #include <filesystem>
-#include <iostream>
 #include "raylib.h"
 
 class Background {
@@ -15,29 +13,36 @@ protected:
     std::filesystem::path m_texturePath;
 
 public:
-    explicit Background(const std::filesystem::path &path, float speed = 0.1F, float x = 0.0f, float y = 0.0f,
-                        float m_scale = 2.0f);
+    explicit Background(const std::filesystem::path &path,
+                        float speed = 0.1F,
+                        float x = 0.0f,
+                        float y = 0.0f,
+                        float scale = 2.0f) noexcept;
 
-    ~Background();
+    ~Background() noexcept;
 
-    void resetIfOutsite();
+    auto resetIfOutsite() -> void;
 
-    void draw(float x = 0.0f, float y = 0.0f, float rotation = 0.0f, float scale = 2.0f, Color color = WHITE);
+    auto draw(float x = 0.0f,
+              float y = 0.0f,
+              float rotation = 0.0f,
+              float scale = 2.0f,
+              Color color = WHITE) -> void;
 
-    [[nodiscard]] float getX() const;
+    [[nodiscard]] auto getX() const -> float;
 
-    [[nodiscard]] float getY() const;
+    [[nodiscard]] auto getY() const -> float;
 
-    void changeSpeed(float speed);
+    auto changeSpeed(float speed) -> void;
 
-    [[nodiscard]] int getWidth() const;
+    [[nodiscard]] auto getWidth() const -> int;
 
-    void update();
+    auto update() -> void;
 
-    void applyDashBoost(float dashBoost) {
-        std::cout << "Applying dash boost to background" << std::endl;
+    auto applyDashBoost(float dashBoost) -> void {
         m_x -= dashBoost;
     }
 };
 
-#endif // BACKGROUND_HPP
+
+#endif

@@ -25,10 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replays/replay_20250314_185820_time6.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/Constants.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Constants.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Background.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Background.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Character.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Background.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Background.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Character.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Character.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

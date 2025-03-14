@@ -192,8 +192,8 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /usr/include/c++/14.2.1/pstl/glue_algorithm_defs.h \
  /usr/local/include/raylib.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Background.hpp \
- /usr/include/c++/14.2.1/iostream \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.hpp \
+ /usr/include/c++/14.2.1/iostream \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Random.hpp \
  /usr/include/c++/14.2.1/random /usr/include/c++/14.2.1/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
