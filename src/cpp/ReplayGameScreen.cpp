@@ -1,11 +1,13 @@
 // File: src/cpp/ReplayGameScreen.cpp
 #include "../headers/ReplayGameScreen.hpp"
 #include "../headers/ReplayScreen.hpp"
+#include "../headers/DebugLog.hpp"
+#include "../headers/Constants.hpp"
 
 ReplayGameScreen::ReplayGameScreen(StateMachine &sm, const std::string &replayFile)
     : GameScreen(sm) // Call base class constructor
 {
-    std::cout<<"in replaygamescreen"<<std::endl;
+    LOG("Creating ReplayGameScreen with file: " << replayFile);
     replay = true;
     m_replaySystem = std::make_unique<ReplaySystem>();
 
@@ -17,17 +19,19 @@ ReplayGameScreen::ReplayGameScreen(StateMachine &sm, const std::string &replayFi
     } else {
         // Handle loading error
         m_replayFinished = true;
+        ERR("Failed to load replay file: " << replayFile);
     }
 }
 
 ReplayGameScreen::~ReplayGameScreen() {
-    std::cout<<"Destructing ReplayGameScreen"<<std::endl;
+    LOG("Destructing ReplayGameScreen");
     // Don't save the replay when we're just playing one back
 }
 
 void ReplayGameScreen::handleInput() {
     // Only check for exit keys during replay
     if (IsKeyPressed(KEY_F)) {
+        LOG("User pressed F - returning to replay selection");
         m_stateMachine.changeState(std::make_unique<ReplayScreen>(m_stateMachine));
     }
 }
@@ -38,6 +42,7 @@ void ReplayGameScreen::update() {
 
         // Check if user wants to return to replay selection screen
         if (IsKeyPressed(KEY_SPACE) || IsKeyPressed(KEY_ENTER) || IsKeyPressed(KEY_F)) {
+            LOG("Replay finished - user pressed key to return");
             m_stateMachine.changeState(std::make_unique<ReplayScreen>(m_stateMachine));
         }
         return;
@@ -62,24 +67,28 @@ void ReplayGameScreen::render() {
     GameScreen::render();
 
     // Add an overlay indicating this is a replay
-    DrawRectangle(10, 10, 120, 30, Fade(BLACK, 0.7f));
-    DrawText("REPLAY", 15, 15, 20, RED);
+    DrawRectangle(constants::REPLAY_OVERLAY_X, constants::REPLAY_OVERLAY_Y,
+                  constants::REPLAY_OVERLAY_WIDTH, constants::REPLAY_OVERLAY_HEIGHT,
+                  Fade(BLACK, constants::REPLAY_OVERLAY_ALPHA));
+    DrawText("REPLAY", constants::REPLAY_TEXT_X, constants::REPLAY_TEXT_Y,
+             constants::REPLAY_TEXT_SIZE, RED);
 
     // Show "replay finished" message when complete
     if (m_replayFinished) {
-        const char* msg = "Replay Finished - Press SPACE to return";
-        int textWidth = MeasureText(msg, 30);
+        const char* msg = constants::REPLAY_FINISHED_MESSAGE;
+        int textWidth = MeasureText(msg, constants::REPLAY_FINISHED_TEXT_SIZE);
         DrawRectangle(
-            GetScreenWidth()/2 - textWidth/2 - 10,
-            GetScreenHeight()/2 - 20,
-            textWidth + 20, 40,
-            Fade(BLACK, 0.7f)
+            GetScreenWidth()/2 - textWidth/2 - constants::REPLAY_FINISHED_PADDING,
+            GetScreenHeight()/2 - constants::REPLAY_FINISHED_HEIGHT/2,
+            textWidth + constants::REPLAY_FINISHED_PADDING * 2,
+            constants::REPLAY_FINISHED_HEIGHT,
+            Fade(BLACK, constants::REPLAY_FINISHED_ALPHA)
         );
         DrawText(
             msg,
             GetScreenWidth()/2 - textWidth/2,
-            GetScreenHeight()/2 - 15,
-            30, WHITE
+            GetScreenHeight()/2 - constants::REPLAY_FINISHED_TEXT_OFFSET,
+            constants::REPLAY_FINISHED_TEXT_SIZE, WHITE
         );
     }
 }
