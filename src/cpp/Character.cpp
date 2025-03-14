@@ -95,19 +95,6 @@ Rectangle Character::getCollisionRect() const {
     rec.height = m_frame_rec.height;
     return rec;
 }
-bool Character::checkObstacleCollision(const Obstacle &obstacle) const {
-    Rectangle rec = this->getCollisionRect();
-    const int numSamples = 3;
-    for (int i = 0; i < numSamples; i++) {
-        float sampleX = rec.x + (rec.width * i) / (numSamples - 1);
-        float sampleY = rec.y + rec.height / 2;
-        Vector2 samplePoint = { sampleX, sampleY };
-        if (obstacle.checkCollision(samplePoint)) {
-            return true;
-        }
-    }
-    return false;
-}
 bool Character::checkGrounded(const std::vector<std::unique_ptr<Platform>>& platforms) {
     float character_bottom = m_position.y + m_frame_rec.height;
     float character_left = m_position.x;

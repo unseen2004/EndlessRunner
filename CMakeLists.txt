@@ -23,7 +23,6 @@ add_executable(MyExecutable
         src/cpp/Character.cpp
         src/cpp/Cloud.cpp
         src/cpp/Interface.cpp
-        src/cpp/Obstacle.cpp
         src/cpp/Platform.cpp
         src/cpp/Table.cpp
         src/cpp/Star.cpp

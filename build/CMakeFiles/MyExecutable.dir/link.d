@@ -12,7 +12,6 @@ MyExecutable: \
   CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o \
-  CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o \
@@ -73,8 +72,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o:
 CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.o:
 
 CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o:
-
-CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o:
 
 CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o:
 

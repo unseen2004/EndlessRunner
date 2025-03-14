@@ -231,7 +231,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/DeadScreen.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Character.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Obstacle.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Star.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Interface.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Snow.h \

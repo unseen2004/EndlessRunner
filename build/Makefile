@@ -297,30 +297,6 @@ src/cpp/Interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.s
 .PHONY : src/cpp/Interface.cpp.s
 
-src/cpp/Obstacle.o: src/cpp/Obstacle.cpp.o
-.PHONY : src/cpp/Obstacle.o
-
-# target to build an object file
-src/cpp/Obstacle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o
-.PHONY : src/cpp/Obstacle.cpp.o
-
-src/cpp/Obstacle.i: src/cpp/Obstacle.cpp.i
-.PHONY : src/cpp/Obstacle.i
-
-# target to preprocess a source file
-src/cpp/Obstacle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.i
-.PHONY : src/cpp/Obstacle.cpp.i
-
-src/cpp/Obstacle.s: src/cpp/Obstacle.cpp.s
-.PHONY : src/cpp/Obstacle.s
-
-# target to generate assembly for a file
-src/cpp/Obstacle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.s
-.PHONY : src/cpp/Obstacle.cpp.s
-
 src/cpp/Platform.o: src/cpp/Platform.cpp.o
 .PHONY : src/cpp/Platform.o
 
@@ -543,9 +519,6 @@ help:
 	@echo "... src/cpp/Interface.o"
 	@echo "... src/cpp/Interface.i"
 	@echo "... src/cpp/Interface.s"
-	@echo "... src/cpp/Obstacle.o"
-	@echo "... src/cpp/Obstacle.i"
-	@echo "... src/cpp/Obstacle.s"
 	@echo "... src/cpp/Platform.o"
 	@echo "... src/cpp/Platform.i"
 	@echo "... src/cpp/Platform.s"

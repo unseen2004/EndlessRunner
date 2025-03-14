@@ -216,5 +216,4 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o: \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/opt_random.h \
  /usr/include/c++/14.2.1/bits/random.tcc /usr/include/c++/14.2.1/numeric \
  /usr/include/c++/14.2.1/bits/stl_numeric.h \
- /usr/include/c++/14.2.1/pstl/glue_numeric_defs.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Obstacle.h
+ /usr/include/c++/14.2.1/pstl/glue_numeric_defs.h

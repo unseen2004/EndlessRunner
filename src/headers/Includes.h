@@ -9,7 +9,6 @@
 #include "DeadScreen.h"
 #include "Game.h"
 #include "Interface.h"
-#include "Obstacle.h"
 #include "Platform.h"
 #include "StateMachine.h"
 #include "WelcomeScreen.h"

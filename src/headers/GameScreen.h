@@ -17,7 +17,6 @@
 #include "StateMachine.h"
 #include "Config.h"
 #include "Character.h"
-#include "Obstacle.h"
 #include "Star.hpp"
 #include "Interface.h"
 #include "Snow.h"
@@ -73,7 +72,6 @@ private:
     std::vector<std::unique_ptr<Platform> > m_platforms_bottom;
     std::vector<std::unique_ptr<Platform> > m_platforms_top;
     std::unique_ptr<Character> m_character;
-    std::map<Platform *, std::unique_ptr<Obstacle> > m_obstacles{};
     int m_stars_collected = 0;
     std::unique_ptr<Interface> m_interface;
     std::unique_ptr<Snow> m_snow;

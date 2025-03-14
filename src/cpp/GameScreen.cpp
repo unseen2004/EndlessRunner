@@ -119,17 +119,11 @@ void GameScreen::updateSpeedBasedOnTime(std::chrono::steady_clock::time_point st
     }
     for (auto &platform : m_platforms_bottom) {
         platform->changeSpeed(m_speed);
-        auto it = m_obstacles.find(platform.get());
-        if (it != m_obstacles.end() && it->second) {
-            it->second->changeSpeed(m_speed);
-        }
+
     }
     for (auto &platform : m_platforms_top) {
         platform->changeSpeed(m_speed);
-        auto it = m_obstacles.find(platform.get());
-        if (it != m_obstacles.end() && it->second) {
-            it->second->changeSpeed(m_speed);
-        }
+
 
     }
     for (auto &star : m_stars) {
@@ -187,11 +181,6 @@ void GameScreen::spawnPlatforms(std::vector<std::unique_ptr<Platform>>& platform
                 int spawnY = bottom ? Random::get(700, config::SCREEN_HEIGHT - 300) : Random::get(0, 100);
                 // Create a new platform before adding to the vector.
                 auto newPlatform = std::make_unique<Platform>(m_speed, config::SCREEN_WIDTH, spawnY, 1.0f);
-                // Now create an obstacle for this platform if needed.
-                if (Random::get(0, 10) < 30) {
-                    m_obstacles[newPlatform.get()] = std::make_unique<Obstacle>(*newPlatform, m_speed, Random::get(2, 4));
-                }
-                // Push the platform into the vector.
                 platforms.push_back(std::move(newPlatform));
             } catch (const std::exception& e) {
                 std::cerr << "Error: " << e.what() << std::endl;
@@ -215,21 +204,7 @@ void GameScreen::update() {
     spawnPlatforms(m_platforms_top, false);
     spawnStars();
     m_character->update(m_input_jump, m_input_dash, m_platforms_bottom, m_platforms_top);
-    for (auto it = m_obstacles.begin(); it != m_obstacles.end(); ) {
-        if (m_character->checkObstacleCollision(*it->second)) {
-            if (m_character->isDashing()) {
-                // If dashing, destroy the obstacle.
-                it = m_obstacles.erase(it);
-                continue;
-            } else {
-                // If not dashing, kill the character.
-                m_character->kill();
-                break;
-            }
-        }
-        ++it;
-    }
-       Rectangle characterRect = m_character->getCollisionRect();
+      Rectangle characterRect = m_character->getCollisionRect();
 for (auto it = m_stars.begin(); it != m_stars.end();) {
     (*it)->update();
     if (CheckCollisionRecs(m_character->getCollisionRect(), (*it)->getBoundingBox())) {
@@ -291,13 +266,9 @@ m_platforms_bottom.erase(
         m_platforms_bottom.begin(), m_platforms_bottom.end(),
         [this](const std::unique_ptr<Platform>& platform) -> bool {
             if (!platform->update()) {
-                m_obstacles.erase(platform.get());
                 return true;
             }
-            auto it = m_obstacles.find(platform.get());
-            if (it != m_obstacles.end()) {
-                it->second->update();
-            }
+
             return false;
         }
     ),
@@ -309,13 +280,9 @@ m_platforms_top.erase(
         m_platforms_top.begin(), m_platforms_top.end(),
         [this](const std::unique_ptr<Platform>& platform) -> bool {
             if (!platform->update()) {
-                m_obstacles.erase(platform.get());
                 return true;
             }
-            auto it = m_obstacles.find(platform.get());
-            if (it != m_obstacles.end()) {
-                it->second->update();
-            }
+
             return false;
         }
     ),
@@ -353,17 +320,11 @@ void GameScreen::render() {
 // Render loop for platforms
 for (auto &platform : m_platforms_bottom) {
     platform->draw();
-    auto it = m_obstacles.find(platform.get());
-    if (it != m_obstacles.end()) {
-        it->second->draw();
-    }
+
 }
 for (auto &platform : m_platforms_top) {
     platform->draw();
-    auto it = m_obstacles.find(platform.get());
-    if (it != m_obstacles.end()) {
-        it->second->draw();
-    }
+
 }
 for(auto &star : m_stars) {
     star->draw();
