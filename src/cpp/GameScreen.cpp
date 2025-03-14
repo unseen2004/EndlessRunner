@@ -171,17 +171,14 @@ auto GameScreen::update() -> void {
 auto GameScreen::render() -> void {
     BeginDrawing();
     ClearBackground(GetColor(0x052c46ff));
+
     m_bg_sky->draw(m_bg_sky->getX());
     m_bg_sky->draw(m_bg_sky->getWidth() * 2 + m_bg_sky->getX());
     m_bg_background->draw(m_bg_background->getX());
     m_bg_background->draw(m_bg_background->getWidth() * 2 + m_bg_background->getX());
     m_bg_midground->draw(m_bg_midground->getX());
     m_bg_midground->draw(m_bg_midground->getWidth() * 2 + m_bg_midground->getX());
-    m_bg_foreground->draw(m_bg_foreground->getX());
-    m_bg_foreground->draw(m_bg_foreground->getWidth() * 2 + m_bg_foreground->getX());
-    for (auto &cloud : m_clouds) {
-        cloud->draw();
-    }
+
     for (auto &platform : m_platforms_bottom) {
         platform->draw();
     }
@@ -191,18 +188,29 @@ auto GameScreen::render() -> void {
     for (auto &star : m_stars) {
         star->draw();
     }
+
     m_character->draw();
-    if (config::snow && m_snow) {
-        m_snow->draw();
+
+    m_bg_foreground->draw(m_bg_foreground->getX());
+    m_bg_foreground->draw(m_bg_foreground->getWidth() * 2 + m_bg_foreground->getX());
+
+    for (auto &popout : m_popouts) {
+        popout->draw();
     }
+
     if (config::fog) {
         Color fogColor = Fade(LIGHTGRAY, 0.4f);
         DrawRectangle(0, 0, config::SCREEN_WIDTH, config::SCREEN_HEIGHT, fogColor);
     }
-    m_interface->draw(m_speed, m_stars_collected);
-    for (auto &popout : m_popouts) {
-        popout->draw();
+
+    for (auto &cloud : m_clouds) {
+        cloud->draw();
     }
+
+    if (config::snow && m_snow) {
+        m_snow->draw();
+    }
+
     if (!m_character->isAlive()) {
         const char *msg = "You died";
         int fontSize = 40;
@@ -218,6 +226,9 @@ auto GameScreen::render() -> void {
         }
         DrawText(msg, pos.x, pos.y, fontSize, mainColor);
     }
+
+    m_interface->draw(m_speed, m_stars_collected);
+
     EndDrawing();
 }
 
