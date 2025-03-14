@@ -182,4 +182,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o: \
  /usr/include/c++/14.2.1/bits/unique_ptr.h \
  /usr/include/c++/14.2.1/ext/aligned_buffer.h \
  /usr/include/c++/14.2.1/bits/fs_dir.h \
- /usr/include/c++/14.2.1/bits/fs_ops.h /usr/local/include/raylib.h
+ /usr/include/c++/14.2.1/bits/fs_ops.h /usr/local/include/raylib.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/DebugLog.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Constants.hpp

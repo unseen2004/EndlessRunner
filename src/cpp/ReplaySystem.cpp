@@ -1,17 +1,21 @@
-// File: `src/cpp/ReplaySystem.cpp`
 #include "../headers/ReplaySystem.hpp"
-
+#include "../headers/DebugLog.hpp"
+#include "../headers/Constants.hpp"
 
 namespace fs = std::filesystem;
+
 ReplaySystem::ReplaySystem()
     : m_currentFrameIndex(0), m_playbackActive(false) {
     // Default setup data
     m_setupData.snow = false;
     m_setupData.fog = false;
-    m_setupData.randomSeed = GetRandomValue(0, 100000);
+    m_setupData.randomSeed = GetRandomValue(0, constants::RANDOM_SEED_MAX);
+    LOG("ReplaySystem initialized");
 }
 
-ReplaySystem::~ReplaySystem() { }
+ReplaySystem::~ReplaySystem() {
+    LOG("ReplaySystem destroyed");
+}
 
 void ReplaySystem::addInputFrame(bool jumpPressed, bool dashPressed, float deltaTime) {
     InputFrame frame;
@@ -24,7 +28,7 @@ void ReplaySystem::addInputFrame(bool jumpPressed, bool dashPressed, float delta
 void ReplaySystem::saveToFile(const std::string &filename) {
     std::ofstream file(filename, std::ios::binary);
     if (!file.is_open()) {
-        std::cerr << "Error opening file for writing: " << filename << std::endl;
+        ERR("Error opening file for writing: " << filename);
         return;
     }
 
@@ -46,10 +50,10 @@ void ReplaySystem::saveToFile(const std::string &filename) {
     auto now = std::chrono::system_clock::now();
     auto time_t_val = std::chrono::system_clock::to_time_t(now);
     std::tm* localTime = std::localtime(&time_t_val);
-    char buffer[80];
+    char buffer[constants::TIMESTAMP_BUFFER_SIZE];
     strftime(buffer, sizeof(buffer), "%Y%m%d_%H%M%S", localTime);
 
-    // Calculate final time (example: total time from frames)
+    // Calculate final time
     float finalTime = 0.0f;
     for (const auto& frame : m_inputFrames) {
         finalTime += frame.deltaTime;
@@ -67,18 +71,18 @@ void ReplaySystem::saveToFile(const std::string &filename) {
                               ".dat")).string();
 
     // Rename the file if using the default filename
-    if (filename == "history.dat") {
+    if (filename == constants::DEFAULT_REPLAY_FILENAME) {
         std::rename(filename.c_str(), newFilename.c_str());
+        LOG("Replay saved as " << newFilename);
     }
 }
-// Language: cpp
-// File: src/cpp/ReplaySystem.cpp
+
 bool ReplaySystem::loadFromFile(const std::string &filename) {
     // Create full path: current directory / replays / filename
     fs::path fullPath = fs::current_path() / "replays" / filename;
     std::ifstream file(fullPath, std::ios::binary);
     if (!file.is_open()) {
-        std::cerr << "Error opening file for reading: " << fullPath << std::endl;
+        ERR("Error opening file for reading: " << fullPath);
         return false;
     }
 
@@ -99,12 +103,14 @@ bool ReplaySystem::loadFromFile(const std::string &filename) {
     }
 
     file.close();
+    LOG("Loaded " << frameCount << " frames from replay file " << filename);
     return true;
 }
 
 void ReplaySystem::startPlayback() {
     m_currentFrameIndex = 0;
     m_playbackActive = true;
+    LOG("Starting replay playback");
 }
 
 void ReplaySystem::advanceFrame() {
@@ -112,6 +118,7 @@ void ReplaySystem::advanceFrame() {
         m_currentFrameIndex++;
         if (m_currentFrameIndex >= m_inputFrames.size()) {
             m_playbackActive = false;
+            LOG("Replay playback finished");
         }
     }
 }

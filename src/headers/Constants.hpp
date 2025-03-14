@@ -54,7 +54,22 @@ namespace constants {
     constexpr float SNOW_RESET_Y_OFFSET = -3.0f;
     constexpr float SNOW_PARTICLE_RADIUS = 3.0f;
     constexpr float SNOW_PARTICLE_ALPHA = 0.8f;
+    // ReplaySystem.cpp constants
+    constexpr int RANDOM_SEED_MAX = 100000;
+    constexpr int TIMESTAMP_BUFFER_SIZE = 80;
+    constexpr const char* DEFAULT_REPLAY_FILENAME = "history.dat";
 
+    // ReplayScreen.cpp constants
+    constexpr const char* NO_SAVED_GAMES_TEXT = "No saved games found";
+    constexpr const char* REPLAY_SCREEN_TITLE = "Select a Saved Game: (Enter to replay, F to go back)";
+    constexpr float REPLAY_TITLE_X = 50.0f;
+    constexpr float REPLAY_TITLE_Y = 50.0f;
+    constexpr float REPLAY_TITLE_SIZE = 20.0f;
+    constexpr float REPLAY_TEXT_SPACING = 1.0f;
+    constexpr float REPLAY_LIST_START_Y = 100.0f;
+    constexpr float REPLAY_LIST_X = 50.0f;
+    constexpr float REPLAY_ITEM_HEIGHT = 30.0f;
+    constexpr int REPLAY_ITEM_FONT_SIZE = 20;
 }
 
 #endif // CONSTANTS_HPP

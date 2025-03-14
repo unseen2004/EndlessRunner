@@ -243,4 +243,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o: \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/14.2.1/bits/fstream.tcc \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplayScreen.hpp \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplayGameScreen.hpp
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplayGameScreen.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/DebugLog.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Constants.hpp

@@ -1,23 +1,22 @@
-// File: src/cpp/ReplayScreen.cpp
 #include "../headers/ReplayScreen.hpp"
 #include "../headers/WelcomeScreen.hpp"
 #include "../headers/ReplayGameScreen.hpp"
-
+#include "../headers/DebugLog.hpp"
+#include "../headers/Constants.hpp"
 
 namespace fs = std::filesystem;
 
 ReplayScreen::ReplayScreen(StateMachine &sm)
     : m_stateMachine(sm), m_selectedIndex(0), m_inReplay(false)
 {
+    LOG("ReplayScreen initialized");
     loadSavedGames();
 }
 
 ReplayScreen::~ReplayScreen() {
-    std::cout << "Destructing ReplayScreen" << std::endl;
+    LOG("ReplayScreen destroyed");
 }
 
-// File: src/cpp/ReplayScreen.cpp
-// Language: cpp
 void ReplayScreen::loadSavedGames() {
     m_savedGames.clear();
     fs::path replayDir = fs::current_path() / "replays";
@@ -30,14 +29,14 @@ void ReplayScreen::loadSavedGames() {
         }
     }
     if (m_savedGames.empty()) {
-        m_savedGames.push_back({"", "No saved games found"});
+        m_savedGames.push_back({"", constants::NO_SAVED_GAMES_TEXT});
     }
     m_selectedIndex = 0;
+    LOG("Loaded " << m_savedGames.size() << " saved replays");
 }
 
 void ReplayScreen::startReplay(const std::string &filename) {
-    // Change state to a new ReplayGameScreen passing the selected replay file.
-    std::cout<<"in start replay"<<std::endl;
+    LOG("Starting replay: " << filename);
     m_stateMachine.changeState(std::make_unique<ReplayGameScreen>(m_stateMachine, filename));
 }
 
@@ -55,6 +54,7 @@ void ReplayScreen::handleInput() {
             }
         }
         if (IsKeyPressed(KEY_F)) {
+            LOG("Returning to welcome screen");
             m_stateMachine.changeState(std::make_unique<WelcomeScreen>(m_stateMachine));
         }
     }
@@ -67,12 +67,17 @@ void ReplayScreen::update() {
 void ReplayScreen::render() {
     BeginDrawing();
     ClearBackground(GetColor(0x052c46ff));
-    DrawTextEx(GetFontDefault(), "Select a Saved Game: (Enter to replay, F to go back)",
-               {50, 50}, 20, 1, WHITE);
-    float startY = 100.0f;
+    DrawTextEx(GetFontDefault(), constants::REPLAY_SCREEN_TITLE,
+               {constants::REPLAY_TITLE_X, constants::REPLAY_TITLE_Y},
+               constants::REPLAY_TITLE_SIZE, constants::REPLAY_TEXT_SPACING, WHITE);
+
+    float startY = constants::REPLAY_LIST_START_Y;
     for (size_t i = 0; i < m_savedGames.size(); i++) {
         Color color = (i == m_selectedIndex) ? RED : WHITE;
-        DrawText(m_savedGames[i].second.c_str(), 50, startY + i * 30, 20, color);
+        DrawText(m_savedGames[i].second.c_str(),
+                constants::REPLAY_LIST_X,
+                startY + i * constants::REPLAY_ITEM_HEIGHT,
+                constants::REPLAY_ITEM_FONT_SIZE, color);
     }
     EndDrawing();
 }
