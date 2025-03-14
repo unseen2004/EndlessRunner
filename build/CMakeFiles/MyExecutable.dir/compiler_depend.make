@@ -328,15 +328,11 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o: /home/maks/Programming/Endl
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/14.2.1/backward/auto_ptr.h \
   /usr/include/c++/14.2.1/backward/binders.h \
   /usr/include/c++/14.2.1/bit \
-  /usr/include/c++/14.2.1/bits/align.h \
   /usr/include/c++/14.2.1/bits/alloc_traits.h \
   /usr/include/c++/14.2.1/bits/allocated_ptr.h \
   /usr/include/c++/14.2.1/bits/allocator.h \
-  /usr/include/c++/14.2.1/bits/atomic_base.h \
-  /usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h \
   /usr/include/c++/14.2.1/bits/basic_ios.h \
   /usr/include/c++/14.2.1/bits/basic_ios.tcc \
   /usr/include/c++/14.2.1/bits/basic_string.h \
@@ -388,7 +384,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o: /home/maks/Programming/Endl
   /usr/include/c++/14.2.1/bits/refwrap.h \
   /usr/include/c++/14.2.1/bits/requires_hosted.h \
   /usr/include/c++/14.2.1/bits/shared_ptr.h \
-  /usr/include/c++/14.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/14.2.1/bits/shared_ptr_base.h \
   /usr/include/c++/14.2.1/bits/specfun.h \
   /usr/include/c++/14.2.1/bits/sstream.tcc \
@@ -402,8 +397,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o: /home/maks/Programming/Endl
   /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/14.2.1/bits/stl_numeric.h \
   /usr/include/c++/14.2.1/bits/stl_pair.h \
-  /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.2.1/bits/stl_vector.h \
   /usr/include/c++/14.2.1/bits/streambuf.tcc \
@@ -446,16 +439,13 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o: /home/maks/Programming/Endl
   /usr/include/c++/14.2.1/iomanip \
   /usr/include/c++/14.2.1/ios \
   /usr/include/c++/14.2.1/iosfwd \
-  /usr/include/c++/14.2.1/iostream \
   /usr/include/c++/14.2.1/istream \
   /usr/include/c++/14.2.1/limits \
   /usr/include/c++/14.2.1/locale \
-  /usr/include/c++/14.2.1/memory \
   /usr/include/c++/14.2.1/new \
   /usr/include/c++/14.2.1/numeric \
   /usr/include/c++/14.2.1/ostream \
   /usr/include/c++/14.2.1/pstl/execution_defs.h \
-  /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
   /usr/include/c++/14.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/14.2.1/pstl/pstl_config.h \
   /usr/include/c++/14.2.1/random \
@@ -2006,15 +1996,11 @@ CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o: /home/maks/Programming/Endle
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/14.2.1/backward/auto_ptr.h \
   /usr/include/c++/14.2.1/backward/binders.h \
   /usr/include/c++/14.2.1/bit \
-  /usr/include/c++/14.2.1/bits/align.h \
   /usr/include/c++/14.2.1/bits/alloc_traits.h \
   /usr/include/c++/14.2.1/bits/allocated_ptr.h \
   /usr/include/c++/14.2.1/bits/allocator.h \
-  /usr/include/c++/14.2.1/bits/atomic_base.h \
-  /usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h \
   /usr/include/c++/14.2.1/bits/basic_ios.h \
   /usr/include/c++/14.2.1/bits/basic_ios.tcc \
   /usr/include/c++/14.2.1/bits/basic_string.h \
@@ -2066,7 +2052,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o: /home/maks/Programming/Endle
   /usr/include/c++/14.2.1/bits/refwrap.h \
   /usr/include/c++/14.2.1/bits/requires_hosted.h \
   /usr/include/c++/14.2.1/bits/shared_ptr.h \
-  /usr/include/c++/14.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/14.2.1/bits/shared_ptr_base.h \
   /usr/include/c++/14.2.1/bits/specfun.h \
   /usr/include/c++/14.2.1/bits/sstream.tcc \
@@ -2080,8 +2065,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o: /home/maks/Programming/Endle
   /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/14.2.1/bits/stl_numeric.h \
   /usr/include/c++/14.2.1/bits/stl_pair.h \
-  /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.2.1/bits/stl_vector.h \
   /usr/include/c++/14.2.1/bits/streambuf.tcc \
@@ -2128,12 +2111,10 @@ CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o: /home/maks/Programming/Endle
   /usr/include/c++/14.2.1/istream \
   /usr/include/c++/14.2.1/limits \
   /usr/include/c++/14.2.1/locale \
-  /usr/include/c++/14.2.1/memory \
   /usr/include/c++/14.2.1/new \
   /usr/include/c++/14.2.1/numeric \
   /usr/include/c++/14.2.1/ostream \
   /usr/include/c++/14.2.1/pstl/execution_defs.h \
-  /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
   /usr/include/c++/14.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/14.2.1/pstl/pstl_config.h \
   /usr/include/c++/14.2.1/random \
@@ -4742,11 +4723,31 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o:
 
 /usr/include/c++/14.2.1/utility:
 
+/usr/include/c++/14.2.1/pstl/glue_memory_defs.h:
+
+/usr/include/c++/14.2.1/memory:
+
 /usr/include/c++/14.2.1/fstream:
+
+CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o:
+
+/usr/include/c++/14.2.1/bits/stl_tempbuf.h:
 
 /usr/include/c++/14.2.1/bits/stl_heap.h:
 
 /usr/include/c++/14.2.1/bits/stl_algo.h:
+
+/usr/include/c++/14.2.1/bits/shared_ptr_atomic.h:
+
+/usr/lib/crtn.o:
+
+/usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h:
+
+/usr/lib/libgcc_s.so:
+
+/usr/include/c++/14.2.1/bits/atomic_base.h:
+
+/usr/include/c++/14.2.1/bits/align.h:
 
 /home/maks/Programming/EndlessRunner/src/headers/WelcomeScreen.hpp:
 
@@ -4788,9 +4789,9 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o:
 
 /usr/include/c++/14.2.1/random:
 
-/usr/include/c++/14.2.1/pstl/glue_memory_defs.h:
+/usr/include/c++/14.2.1/backward/auto_ptr.h:
 
-/usr/include/c++/14.2.1/memory:
+/usr/include/c++/14.2.1/pstl/glue_numeric_defs.h:
 
 /usr/lib/ld-linux-x86-64.so.2:
 
@@ -4800,17 +4801,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o:
 
 /usr/include/c++/14.2.1/bits/stl_vector.h:
 
-CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o:
-
-/usr/include/c++/14.2.1/bits/stl_tempbuf.h:
-
-/usr/include/c++/14.2.1/bits/shared_ptr_atomic.h:
-
 /usr/include/c++/14.2.1/bits/ptr_traits.h:
-
-/usr/include/c++/14.2.1/bits/stl_numeric.h:
-
-/usr/include/c++/14.2.1/bits/ostream_insert.h:
 
 CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o:
 
@@ -4843,6 +4834,10 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o:
 /usr/include/c++/14.2.1/bits/hash_bytes.h:
 
 /usr/include/c++/14.2.1/bits/istream.tcc:
+
+/usr/include/c++/14.2.1/bits/ostream_insert.h:
+
+/usr/include/c++/14.2.1/bits/stl_numeric.h:
 
 /usr/include/bits/types/struct_tm.h:
 
@@ -4929,10 +4924,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o:
 /usr/include/bits/waitflags.h:
 
 /usr/include/ctype.h:
-
-/usr/include/c++/14.2.1/bits/stl_uninitialized.h:
-
-/usr/include/bits/types/struct_sched_param.h:
 
 /usr/include/bits/types/struct_itimerspec.h:
 
@@ -5120,6 +5111,10 @@ CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/c++/14.2.1/bits/stl_uninitialized.h:
+
 /usr/include/c++/14.2.1/iostream:
 
 /usr/include/asm/errno.h:
@@ -5226,10 +5221,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o:
 
 /usr/include/c++/14.2.1/cerrno:
 
-/usr/include/c++/14.2.1/pstl/glue_numeric_defs.h:
-
-/usr/include/c++/14.2.1/backward/auto_ptr.h:
-
 /usr/include/wchar.h:
 
 /usr/include/c++/14.2.1/clocale:
@@ -5320,12 +5311,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/c++/14.2.1/bits/stl_bvector.h:
-
-/usr/include/c++/14.2.1/bits/std_abs.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
 /home/maks/Programming/EndlessRunner/src/cpp/Cloud.cpp:
@@ -5337,6 +5322,12 @@ CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o:
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/messages_members.h:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/time_members.h:
+
+/usr/include/c++/14.2.1/bits/std_abs.h:
+
+/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/14.2.1/bits/stl_bvector.h:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
 
@@ -5386,10 +5377,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h:
 
-/usr/lib/libgcc_s.so:
-
-/usr/include/c++/14.2.1/bits/atomic_base.h:
-
 /home/maks/Programming/EndlessRunner/src/headers/Character.hpp:
 
 CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o:
@@ -5406,12 +5393,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o:
 
 /usr/include/bits/fp-fast.h:
 
-/usr/lib/crtn.o:
-
-/usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h:
-
 /usr/include/bits/libm-simd-decl-stubs.h:
 
 /usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/c++/14.2.1/bits/align.h:

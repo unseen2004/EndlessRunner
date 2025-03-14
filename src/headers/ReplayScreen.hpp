@@ -6,10 +6,8 @@
 #include <utility>
 #include "raylib.h"
 #include <filesystem>
-#include <iostream>
 #include "State.hpp"
 #include "StateMachine.hpp"
-
 
 class ReplayScreen : public State {
 public:
@@ -17,13 +15,13 @@ public:
 
     ~ReplayScreen();
 
-    void handleInput() override;
+    auto handleInput() -> void override;
 
-    void update() override;
+    auto update() -> void override;
 
-    void render() override;
+    auto render() -> void override;
 
-    const char *getName() const override { return "ReplayScreen"; }
+    [[nodiscard]] auto getName() const -> const char * override { return "ReplayScreen"; }
 
 private:
     StateMachine &m_stateMachine;
@@ -31,9 +29,9 @@ private:
     int m_selectedIndex;
     bool m_inReplay;
 
-    void loadSavedGames();
+    auto loadSavedGames() -> void;
 
-    void startReplay(const std::string &filename);
+    auto startReplay(const std::string &filename) -> void;
 };
 
-#endif // REPLAYSCREEN_HPP
+#endif

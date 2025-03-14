@@ -25,19 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/MyExecutable" beforeDir="false" afterPath="$PROJECT_DIR$/build/MyExecutable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/Interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Interface.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/Platform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Platform.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/Interface.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Interface.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/Platform.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Platform.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/ReplayGameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplayGameScreen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/ReplayScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplayScreen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/ReplaySystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplaySystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/ReplayGameScreen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/ReplayGameScreen.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/ReplayScreen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/ReplayScreen.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/ReplaySystem.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/ReplaySystem.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

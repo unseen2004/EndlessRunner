@@ -3,14 +3,9 @@
 
 #include <vector>
 #include <fstream>
-#include <iostream>
 #include <chrono>
 #include <stdexcept>
 #include <filesystem>
-#include <chrono>
-#include <iomanip>
-#include <sstream>
-#include <cstdio>
 #include "raylib.h"
 
 struct InputFrame {
@@ -31,22 +26,22 @@ public:
 
     ~ReplaySystem();
 
-    void addInputFrame(bool jumpPressed, bool dashPressed, float deltaTime);
+    auto addInputFrame(bool jumpPressed, bool dashPressed, float deltaTime) -> void;
 
-    void saveToFile(const std::string &filename);
+    auto saveToFile(const std::string &filename) -> void;
 
-    bool loadFromFile(const std::string &filename);
+    auto loadFromFile(const std::string &filename) -> bool;
 
-    void startPlayback();
+    auto startPlayback() -> void;
 
-    void advanceFrame();
+    auto advanceFrame() -> void;
 
-    bool isPlaybackFinished() const;
+    [[nodiscard]] auto isPlaybackFinished() const -> bool;
 
-    const InputFrame &getCurrentInput() const;
+    [[nodiscard]] auto getCurrentInput() const -> const InputFrame &;
 
-    GameSetupData &getSetupData() { return m_setupData; }
-    const GameSetupData &getSetupData() const { return m_setupData; }
+    auto getSetupData() -> GameSetupData & { return m_setupData; }
+    [[nodiscard]] auto getSetupData() const -> const GameSetupData & { return m_setupData; }
 
 private:
     std::vector<InputFrame> m_inputFrames;
@@ -55,4 +50,4 @@ private:
     bool m_playbackActive;
 };
 
-#endif // REPLAYSYSTEM_HPP
+#endif

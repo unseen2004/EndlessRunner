@@ -179,10 +179,10 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o: \
  /usr/include/c++/14.2.1/bits/unique_ptr.h \
  /usr/include/c++/14.2.1/ext/aligned_buffer.h \
  /usr/include/c++/14.2.1/bits/fs_dir.h \
- /usr/include/c++/14.2.1/bits/fs_ops.h /usr/include/c++/14.2.1/iostream \
+ /usr/include/c++/14.2.1/bits/fs_ops.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/State.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/StateMachine.hpp \
- /usr/include/c++/14.2.1/memory \
+ /usr/include/c++/14.2.1/iostream /usr/include/c++/14.2.1/memory \
  /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
  /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
  /usr/include/c++/14.2.1/bits/align.h \
