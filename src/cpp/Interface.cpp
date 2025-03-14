@@ -11,13 +11,11 @@ Interface::~Interface() {
     LOG("Interface destroyed");
 }
 
-void Interface::update() {
-    // Optional: add UI logic update if needed.
+auto Interface::update() -> void {
     LOG("Interface updated");
 }
 
-void Interface::draw(float speed, int stars) {
-    // Draw speed information
+auto Interface::draw(float speed, int stars) -> void {
     DrawText(
         TextFormat("SPEED: %.1f", speed),
         constants::UI_POSITION_X,
@@ -25,8 +23,6 @@ void Interface::draw(float speed, int stars) {
         constants::UI_FONT_SIZE,
         GREEN
     );
-
-    // Draw FPS information
     DrawText(
         TextFormat("FPS: %i", (int)(1.0f / GetFrameTime())),
         constants::UI_POSITION_X,
@@ -34,8 +30,6 @@ void Interface::draw(float speed, int stars) {
         constants::UI_FONT_SIZE,
         GREEN
     );
-
-    // Draw star count
     DrawText(
         TextFormat("Stars: %i", stars),
         constants::UI_POSITION_X,
@@ -43,8 +37,6 @@ void Interface::draw(float speed, int stars) {
         constants::UI_FONT_SIZE,
         GREEN
     );
-
-    // Draw control hints
     DrawText(
         "SPACE: Jump (Double Jump Available)",
         config::SCREEN_WIDTH - constants::CONTROL_HINT_OFFSET,
@@ -52,7 +44,6 @@ void Interface::draw(float speed, int stars) {
         constants::CONTROL_HINT_SIZE,
         GREEN
     );
-
     DrawText(
         "SHIFT: Dash",
         config::SCREEN_WIDTH - constants::CONTROL_HINT_OFFSET,

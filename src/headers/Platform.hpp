@@ -2,38 +2,32 @@
 #define PLATFORM_HPP
 
 #include <filesystem>
-#include <iostream>
-#include <memory>
-#include <vector>
 #include "raylib.h"
 #include "Background.hpp"
 #include "Random.hpp"
 
 class Platform : public Background {
-    static std::filesystem::path getRandomPlatformPath();
+    static auto getRandomPlatformPath() -> std::filesystem::path;
 
 public:
     Platform(float speed, float x, float y, float scale = 1.0f);
 
     ~Platform();
 
-    bool update();
+    auto update() -> bool;
 
-    void draw();
+    auto draw() -> void;
 
-    bool checkCollision(Vector2 point);
+    auto checkCollision(const Vector2 &point) -> bool;
 
-    void changeSpeed(float speed);
+    auto changeSpeed(float speed) -> void;
 
-    [[nodiscard]] inline const Texture2D getTexture() const { return m_texture; }
-    [[nodiscard]] inline float getScale() const { return m_scale; }
-
-    void applyDashBoost(float dashBoost) {
-        m_x -= dashBoost;
-    }
+    [[nodiscard]] inline auto getTexture() const -> Texture2D { return m_texture; }
+    [[nodiscard]] inline auto getScale() const -> float { return m_scale; }
+    auto applyDashBoost(float dashBoost) -> void { m_x -= dashBoost; }
 
 private:
-    bool isOutsite();
+    auto isOutsite() -> bool;
 
     Image m_cachedImage;
 };

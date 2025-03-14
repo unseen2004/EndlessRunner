@@ -193,7 +193,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /usr/local/include/raylib.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Background.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.hpp \
- /usr/include/c++/14.2.1/iostream \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Random.hpp \
  /usr/include/c++/14.2.1/random /usr/include/c++/14.2.1/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
@@ -224,6 +223,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/DeadScreen.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/State.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/StateMachine.hpp \
+ /usr/include/c++/14.2.1/iostream \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/WelcomeScreen.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/GameScreen.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplayScreen.hpp \

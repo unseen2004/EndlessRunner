@@ -9,9 +9,9 @@ public:
 
     ~Interface();
 
-    void update();
+    auto update() -> void;
 
-    void draw(float speed, int stars);
+    auto draw(float speed, int stars) -> void;
 };
 
 #endif // INTERFACE_HPP

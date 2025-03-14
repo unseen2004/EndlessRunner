@@ -178,16 +178,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o: \
  /usr/include/c++/14.2.1/bits/vector.tcc /usr/local/include/raylib.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.hpp \
- /usr/include/c++/14.2.1/iostream /usr/include/c++/14.2.1/memory \
- /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
- /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14.2.1/bits/align.h \
- /usr/include/c++/14.2.1/bits/shared_ptr_atomic.h \
- /usr/include/c++/14.2.1/bits/atomic_base.h \
- /usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h \
- /usr/include/c++/14.2.1/backward/auto_ptr.h \
- /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
- /usr/include/c++/14.2.1/pstl/execution_defs.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Background.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Random.hpp \
  /usr/include/c++/14.2.1/chrono /usr/include/c++/14.2.1/random \
@@ -216,4 +206,5 @@ CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o: \
  /usr/include/c++/14.2.1/bits/random.tcc /usr/include/c++/14.2.1/numeric \
  /usr/include/c++/14.2.1/bits/stl_numeric.h \
  /usr/include/c++/14.2.1/pstl/glue_numeric_defs.h \
+ /usr/include/c++/14.2.1/pstl/execution_defs.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Constants.hpp
