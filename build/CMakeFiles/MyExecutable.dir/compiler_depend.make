@@ -1089,6 +1089,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o: /home/maks/Programming/EndlessRu
   /home/maks/Programming/EndlessRunner/src/headers/Cloud.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Config.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.hpp \
+  /home/maks/Programming/EndlessRunner/src/headers/DebugLog.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Game.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Interface.hpp \
@@ -1402,7 +1403,9 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: /home/maks/Programming/End
   /home/maks/Programming/EndlessRunner/src/headers/Character.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Cloud.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Config.hpp \
+  /home/maks/Programming/EndlessRunner/src/headers/Constants.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/DeadScreen.hpp \
+  /home/maks/Programming/EndlessRunner/src/headers/DebugLog.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/GameScreen.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Interface.hpp \
   /home/maks/Programming/EndlessRunner/src/headers/Platform.hpp \

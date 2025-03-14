@@ -27,7 +27,7 @@ public:
 
 private:
     StateMachine &m_stateMachine;
-    std::vector<std::pair<std::string, std::string> > m_savedGames; // first: filename, second: display name
+    std::vector<std::pair<std::string, std::string> > m_savedGames;
     int m_selectedIndex;
     bool m_inReplay;
 

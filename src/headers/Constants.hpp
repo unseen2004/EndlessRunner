@@ -27,10 +27,12 @@ namespace constants {
     constexpr int MAX_CHARACTER_FRAME = 5;
     constexpr float CHARACTER_FRAME_DIVISOR = 6.0f;
     constexpr float MAX_VERTICAL_VELOCITY = 15.0f;
+
     // Explosion animation
     constexpr int EXPLOSION_FPS = 2;
     constexpr int EXPLOSION_MAX_FRAME = 5;
     constexpr int EXPLOSION_MAX_LINE = 5;
+
     // Collision and grounded checks
     constexpr float GROUND_SCAN_RANGE = 10.0f;
     constexpr float GROUND_STEP = 1.0f;
@@ -115,31 +117,31 @@ namespace constants {
     constexpr int MAX_PLATFORM_TYPE = 5;
 
     // GameScreen.cpp constants
-    constexpr float INVULNERABILITY_TIMER = 0.5f;          // Already exists
-    constexpr float SPEED_GAME_OVER = 0.0f;                // Already exists
-    constexpr float BASE_SPEED = 3.0f;                     // Already exists
-    constexpr int CLOUD_MIN_Y = 0;                         // Already exists
-    constexpr int CLOUD_MAX_Y = 100;                       // Already exists
-    constexpr int CLOUD_MIN_TYPE = 1;                      // Already exists
-    constexpr int CLOUD_MAX_TYPE = 3;                      // Already exists
-    constexpr float CLOUD_MIN_SCALE = 1.0f;                // Already exists
-    constexpr float CLOUD_MAX_SCALE = 2.0f;                // Already exists
-    constexpr float CLOUD_MIN_SPEED_FACTOR = 0.3f;         // Already exists
-    constexpr float CLOUD_MAX_SPEED_FACTOR = 0.5f;         // Already exists
-    constexpr int BOTTOM_PLATFORM_GAP_MULTIPLIER = 2;      // New
-    constexpr int TOP_PLATFORM_GAP_MULTIPLIER = 3;         // New
-    constexpr int PLATFORM_BOTTOM_MIN = 700;               // New
-    constexpr int PLATFORM_BOTTOM_MAX_OFFSET = 300;        // New
-    constexpr int PLATFORM_TOP_MAX = 100;                  // New
-    constexpr int INITIAL_PLATFORM_X = 300;                // New
-    constexpr int INITIAL_PLATFORM_Y = 300;                // New
-    constexpr int PLATFORM_GAP = 600;                      // New
-    constexpr int FONT_BASE_SIZE = 36;                     // New
-    constexpr const char* DEATH_MESSAGE = "GAME OVER";     // New
-    constexpr int DEATH_MSG_OFFSET_X = 100;                // New
-    constexpr int DEATH_MSG_OFFSET_Y = 20;                 // New
-    constexpr int DEATH_MSG_BORDER = 2;                    // New
-    constexpr int DEATH_MSG_FONT_SIZE = 40;                // New
+    constexpr float INVULNERABILITY_TIMER = 0.5f;
+    constexpr float SPEED_GAME_OVER = 0.0f;
+    constexpr float BASE_SPEED = 3.0f;
+    constexpr int CLOUD_MIN_Y = 0;
+    constexpr int CLOUD_MAX_Y = 100;
+    constexpr int CLOUD_MIN_TYPE = 1;
+    constexpr int CLOUD_MAX_TYPE = 3;
+    constexpr float CLOUD_MIN_SCALE = 1.0f;
+    constexpr float CLOUD_MAX_SCALE = 2.0f;
+    constexpr float CLOUD_MIN_SPEED_FACTOR = 0.3f;
+    constexpr float CLOUD_MAX_SPEED_FACTOR = 0.5f;
+    constexpr int BOTTOM_PLATFORM_GAP_MULTIPLIER = 2;
+    constexpr int TOP_PLATFORM_GAP_MULTIPLIER = 3;
+    constexpr int PLATFORM_BOTTOM_MIN = 700;
+    constexpr int PLATFORM_BOTTOM_MAX_OFFSET = 300;
+    constexpr int PLATFORM_TOP_MAX = 100;
+    constexpr int INITIAL_PLATFORM_X = 300;
+    constexpr int INITIAL_PLATFORM_Y = 300;
+    constexpr int PLATFORM_GAP = 600;
+    constexpr int FONT_BASE_SIZE = 36;
+    constexpr const char* DEATH_MESSAGE = "GAME OVER";
+    constexpr int DEATH_MSG_OFFSET_X = 100;
+    constexpr int DEATH_MSG_OFFSET_Y = 20;
+    constexpr int DEATH_MSG_BORDER = 2;
+    constexpr int DEATH_MSG_FONT_SIZE = 40;
     constexpr float CLOUD_SPAWN_MARGIN = 300.0f;
 
 }
