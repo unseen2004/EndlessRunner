@@ -2,13 +2,11 @@
 #include "../headers/Constants.hpp"
 #include "../headers/DebugLog.hpp"
 
-bool GameScreen::s_invulnerability_active = false;
 extern bool g_exitGame;
 
 GameScreen::GameScreen(StateMachine &sm)
     : m_stateMachine(sm) {
     m_invulnerability_timer = constants::INVULNERABILITY_TIMER;
-    s_invulnerability_active = true;
     try {
         m_bg_background = std::make_unique<Background>(fs::path("resources/background/BG.png"), m_speed);
         if (!m_bg_background) throw std::runtime_error("Failed to load background");
@@ -20,14 +18,12 @@ GameScreen::GameScreen(StateMachine &sm)
         if (!m_bg_sky) throw std::runtime_error("Failed to load sky");
         m_character = std::make_unique<Character>(
             fs::path("resources/scarfy.png"),
-            fs::path("resources/explosion.png"),
-            fs::path("resources/sound/boom.wav"),
             m_speed
         );
         if (!m_character) throw std::runtime_error("Failed to load character");
-        const char* textSample = "Some UTF-8 text";
+
         int codepointCount = 0;
-        int *codepoints = LoadCodepoints(textSample, &codepointCount);
+        int *codepoints = LoadCodepoints(text, &codepointCount);
         m_replaySystem = std::make_unique<ReplaySystem>();
         font = LoadFontEx("resources/fonts/GenShinGothic-Regular.ttf",
                           constants::FONT_BASE_SIZE,
@@ -111,7 +107,7 @@ auto GameScreen::update() -> void {
         if (CheckCollisionRecs(m_character->getCollisionRect(), (*it)->getBoundingBox())) {
             m_stars_collected++;
             Vector2 popPos{m_character->getCollisionRect().x, m_character->getCollisionRect().y};
-            m_popouts.push_back(std::make_unique<StarPopout>(popPos, "Star!", font));
+            m_popouts.push_back(std::make_unique<StarPopout>(popPos, text, font));
             it = m_stars.erase(it);
         } else {
             ++it;

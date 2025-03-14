@@ -4,8 +4,6 @@
 #include <limits>
 
 Character::Character(std::filesystem::path path1,
-                     std::filesystem::path path2,
-                     std::filesystem::path path3,
                      float speed,
                      float x,
                      float y,
@@ -15,8 +13,6 @@ Character::Character(std::filesystem::path path1,
                      int currentLine,
                      bool is_jumping)
     : m_path_character(std::move(path1)),
-      m_path_explosion(std::move(path2)),
-      m_path_sound(std::move(path3)),
       m_position{ x, y },
       m_currentFrame(currentFrame),
       m_framesCounter(framesCounter),
@@ -25,8 +21,6 @@ Character::Character(std::filesystem::path path1,
       m_is_jumping(is_jumping),
       m_speed(speed) {
     m_character = LoadTexture(m_path_character.string().c_str());
-    m_explosion = LoadTexture(m_path_explosion.string().c_str());
-    m_boom = LoadSound(m_path_sound.string().c_str());
     m_frame_rec = {
         0.0f, 0.0f,
         static_cast<float>(m_character.width) / constants::CHARACTER_FRAME_DIVISOR,
@@ -36,8 +30,6 @@ Character::Character(std::filesystem::path path1,
 
 Character::~Character() {
     UnloadTexture(m_character);
-    UnloadTexture(m_explosion);
-    UnloadSound(m_boom);
 }
 
 auto Character::update(bool input_jump,

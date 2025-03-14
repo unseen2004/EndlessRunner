@@ -53,7 +53,6 @@ private:
     const char *text = "+1 ポイント";
     Font font;
     float m_invulnerability_timer = 0.5F;
-    static bool s_invulnerability_active;
     std::chrono::steady_clock::time_point m_startTime;
     std::unique_ptr<Background> m_bg_background;
     std::unique_ptr<Background> m_bg_foreground;

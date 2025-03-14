@@ -17,8 +17,6 @@ namespace character_const {
 class Character {
 public:
     Character(std::filesystem::path path1,
-              std::filesystem::path path2,
-              std::filesystem::path path3,
               float speed = 0.1F,
               float x = config::CHARACTER_START_X,
               float y = 0.0f,

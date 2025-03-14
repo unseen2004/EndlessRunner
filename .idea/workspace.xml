@@ -25,17 +25,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cpp/Snow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Snow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/Star.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Star.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/StarPopout.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/StarPopout.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/StateMachine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/StateMachine.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/WelcomeScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/WelcomeScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/Snow.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Snow.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/Star.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Star.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/StarPopout.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/StarPopout.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/State.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/State.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/StateMachine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/StateMachine.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/WelcomeScreen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/WelcomeScreen.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/MyExecutable" beforeDir="false" afterPath="$PROJECT_DIR$/build/MyExecutable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/explosion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sound/boom.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Character.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Character.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Character.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/GameScreen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/GameScreen.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
