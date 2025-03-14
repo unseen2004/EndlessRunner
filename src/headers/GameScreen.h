@@ -49,10 +49,14 @@ public:
     void render() override;
 
     const char *getName() const override { return "GameScreen"; }
+    bool m_input_jump = false;
+    bool m_input_dash = false;
+
+    StateMachine &m_stateMachine;
+    bool replay = false;
 
 private:
     // Game state
-    StateMachine &m_stateMachine;
     float m_speed = 1.0f;
     bool m_game_over = false;
     float m_death_timer = 0.0f;
@@ -67,8 +71,6 @@ private:
     std::unique_ptr<ReplaySystem> m_replaySystem; // Replay system instance
 
     // Input state
-    bool m_input_jump = false;
-    bool m_input_dash = false;
 
     // Game time tracking
     std::chrono::steady_clock::time_point m_startTime;

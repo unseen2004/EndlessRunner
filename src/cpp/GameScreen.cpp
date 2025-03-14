@@ -57,7 +57,8 @@ GameScreen::GameScreen(StateMachine &sm) : m_stateMachine(sm) {
 }
 
 GameScreen::~GameScreen() {
-    m_replaySystem->saveToFile("history.dat");
+    if(!replay)
+    	m_replaySystem->saveToFile("history.dat");
 
     m_bg_background.reset();
     m_bg_foreground.reset();
@@ -101,6 +102,9 @@ void GameScreen::handleInput() {
     }
     m_input_jump = IsKeyPressed(KEY_SPACE);
     m_input_dash = IsKeyDown(KEY_LEFT_SHIFT) || IsKeyDown(KEY_RIGHT_SHIFT);
+
+        m_replaySystem->addInputFrame(m_input_jump, m_input_dash, GetFrameTime());
+
 }
 
 void GameScreen::updateSpeedBasedOnTime(std::chrono::steady_clock::time_point start_time) {
@@ -298,30 +302,7 @@ m_platforms_top.erase(
     m_bg_midground->update();
     m_bg_sky->update();
 
-    ReplayFrame frame;
-Rectangle rect = m_character->getCollisionRect();
-frame.characterPosition = { rect.x, rect.y };
-frame.characterRotation = 0.0f; // you may update rotation as needed
 
-    // Record positions for platforms from bottom platforms.
-    for (const auto &platform : m_platforms_bottom) {
-        // Assuming platforms use their x/y values directly for position.
-        frame.platformPositions.push_back({platform->getX(), platform->getY()});
-    }
-
-    // Record positions for clouds.
-    for (const auto &cloud : m_clouds) {
-        // Assuming Cloud has methods to retrieve position information.
-        frame.cloudPositions.push_back({static_cast<float>(cloud->getX()), 0.0f});  // Y can be added if available
-    }
-
-    // Record other game state.
-    frame.gameSpeed = m_speed;
-    frame.starsCollected = m_stars_collected;
-    frame.gameTime = GetTime();
-
-    // Add the frame to the replay history.
-    m_replaySystem->addFrame(frame);
 }
 
 void GameScreen::render() {

@@ -321,6 +321,30 @@ src/cpp/Platform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.s
 .PHONY : src/cpp/Platform.cpp.s
 
+src/cpp/ReplayGameScreen.o: src/cpp/ReplayGameScreen.cpp.o
+.PHONY : src/cpp/ReplayGameScreen.o
+
+# target to build an object file
+src/cpp/ReplayGameScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o
+.PHONY : src/cpp/ReplayGameScreen.cpp.o
+
+src/cpp/ReplayGameScreen.i: src/cpp/ReplayGameScreen.cpp.i
+.PHONY : src/cpp/ReplayGameScreen.i
+
+# target to preprocess a source file
+src/cpp/ReplayGameScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.i
+.PHONY : src/cpp/ReplayGameScreen.cpp.i
+
+src/cpp/ReplayGameScreen.s: src/cpp/ReplayGameScreen.cpp.s
+.PHONY : src/cpp/ReplayGameScreen.s
+
+# target to generate assembly for a file
+src/cpp/ReplayGameScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.s
+.PHONY : src/cpp/ReplayGameScreen.cpp.s
+
 src/cpp/ReplayScreen.o: src/cpp/ReplayScreen.cpp.o
 .PHONY : src/cpp/ReplayScreen.o
 
@@ -570,6 +594,9 @@ help:
 	@echo "... src/cpp/Platform.o"
 	@echo "... src/cpp/Platform.i"
 	@echo "... src/cpp/Platform.s"
+	@echo "... src/cpp/ReplayGameScreen.o"
+	@echo "... src/cpp/ReplayGameScreen.i"
+	@echo "... src/cpp/ReplayGameScreen.s"
 	@echo "... src/cpp/ReplayScreen.o"
 	@echo "... src/cpp/ReplayScreen.i"
 	@echo "... src/cpp/ReplayScreen.s"

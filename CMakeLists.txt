@@ -30,6 +30,7 @@ add_executable(MyExecutable
         src/cpp/StarPopout.cpp
         src/cpp/ReplayScreen.cpp
         src/cpp/ReplaySystem.cpp
+        src/cpp/ReplayGameScreen.cpp
 )
 
 # Link the raylib library

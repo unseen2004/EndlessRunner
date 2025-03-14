@@ -25,6 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/cpp/ReplayGameScreen.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/headers/ReplayGameScreen.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
@@ -42,12 +44,15 @@
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/MyExecutable" beforeDir="false" afterPath="$PROJECT_DIR$/build/MyExecutable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/ReplayScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplayScreen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/ReplaySystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplaySystem.cpp" afterDir="false" />
@@ -362,7 +367,7 @@
       <workItem from="1741812031887" duration="11066000" />
       <workItem from="1741827210789" duration="1269000" />
       <workItem from="1741868007730" duration="8358000" />
-      <workItem from="1741948441973" duration="7582000" />
+      <workItem from="1741948441973" duration="10955000" />
     </task>
     <servers />
   </component>

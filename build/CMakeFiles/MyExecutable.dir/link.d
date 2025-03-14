@@ -19,6 +19,7 @@ MyExecutable: \
   CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o \
   CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o \
+  CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o \
   /usr/lib/libraylib.so \
   /usr/lib/libraylib.so \
   /usr/lib/libstdc++.so \
@@ -88,6 +89,8 @@ CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o:
 CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o:
 
 CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o:
+
+CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o:
 
 /usr/lib/libraylib.so:
 
