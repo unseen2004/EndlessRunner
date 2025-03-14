@@ -51,10 +51,12 @@ void WelcomeScreen::render() {
     const char *fogStatus = config::fog ? "Fog is on - press f to change" : "Fog is off - press f to change";
     const char *snowStatus = config::snow ? "Snow is on - press s to change" : "Snow is off - press s to change";
 
+
+    const char *info = "In game press space to jump and left shift to dash";
     // Draw status text below the main message.
     DrawTextEx(GetFontDefault(), fogStatus, (Vector2){ startPos.x, startPos.y + 40 }, 20, 1, YELLOW);
     DrawTextEx(GetFontDefault(), snowStatus, (Vector2){ startPos.x, startPos.y + 70 }, 20, 1, YELLOW);
-
+	DrawTextEx(GetFontDefault(), info, (Vector2){ startPos.x, startPos.y + 100 }, 20, 1, YELLOW);
 
 
 

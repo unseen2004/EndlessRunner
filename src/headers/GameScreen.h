@@ -57,7 +57,7 @@ public:
 
 private:
     // Game state
-    float m_speed = 1.0f;
+    float m_speed = 10.0f;
     bool m_game_over = false;
     float m_death_timer = 0.0f;
     float m_death_delay = 2.0f;

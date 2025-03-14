@@ -1,7 +1,13 @@
 // File: `src/cpp/ReplaySystem.cpp`
 #include "../headers/ReplaySystem.h"
 #include <stdexcept>
+#include <filesystem>
+#include <chrono>
+#include <iomanip>
+#include <sstream>
+#include <cstdio>
 
+namespace fs = std::filesystem;
 ReplaySystem::ReplaySystem()
     : m_currentFrameIndex(0), m_playbackActive(false) {
     // Default setup data
@@ -27,7 +33,7 @@ void ReplaySystem::saveToFile(const std::string &filename) {
         return;
     }
 
-    // First write the setup data
+    // Write the setup data
     file.write(reinterpret_cast<const char*>(&m_setupData), sizeof(GameSetupData));
 
     // Write the number of frames
@@ -43,36 +49,41 @@ void ReplaySystem::saveToFile(const std::string &filename) {
 
     // Generate a timestamp for the filename
     auto now = std::chrono::system_clock::now();
-    auto time_t = std::chrono::system_clock::to_time_t(now);
-    std::tm* localTime = std::localtime(&time_t);
+    auto time_t_val = std::chrono::system_clock::to_time_t(now);
+    std::tm* localTime = std::localtime(&time_t_val);
     char buffer[80];
     strftime(buffer, sizeof(buffer), "%Y%m%d_%H%M%S", localTime);
 
-    // Get the final score and time
-    int finalScore = 0;
+    // Calculate final time (example: total time from frames)
     float finalTime = 0.0f;
-    if (!m_inputFrames.empty()) {
-        // Calculate total time
-        for (const auto& frame : m_inputFrames) {
-            finalTime += frame.deltaTime;
-        }
+    for (const auto& frame : m_inputFrames) {
+        finalTime += frame.deltaTime;
     }
 
-    // Rename the file to include metadata
-    std::string newFilename = "replay_" + std::string(buffer) +
-                              "_time" + std::to_string(static_cast<int>(finalTime)) +
-                              ".dat";
+    // Create the "replays" directory if it doesn't exist
+    fs::path replayDir = fs::current_path() / "replays";
+    if (!fs::exists(replayDir)) {
+        fs::create_directories(replayDir);
+    }
 
-    // Only rename if we used the default filename
+    // Compose the new filename inside the "replays" directory
+    std::string newFilename = (replayDir / ("replay_" + std::string(buffer) +
+                              "_time" + std::to_string(static_cast<int>(finalTime)) +
+                              ".dat")).string();
+
+    // Rename the file if using the default filename
     if (filename == "history.dat") {
         std::rename(filename.c_str(), newFilename.c_str());
     }
 }
-
+// Language: cpp
+// File: src/cpp/ReplaySystem.cpp
 bool ReplaySystem::loadFromFile(const std::string &filename) {
-    std::ifstream file(filename, std::ios::binary);
+    // Create full path: current directory / replays / filename
+    fs::path fullPath = fs::current_path() / "replays" / filename;
+    std::ifstream file(fullPath, std::ios::binary);
     if (!file.is_open()) {
-        std::cerr << "Error opening file for reading: " << filename << std::endl;
+        std::cerr << "Error opening file for reading: " << fullPath << std::endl;
         return false;
     }
 

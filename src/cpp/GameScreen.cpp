@@ -82,7 +82,7 @@ GameScreen::~GameScreen() {
     m_snow.reset();
 }
 // File: src/cpp/GameScreen.cpp
-// This helper function stops other world updates and only processes the character’s death animation.
+// This helper function sts other world updates and only processes the character’s death animation.
 // Once finished, it transitions to the next game screen.
 // Language: cpp
 // File: src/cpp/GameScreen.cpp
@@ -113,8 +113,7 @@ void GameScreen::updateSpeedBasedOnTime(std::chrono::steady_clock::time_point st
     if (m_game_over) {
         m_speed = 0.0f;
     } else {
-            	m_speed = 1.0f + config::e * std::chrono::duration_cast<std::chrono::seconds>(diff).count();
-
+      m_speed = 3.0f + config::e * std::chrono::duration_cast<std::chrono::seconds>(diff).count();
     }
     m_bg_background->changeSpeed(m_speed);
     m_bg_foreground->changeSpeed(m_speed);

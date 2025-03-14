@@ -3,6 +3,7 @@
 #include "../headers/DeadScreen.h"
 #include <cstdlib>
 
+extern bool g_exitGame;
 DeadScreen::DeadScreen(StateMachine& sm) : stateMachine(sm) {}
 DeadScreen::~DeadScreen() {}
 
@@ -11,7 +12,7 @@ void DeadScreen::handleInput() {
         stateMachine.changeState(std::make_unique<WelcomeScreen>(stateMachine));
     }
     if (IsKeyPressed(KEY_E)) {
-        exit(0);
+        g_exitGame = true;
     }
 }
 

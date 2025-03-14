@@ -18,12 +18,17 @@ ReplayScreen::~ReplayScreen() {
     std::cout << "Destructing ReplayScreen" << std::endl;
 }
 
+// File: src/cpp/ReplayScreen.cpp
+// Language: cpp
 void ReplayScreen::loadSavedGames() {
     m_savedGames.clear();
-    for (const auto &entry : fs::directory_iterator(fs::current_path())) {
-        if (entry.path().extension() == ".dat") {
-            std::string filename = entry.path().filename().string();
-            m_savedGames.push_back({filename, filename});
+    fs::path replayDir = fs::current_path() / "replays";
+    if (fs::exists(replayDir)) {
+        for (const auto &entry : fs::directory_iterator(replayDir)) {
+            if (entry.path().extension() == ".dat") {
+                std::string filename = entry.path().filename().string();
+                m_savedGames.push_back({filename, filename});
+            }
         }
     }
     if (m_savedGames.empty()) {
