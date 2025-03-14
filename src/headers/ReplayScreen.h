@@ -1,27 +1,38 @@
-//
-// Created by maks on 3/14/25.
-//
+// Language: cpp
+// File: src/headers/ReplayScreen.h
+#pragma once
 
-#ifndef REPLAYSCREEN_H
-#define REPLAYSCREEN_H
+#include <filesystem>
+#include <vector>
+#include <string>
+#include <memory>
 #include "State.h"
-#include "raylib.h"
 #include "StateMachine.h"
-#include "WelcomeScreen.h"
-class ReplayScreen : public State {
-    StateMachine &stateMachine;
+#include "ReplaySystem.h"
+#include "raylib.h"
 
+namespace fs = std::filesystem;
+
+class ReplayScreen : public State {
 public:
     ReplayScreen(StateMachine &sm);
-
     ~ReplayScreen();
 
     void handleInput() override;
-
     void update() override;
-
     void render() override;
-
     const char *getName() const override { return "ReplayScreen"; }
-};
-#endif //REPLAYSCREEN_HPP
+
+private:
+    StateMachine &m_stateMachine;
+    std::unique_ptr<ReplaySystem> m_replaySystem;
+
+    // List view fields
+    std::vector<std::string> m_savedGames;
+    int m_selectedIndex = 0;
+    bool m_inReplay = false;
+
+    // Helper functions
+    void loadSavedGames();
+    void startReplay(const std::string &filename);
+};;

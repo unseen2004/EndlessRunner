@@ -27,6 +27,7 @@ GameScreen::GameScreen(StateMachine &sm) : m_stateMachine(sm) {
              // Get the codepoints from the UTF-8 string
     int codepointCount = 0;
     int *codepoints = LoadCodepoints(text, &codepointCount);
+    m_replaySystem = std::make_unique<ReplaySystem>();
 
     // Load the font with a chosen base size (adjust 36 as needed)
     try{
@@ -56,6 +57,8 @@ GameScreen::GameScreen(StateMachine &sm) : m_stateMachine(sm) {
 }
 
 GameScreen::~GameScreen() {
+    m_replaySystem->saveToFile("history.dat");
+
     m_bg_background.reset();
     m_bg_foreground.reset();
     m_bg_midground.reset();
@@ -192,7 +195,9 @@ void GameScreen::spawnPlatforms(std::vector<std::unique_ptr<Platform>>& platform
 void GameScreen::update() {
     handleInput();
     if (!m_character->isAlive()) {
+
         handleDeathTransition();
+
         return;
     }
        if (config::snow && m_snow) {
@@ -292,6 +297,31 @@ m_platforms_top.erase(
     m_bg_foreground->update();
     m_bg_midground->update();
     m_bg_sky->update();
+
+    ReplayFrame frame;
+Rectangle rect = m_character->getCollisionRect();
+frame.characterPosition = { rect.x, rect.y };
+frame.characterRotation = 0.0f; // you may update rotation as needed
+
+    // Record positions for platforms from bottom platforms.
+    for (const auto &platform : m_platforms_bottom) {
+        // Assuming platforms use their x/y values directly for position.
+        frame.platformPositions.push_back({platform->getX(), platform->getY()});
+    }
+
+    // Record positions for clouds.
+    for (const auto &cloud : m_clouds) {
+        // Assuming Cloud has methods to retrieve position information.
+        frame.cloudPositions.push_back({static_cast<float>(cloud->getX()), 0.0f});  // Y can be added if available
+    }
+
+    // Record other game state.
+    frame.gameSpeed = m_speed;
+    frame.starsCollected = m_stars_collected;
+    frame.gameTime = GetTime();
+
+    // Add the frame to the replay history.
+    m_replaySystem->addFrame(frame);
 }
 
 void GameScreen::render() {

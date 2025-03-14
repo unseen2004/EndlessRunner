@@ -231,6 +231,11 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/StateMachine.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/WelcomeScreen.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplayScreen.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplaySystem.h \
+ /usr/include/c++/14.2.1/fstream \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/14.2.1/bits/fstream.tcc \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Character.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Star.hpp \

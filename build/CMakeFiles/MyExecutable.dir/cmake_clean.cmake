@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o"
   "CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o.d"
+  "CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o"
+  "CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o"
   "CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o"

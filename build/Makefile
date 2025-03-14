@@ -345,6 +345,30 @@ src/cpp/ReplayScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.s
 .PHONY : src/cpp/ReplayScreen.cpp.s
 
+src/cpp/ReplaySystem.o: src/cpp/ReplaySystem.cpp.o
+.PHONY : src/cpp/ReplaySystem.o
+
+# target to build an object file
+src/cpp/ReplaySystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o
+.PHONY : src/cpp/ReplaySystem.cpp.o
+
+src/cpp/ReplaySystem.i: src/cpp/ReplaySystem.cpp.i
+.PHONY : src/cpp/ReplaySystem.i
+
+# target to preprocess a source file
+src/cpp/ReplaySystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.i
+.PHONY : src/cpp/ReplaySystem.cpp.i
+
+src/cpp/ReplaySystem.s: src/cpp/ReplaySystem.cpp.s
+.PHONY : src/cpp/ReplaySystem.s
+
+# target to generate assembly for a file
+src/cpp/ReplaySystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.s
+.PHONY : src/cpp/ReplaySystem.cpp.s
+
 src/cpp/Snow.o: src/cpp/Snow.cpp.o
 .PHONY : src/cpp/Snow.o
 
@@ -549,6 +573,9 @@ help:
 	@echo "... src/cpp/ReplayScreen.o"
 	@echo "... src/cpp/ReplayScreen.i"
 	@echo "... src/cpp/ReplayScreen.s"
+	@echo "... src/cpp/ReplaySystem.o"
+	@echo "... src/cpp/ReplaySystem.i"
+	@echo "... src/cpp/ReplaySystem.s"
 	@echo "... src/cpp/Snow.o"
 	@echo "... src/cpp/Snow.i"
 	@echo "... src/cpp/Snow.s"

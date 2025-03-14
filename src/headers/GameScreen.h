@@ -21,6 +21,15 @@
 #include "Interface.h"
 #include "Snow.h"
 #include "StarPopout.h"
+#include "ReplaySystem.h"
+#include "ReplayScreen.h"
+
+
+#include "raylib.h"
+#include <filesystem>
+#include <iostream>
+
+#include "WelcomeScreen.h"
 
 namespace fs = std::filesystem;
 
@@ -55,6 +64,7 @@ private:
     // Invulnerability timer for game start
     float m_invulnerability_timer = 0.5f;
     static bool s_invulnerability_active;
+    std::unique_ptr<ReplaySystem> m_replaySystem; // Replay system instance
 
     // Input state
     bool m_input_jump = false;
