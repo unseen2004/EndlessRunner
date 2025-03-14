@@ -1,3 +1,0 @@
-/home/maks/Programming/EndlessRunner/build/CMakeFiles/MyExecutable.dir
-/home/maks/Programming/EndlessRunner/build/CMakeFiles/edit_cache.dir
-/home/maks/Programming/EndlessRunner/build/CMakeFiles/rebuild_cache.dir
