@@ -1,22 +1,22 @@
 #include "../headers/StarPopout.h"
+#include "raylib.h"
 
-StarPopout::StarPopout(Vector2 pos, const std::string &text)
-    : m_position(pos), m_text(text), m_timer(0.0f), m_duration(1.0f) // duration in seconds
-{}
+StarPopout::StarPopout(Vector2 pos, const std::string &text, const Font &font)
+    : m_position(pos), m_text(text), m_font(font), m_timer(0.0f), m_duration(3.0f) {
+}
 
 void StarPopout::update() {
-    float dt = GetFrameTime();
-    m_timer += dt;
-    m_position.y -= 20.0f * dt; // move upward
+    m_timer += GetFrameTime();
 }
 
 void StarPopout::draw() {
     float alpha = 1.0f - (m_timer / m_duration);
+    if (alpha < 0.0f) alpha = 0.0f;
     Color color = Fade(YELLOW, alpha);
-    int fontSize = 20;
-    DrawText(m_text.c_str(), static_cast<int>(m_position.x), static_cast<int>(m_position.y), fontSize, color);
+    int fontSize = m_font.baseSize;  // Adjust if needed
+    DrawTextEx(m_font, m_text.c_str(), m_position, (float)fontSize, 2.0f, color);
 }
 
 bool StarPopout::isExpired() const {
-    return m_timer > m_duration;
+    return (m_timer >= m_duration);
 }

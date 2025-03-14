@@ -3,9 +3,11 @@
 #include "../headers/WelcomeScreen.h"
 #include "../headers/Config.h"
 
-WelcomeScreen::WelcomeScreen(StateMachine &sm) : stateMachine(sm), m_animationTimer(0.0f) {}
+WelcomeScreen::WelcomeScreen(StateMachine &sm) : stateMachine(sm), m_animationTimer(0.0f) {
+ }
 
-WelcomeScreen::~WelcomeScreen() {}
+WelcomeScreen::~WelcomeScreen() {
+}
 
 void WelcomeScreen::handleInput() {
     if (IsKeyPressed(KEY_ENTER)) {
@@ -49,6 +51,8 @@ void WelcomeScreen::render() {
     // Draw status text below the main message.
     DrawTextEx(GetFontDefault(), fogStatus, (Vector2){ startPos.x, startPos.y + 40 }, 20, 1, YELLOW);
     DrawTextEx(GetFontDefault(), snowStatus, (Vector2){ startPos.x, startPos.y + 70 }, 20, 1, YELLOW);
+
+
 
     EndDrawing();
 }

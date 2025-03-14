@@ -24,6 +24,18 @@ GameScreen::GameScreen(StateMachine &sm) : m_stateMachine(sm) {
                                                    fs::path("resources/sound/boom.wav"), m_speed);
         if (!m_character) throw std::runtime_error("Failed to load character");
 
+             // Get the codepoints from the UTF-8 string
+    int codepointCount = 0;
+    int *codepoints = LoadCodepoints(text, &codepointCount);
+
+    // Load the font with a chosen base size (adjust 36 as needed)
+    try{
+    font = LoadFontEx("resources/fonts/GenShinGothic-Regular.ttf", 36, codepoints, codepointCount);
+ 	}catch(const std::exception &e) {throw std::runtime_error("Failed to load font");
+    }
+        // Free the codepoints array now that the atlas has been generated
+    UnloadCodepoints(codepoints);
+
     } catch (const std::exception &e) {
         std::cerr << "Error: " << e.what() << std::endl;
     }
@@ -50,6 +62,7 @@ GameScreen::~GameScreen() {
     m_bg_sky.reset();
     m_character.reset();
     m_interface.reset();
+    UnloadFont(font);
     for(auto &cloud : m_clouds) {
         cloud.reset();
     }
@@ -222,7 +235,7 @@ for (auto it = m_stars.begin(); it != m_stars.end();) {
     if (CheckCollisionRecs(m_character->getCollisionRect(), (*it)->getBoundingBox())) {
         m_stars_collected++;
         Vector2 popPos{m_character->getCollisionRect().x, m_character->getCollisionRect().y};
-        m_popouts.push_back(std::make_unique<StarPopout>(popPos, "i")); // Japanese "star"
+        m_popouts.push_back(std::make_unique<StarPopout>(popPos, text, font));
         it = m_stars.erase(it);
     } else {
         ++it;
@@ -365,12 +378,12 @@ for(auto &star : m_stars) {
     }
 
     m_interface->draw(m_speed, m_stars_collected);
-/*
+
     for (auto &popout : m_popouts) {
     popout->draw();
 }
 
- */
+
   if (!m_character->isAlive()) {
     const char *msg = "You died";
     int fontSize = 40;
@@ -389,5 +402,8 @@ for(auto &star : m_stars) {
     // Draw the main text
     DrawText(msg, pos.x, pos.y, fontSize, mainColor);
 }
+
+
+
     EndDrawing();
 }

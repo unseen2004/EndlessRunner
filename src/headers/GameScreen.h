@@ -51,7 +51,8 @@ private:
     float m_death_delay = 2.0f;
     std::vector<std::unique_ptr<Star> > m_stars;
     std::vector<std::unique_ptr<StarPopout> > m_popouts;
-
+    const char *text = "+1 ポイント";
+    Font font;
     // Invulnerability timer for game start
     float m_invulnerability_timer = 0.5f;
     static bool s_invulnerability_active;
