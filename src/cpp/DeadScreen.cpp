@@ -1,6 +1,6 @@
 // Language: cpp
 // File: `src/cpp/DeadScreen.cpp`
-#include "../headers/DeadScreen.h"
+#include "../headers/DeadScreen.hpp"
 #include <cstdlib>
 
 extern bool g_exitGame;

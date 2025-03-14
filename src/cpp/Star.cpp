@@ -1,10 +1,6 @@
 // Language: cpp
 // File: `src/cpp/Star.cpp`
 #include "../headers/Star.hpp"
-#include "../headers/Platform.h"
-#include "raylib.h"
-#include <cstdlib>
-#include <iostream>
 int Star::s_collectedStars = 0;
 
 Star::Star(Vector2 position)

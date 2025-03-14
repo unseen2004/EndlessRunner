@@ -1,4 +1,4 @@
-#include "../headers/Platform.h"
+#include "../headers/Platform.hpp"
 
 Platform::Platform( float speed, float x, float y, float scale)
     : Background(getRandomPlatformPath(), speed, x, y, scale)

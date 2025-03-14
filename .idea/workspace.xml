@@ -26,25 +26,122 @@
   <component name="ChangeListManager">
     <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.5/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.5/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.5/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/compiler_depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/compiler_depend.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/link.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/src/all_horizontal_movable.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/src/all_horizontal_movable.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/src/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/src/main.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/src/new_operator.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/EndlessRunner.dir/src/new_operator.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/link.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/all_horizontal_movable.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Cloud.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Game.cpp.o.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Obstacle.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Table.cpp.o.d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/MyExecutable" beforeDir="false" afterPath="$PROJECT_DIR$/build/MyExecutable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replay_20250314_151857_time16.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/replay_20250314_152138_time5.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/main.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/main.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/new_operator.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/MyExecutable" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Background.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Background.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Character.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Cloud.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Cloud.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/DeadScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/DeadScreen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Interface.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Platform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Platform.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/ReplayGameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplayGameScreen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/ReplayScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplayScreen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/ReplaySystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplaySystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Snow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Snow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Star.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Star.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/StarPopout.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/StarPopout.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/StateMachine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/StateMachine.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/WelcomeScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/WelcomeScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/GameScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/GameScreen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Background.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Background.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Character.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Character.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Cloud.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Cloud.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Config.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Config.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/DeadScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/DeadScreen.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Game.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/GameScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/GameScreen.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Includes.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Includes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Interface.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Platform.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Random.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Random.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/ReplayGameScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/ReplayGameScreen.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/ReplayScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/ReplayScreen.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/ReplaySystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/ReplaySystem.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Snow.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Snow.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Star.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Star.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/StarPopout.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/StarPopout.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/State.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/State.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/StateMachine.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/StateMachine.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/WelcomeScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/WelcomeScreen.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +220,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -353,7 +450,8 @@
       <workItem from="1741812031887" duration="11066000" />
       <workItem from="1741827210789" duration="1269000" />
       <workItem from="1741868007730" duration="8358000" />
-      <workItem from="1741948441973" duration="13651000" />
+      <workItem from="1741948441973" duration="18461000" />
+      <workItem from="1741971034762" duration="1380000" />
     </task>
     <servers />
   </component>

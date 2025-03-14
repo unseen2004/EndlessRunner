@@ -1,10 +1,8 @@
 // File: src/cpp/ReplayScreen.cpp
-#include "../headers/ReplayScreen.h"
-#include "../headers/WelcomeScreen.h"
-#include "../headers/ReplayGameScreen.h"
-#include "raylib.h"
-#include <filesystem>
-#include <iostream>
+#include "../headers/ReplayScreen.hpp"
+#include "../headers/WelcomeScreen.hpp"
+#include "../headers/ReplayGameScreen.hpp"
+
 
 namespace fs = std::filesystem;
 

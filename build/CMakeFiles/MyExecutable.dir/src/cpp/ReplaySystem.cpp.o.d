@@ -1,7 +1,7 @@
 CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/ReplaySystem.cpp \
  /usr/include/stdc-predef.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplaySystem.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplaySystem.hpp \
  /usr/include/c++/14.2.1/vector \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -162,7 +162,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o: \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/c++/14.2.1/limits \
  /usr/include/c++/14.2.1/ctime \
- /usr/include/c++/14.2.1/bits/parse_numbers.h /usr/local/include/raylib.h \
+ /usr/include/c++/14.2.1/bits/parse_numbers.h \
  /usr/include/c++/14.2.1/filesystem /usr/include/c++/14.2.1/bits/fs_fwd.h \
  /usr/include/c++/14.2.1/bits/fs_path.h /usr/include/c++/14.2.1/locale \
  /usr/include/c++/14.2.1/bits/locale_facets_nonio.h \
@@ -182,4 +182,4 @@ CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o: \
  /usr/include/c++/14.2.1/bits/unique_ptr.h \
  /usr/include/c++/14.2.1/ext/aligned_buffer.h \
  /usr/include/c++/14.2.1/bits/fs_dir.h \
- /usr/include/c++/14.2.1/bits/fs_ops.h
+ /usr/include/c++/14.2.1/bits/fs_ops.h /usr/local/include/raylib.h

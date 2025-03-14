@@ -1,7 +1,7 @@
 CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/Platform.cpp \
  /usr/include/stdc-predef.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.hpp \
  /usr/include/c++/14.2.1/filesystem \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -186,8 +186,8 @@ CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o: \
  /usr/include/c++/14.2.1/vector /usr/include/c++/14.2.1/bits/stl_vector.h \
  /usr/include/c++/14.2.1/bits/stl_bvector.h \
  /usr/include/c++/14.2.1/bits/vector.tcc /usr/local/include/raylib.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Background.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Random.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Background.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Random.hpp \
  /usr/include/c++/14.2.1/chrono /usr/include/c++/14.2.1/random \
  /usr/include/c++/14.2.1/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \

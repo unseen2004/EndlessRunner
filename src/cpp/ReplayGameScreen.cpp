@@ -1,6 +1,6 @@
 // File: src/cpp/ReplayGameScreen.cpp
-#include "../headers/ReplayGameScreen.h"
-#include "../headers/ReplayScreen.h"
+#include "../headers/ReplayGameScreen.hpp"
+#include "../headers/ReplayScreen.hpp"
 
 ReplayGameScreen::ReplayGameScreen(StateMachine &sm, const std::string &replayFile)
     : GameScreen(sm) // Call base class constructor

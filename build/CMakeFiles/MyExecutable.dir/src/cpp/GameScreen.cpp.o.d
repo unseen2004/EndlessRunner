@@ -1,7 +1,7 @@
 CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/GameScreen.cpp \
  /usr/include/stdc-predef.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/GameScreen.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/GameScreen.hpp \
  /usr/include/c++/14.2.1/vector \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -123,22 +123,21 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /usr/include/c++/14.2.1/chrono /usr/include/c++/14.2.1/bits/chrono.h \
  /usr/include/c++/14.2.1/ratio /usr/include/c++/14.2.1/cstdint \
  /usr/include/c++/14.2.1/limits /usr/include/c++/14.2.1/ctime \
- /usr/include/c++/14.2.1/bits/parse_numbers.h /usr/include/c++/14.2.1/map \
- /usr/include/c++/14.2.1/bits/stl_tree.h \
- /usr/include/c++/14.2.1/bits/node_handle.h \
- /usr/include/c++/14.2.1/bits/stl_map.h \
- /usr/include/c++/14.2.1/bits/stl_multimap.h \
- /usr/include/c++/14.2.1/bits/erase_if.h /usr/include/c++/14.2.1/iostream \
- /usr/include/c++/14.2.1/ostream /usr/include/c++/14.2.1/ios \
+ /usr/include/c++/14.2.1/bits/parse_numbers.h \
+ /usr/include/c++/14.2.1/filesystem /usr/include/c++/14.2.1/bits/fs_fwd.h \
+ /usr/include/c++/14.2.1/system_error \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
+ /usr/include/c++/14.2.1/cerrno /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
+ /usr/include/c++/14.2.1/stdexcept /usr/include/c++/14.2.1/string \
  /usr/include/c++/14.2.1/bits/char_traits.h \
  /usr/include/c++/14.2.1/bits/localefwd.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
  /usr/include/c++/14.2.1/clocale /usr/include/locale.h \
  /usr/include/bits/locale.h /usr/include/c++/14.2.1/cctype \
- /usr/include/ctype.h /usr/include/c++/14.2.1/bits/ios_base.h \
- /usr/include/c++/14.2.1/bits/locale_classes.h \
- /usr/include/c++/14.2.1/string \
- /usr/include/c++/14.2.1/bits/ostream_insert.h \
+ /usr/include/ctype.h /usr/include/c++/14.2.1/bits/ostream_insert.h \
  /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
  /usr/include/c++/14.2.1/bits/basic_string.h \
  /usr/include/c++/14.2.1/string_view \
@@ -155,31 +154,21 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__fpos64_t.h \
  /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/c++/14.2.1/cerrno \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/bits/types/error_t.h \
- /usr/include/c++/14.2.1/bits/charconv.h \
+ /usr/include/bits/stdio_lim.h /usr/include/c++/14.2.1/bits/charconv.h \
  /usr/include/c++/14.2.1/bits/basic_string.tcc \
+ /usr/include/c++/14.2.1/bits/fs_path.h /usr/include/c++/14.2.1/locale \
+ /usr/include/c++/14.2.1/bits/locale_classes.h \
  /usr/include/c++/14.2.1/bits/locale_classes.tcc \
- /usr/include/c++/14.2.1/system_error \
- /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
- /usr/include/c++/14.2.1/stdexcept /usr/include/c++/14.2.1/streambuf \
- /usr/include/c++/14.2.1/bits/streambuf.tcc \
- /usr/include/c++/14.2.1/bits/basic_ios.h \
  /usr/include/c++/14.2.1/bits/locale_facets.h \
  /usr/include/c++/14.2.1/cwctype /usr/include/wctype.h \
  /usr/include/bits/wctype-wchar.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
+ /usr/include/c++/14.2.1/bits/ios_base.h \
+ /usr/include/c++/14.2.1/streambuf \
+ /usr/include/c++/14.2.1/bits/streambuf.tcc \
  /usr/include/c++/14.2.1/bits/streambuf_iterator.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/14.2.1/bits/locale_facets.tcc \
- /usr/include/c++/14.2.1/bits/basic_ios.tcc \
- /usr/include/c++/14.2.1/bits/ostream.tcc /usr/include/c++/14.2.1/istream \
- /usr/include/c++/14.2.1/bits/istream.tcc \
- /usr/include/c++/14.2.1/filesystem /usr/include/c++/14.2.1/bits/fs_fwd.h \
- /usr/include/c++/14.2.1/bits/fs_path.h /usr/include/c++/14.2.1/locale \
  /usr/include/c++/14.2.1/bits/locale_facets_nonio.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
@@ -188,8 +177,13 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /usr/include/c++/14.2.1/bits/locale_conv.h \
  /usr/include/c++/14.2.1/iomanip \
  /usr/include/c++/14.2.1/bits/quoted_string.h \
- /usr/include/c++/14.2.1/sstream /usr/include/c++/14.2.1/bits/sstream.tcc \
- /usr/include/c++/14.2.1/codecvt /usr/include/c++/14.2.1/bits/fs_dir.h \
+ /usr/include/c++/14.2.1/sstream /usr/include/c++/14.2.1/istream \
+ /usr/include/c++/14.2.1/ios /usr/include/c++/14.2.1/bits/basic_ios.h \
+ /usr/include/c++/14.2.1/bits/basic_ios.tcc \
+ /usr/include/c++/14.2.1/ostream /usr/include/c++/14.2.1/bits/ostream.tcc \
+ /usr/include/c++/14.2.1/bits/istream.tcc \
+ /usr/include/c++/14.2.1/bits/sstream.tcc /usr/include/c++/14.2.1/codecvt \
+ /usr/include/c++/14.2.1/bits/fs_dir.h \
  /usr/include/c++/14.2.1/bits/fs_ops.h /usr/include/c++/14.2.1/algorithm \
  /usr/include/c++/14.2.1/bits/stl_algo.h \
  /usr/include/c++/14.2.1/bits/algorithmfwd.h \
@@ -197,9 +191,10 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /usr/include/c++/14.2.1/bits/uniform_int_dist.h \
  /usr/include/c++/14.2.1/pstl/glue_algorithm_defs.h \
  /usr/local/include/raylib.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Background.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Random.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Background.hpp \
+ /usr/include/c++/14.2.1/iostream \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Random.hpp \
  /usr/include/c++/14.2.1/random /usr/include/c++/14.2.1/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -225,21 +220,22 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /usr/include/c++/14.2.1/bits/random.tcc /usr/include/c++/14.2.1/numeric \
  /usr/include/c++/14.2.1/bits/stl_numeric.h \
  /usr/include/c++/14.2.1/pstl/glue_numeric_defs.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Cloud.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/DeadScreen.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/State.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/StateMachine.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/WelcomeScreen.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplayScreen.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Cloud.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/DeadScreen.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/State.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/StateMachine.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/WelcomeScreen.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/GameScreen.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplayScreen.hpp \
  /usr/include/c++/14.2.1/utility \
  /usr/include/c++/14.2.1/bits/stl_relops.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Character.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Character.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Config.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Star.hpp \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Interface.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Snow.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/StarPopout.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplaySystem.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Interface.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Snow.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/StarPopout.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplaySystem.hpp \
  /usr/include/c++/14.2.1/fstream \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++io.h \

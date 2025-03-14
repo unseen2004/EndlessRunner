@@ -1,4 +1,4 @@
-#include "../headers/Character.h"
+#include "../headers/Character.hpp"
 
 Character::Character(std::filesystem::path path1, std::filesystem::path path2, std::filesystem::path path3,
                      float speed, float x, float y, int currentFrame, int framesCounter, int framesSpeed,

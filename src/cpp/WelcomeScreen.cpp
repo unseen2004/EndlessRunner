@@ -1,8 +1,7 @@
 // Language: cpp
 // File: `src/cpp/WelcomeScreen.cpp`
-#include "../headers/WelcomeScreen.h"
-#include "../headers/Config.h"
-
+#include "../headers/WelcomeScreen.hpp"
+#include "../headers/Config.hpp"
 WelcomeScreen::WelcomeScreen(StateMachine &sm) : stateMachine(sm), m_animationTimer(0.0f) {
  }
 

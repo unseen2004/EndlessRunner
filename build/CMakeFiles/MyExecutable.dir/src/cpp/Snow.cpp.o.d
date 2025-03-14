@@ -1,9 +1,7 @@
 CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/Snow.cpp \
  /usr/include/stdc-predef.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Snow.h \
- /usr/local/include/raylib.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Snow.hpp \
  /usr/include/c++/14.2.1/vector \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -58,4 +56,5 @@ CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
  /usr/include/c++/14.2.1/bits/uses_allocator.h \
  /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
- /usr/include/c++/14.2.1/tuple
+ /usr/include/c++/14.2.1/tuple /usr/local/include/raylib.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h

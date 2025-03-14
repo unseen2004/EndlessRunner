@@ -1,4 +1,4 @@
-#include "../headers/StateMachine.h"
+#include "../headers/StateMachine.hpp"
 
 void StateMachine::changeState(std::unique_ptr<State> newState) {
     // Instead of switching state immediately, store it as pending

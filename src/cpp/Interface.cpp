@@ -1,7 +1,7 @@
 // Language: cpp
 // File: `src/cpp/Interface.cpp`
-#include "../headers/Interface.h"
-#include "../headers/Config.h"
+#include "../headers/Interface.hpp"
+#include "../headers/Config.hpp"
 
 Interface::Interface() {}
 Interface::~Interface() {}

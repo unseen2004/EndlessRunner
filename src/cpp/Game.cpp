@@ -1,4 +1,4 @@
-#include "../headers/Game.h"
+#include "../headers/Game.hpp"
 bool g_exitGame = false;
 Game::Game() {
     InitWindow(config::SCREEN_WIDTH, config::SCREEN_HEIGHT, "Endless Runner");

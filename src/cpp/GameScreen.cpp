@@ -1,4 +1,4 @@
-#include "../headers/GameScreen.h"
+#include "../headers/GameScreen.hpp"
 
 bool GameScreen::s_invulnerability_active = false;
 

@@ -1,7 +1,6 @@
 // Language: cpp
 // File: `src/cpp/Snow.cpp`
-#include "../headers/Snow.h"
-#include "raylib.h"
+#include "../headers/Snow.hpp"
 
 Snow::Snow(int count, int screenWidth, int screenHeight)
     : m_screenWidth(screenWidth), m_screenHeight(screenHeight)

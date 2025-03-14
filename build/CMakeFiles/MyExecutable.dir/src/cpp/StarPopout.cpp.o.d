@@ -1,9 +1,7 @@
 CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/StarPopout.cpp \
  /usr/include/stdc-predef.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/StarPopout.h \
- /usr/local/include/raylib.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/StarPopout.hpp \
  /usr/include/c++/14.2.1/string \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -21,6 +19,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o: \
  /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
  /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
  /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
@@ -105,4 +104,4 @@ CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o: \
  /usr/include/c++/14.2.1/cstddef \
  /usr/include/c++/14.2.1/bits/uses_allocator.h \
  /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
- /usr/include/c++/14.2.1/tuple
+ /usr/include/c++/14.2.1/tuple /usr/local/include/raylib.h

@@ -1,7 +1,7 @@
 CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/Background.cpp \
  /usr/include/stdc-predef.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Background.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Background.hpp \
  /usr/include/c++/14.2.1/filesystem \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -171,5 +171,5 @@ CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o: \
  /usr/include/c++/14.2.1/bits/unique_ptr.h \
  /usr/include/c++/14.2.1/ext/aligned_buffer.h \
  /usr/include/c++/14.2.1/bits/fs_dir.h \
- /usr/include/c++/14.2.1/bits/fs_ops.h /usr/local/include/raylib.h \
- /usr/include/c++/14.2.1/iostream
+ /usr/include/c++/14.2.1/bits/fs_ops.h /usr/include/c++/14.2.1/iostream \
+ /usr/local/include/raylib.h
