@@ -238,4 +238,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o: \
  /usr/include/c++/14.2.1/bits/fstream.tcc \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplayScreen.hpp \
  /usr/include/c++/14.2.1/utility \
- /usr/include/c++/14.2.1/bits/stl_relops.h
+ /usr/include/c++/14.2.1/bits/stl_relops.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/DebugLog.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Constants.hpp

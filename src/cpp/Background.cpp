@@ -1,4 +1,5 @@
 #include "../headers/Background.hpp"
+#include "../headers/Constants.hpp"
 
 Background::Background(const std::filesystem::path& path, float speed, float x, float y, float scale)
     : m_speed(speed), m_x(x), m_y(y), m_scale(scale), m_texturePath(path) {
@@ -13,7 +14,7 @@ Background::~Background() {
 }
 
 void Background::resetIfOutsite() {
-    if (m_x <= -m_texture.width * 2)
+    if (m_x <= -m_texture.width * constants::BACKGROUND_WIDTH_MULTIPLIER)
         m_x = 0;
 }
 
@@ -38,7 +39,6 @@ int Background::getWidth() const {
 }
 
 void Background::update() {
-  	m_x -= m_speed ;
+    m_x -= m_speed;
     resetIfOutsite();
 }
-

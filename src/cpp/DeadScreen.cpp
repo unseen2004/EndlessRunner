@@ -1,10 +1,9 @@
-// Language: cpp
-// File: `src/cpp/DeadScreen.cpp`
 #include "../headers/DeadScreen.hpp"
-#include <cstdlib>
+#include "../headers/DebugLog.hpp"
+#include "../headers/Constants.hpp"
 
 extern bool g_exitGame;
-DeadScreen::DeadScreen(StateMachine& sm) : stateMachine(sm) {}
+DeadScreen::DeadScreen(StateMachine &sm) : stateMachine(sm) {}
 DeadScreen::~DeadScreen() {}
 
 void DeadScreen::handleInput() {
@@ -23,6 +22,8 @@ void DeadScreen::update() {
 void DeadScreen::render() {
     BeginDrawing();
     ClearBackground(GetColor(0x052c46ff));
-    DrawText("Dead Screen - Press Enter to Continue, E to Exit", 200, 200, 20, BLACK);
+    DrawText("Dead Screen - Press Enter to Continue, E to Exit",
+             constants::DEAD_SCREEN_X, constants::DEAD_SCREEN_Y,
+             constants::DEAD_SCREEN_FONT_SIZE, BLACK);
     EndDrawing();
 }
