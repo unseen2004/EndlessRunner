@@ -7,6 +7,7 @@
 #include "raylib.h"
 #include "StateMachine.h"
 #include "GameScreen.h"
+#include "ReplayScreen.h"
 
 class WelcomeScreen : public State {
     StateMachine &stateMachine;

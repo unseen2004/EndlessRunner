@@ -13,6 +13,9 @@ void WelcomeScreen::handleInput() {
     if (IsKeyPressed(KEY_ENTER)) {
         stateMachine.changeState(std::make_unique<GameScreen>(stateMachine));
     }
+    if(IsKeyPressed(KEY_R)){
+     	stateMachine.changeState(std::make_unique<ReplayScreen>(stateMachine));
+     }
     if(IsKeyPressed(KEY_F)) {
         config::fog = !config::fog;
     }
@@ -31,8 +34,8 @@ void WelcomeScreen::render() {
     ClearBackground(GetColor(0x052c46ff));
 
     // Define the text and its starting position.
-    const char *message = "Press Enter to Start Game";
-    Vector2 startPos = { 200, 200 };
+    const char *message = "Press Enter to Start Game, R to Replay";
+    Vector2 startPos  { 200, 200 };
 
     // Draw the animated pixel style text letter by letter.
     float letterSpacing = 20.0f;
@@ -51,6 +54,8 @@ void WelcomeScreen::render() {
     // Draw status text below the main message.
     DrawTextEx(GetFontDefault(), fogStatus, (Vector2){ startPos.x, startPos.y + 40 }, 20, 1, YELLOW);
     DrawTextEx(GetFontDefault(), snowStatus, (Vector2){ startPos.x, startPos.y + 70 }, 20, 1, YELLOW);
+
+
 
 
 
