@@ -67,11 +67,11 @@ namespace constants {
     // ReplaySystem.cpp constants
     constexpr int RANDOM_SEED_MAX = 100000;
     constexpr int TIMESTAMP_BUFFER_SIZE = 80;
-    constexpr const char* DEFAULT_REPLAY_FILENAME = "history.dat";
+    constexpr const char *DEFAULT_REPLAY_FILENAME = "history.dat";
 
     // ReplayScreen.cpp constants
-    constexpr const char* NO_SAVED_GAMES_TEXT = "No saved games found";
-    constexpr const char* REPLAY_SCREEN_TITLE = "Select a Saved Game: (Enter to replay, F to go back)";
+    constexpr const char *NO_SAVED_GAMES_TEXT = "No saved games found";
+    constexpr const char *REPLAY_SCREEN_TITLE = "Select a Saved Game: (Enter to replay, F to go back)";
     constexpr float REPLAY_TITLE_X = 50.0f;
     constexpr float REPLAY_TITLE_Y = 50.0f;
     constexpr float REPLAY_TITLE_SIZE = 20.0f;
@@ -90,14 +90,12 @@ namespace constants {
     constexpr int REPLAY_TEXT_X = 15;
     constexpr int REPLAY_TEXT_Y = 15;
     constexpr int REPLAY_TEXT_SIZE = 20;
-    constexpr const char* REPLAY_FINISHED_MESSAGE = "Replay Finished - Press SPACE to return";
+    constexpr const char *REPLAY_FINISHED_MESSAGE = "Replay Finished - Press SPACE to return";
     constexpr int REPLAY_FINISHED_TEXT_SIZE = 30;
     constexpr int REPLAY_FINISHED_PADDING = 10;
     constexpr int REPLAY_FINISHED_HEIGHT = 40;
     constexpr float REPLAY_FINISHED_ALPHA = 0.7f;
     constexpr int REPLAY_FINISHED_TEXT_OFFSET = 15;
-
-
 
     // Interface.cpp constants
     constexpr int UI_POSITION_X = 20;
@@ -137,13 +135,13 @@ namespace constants {
     constexpr int INITIAL_PLATFORM_Y = 300;
     constexpr int PLATFORM_GAP = 600;
     constexpr int FONT_BASE_SIZE = 36;
-    constexpr const char* DEATH_MESSAGE = "GAME OVER";
+    constexpr const char *DEATH_MESSAGE = "GAME OVER";
     constexpr int DEATH_MSG_OFFSET_X = 100;
     constexpr int DEATH_MSG_OFFSET_Y = 20;
     constexpr int DEATH_MSG_BORDER = 2;
     constexpr int DEATH_MSG_FONT_SIZE = 40;
     constexpr float CLOUD_SPAWN_MARGIN = 300.0f;
 
-}
+} // namespace constants
 
 #endif // CONSTANTS_HPP

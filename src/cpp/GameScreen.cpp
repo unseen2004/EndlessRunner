@@ -4,41 +4,40 @@
 
 extern bool g_exitGame;
 
-GameScreen::GameScreen(StateMachine &sm)
-    : m_stateMachine(sm) {
+GameScreen::GameScreen(StateMachine &sm) : m_stateMachine(sm) {
     m_invulnerability_timer = constants::INVULNERABILITY_TIMER;
     try {
         m_bg_background = std::make_unique<Background>(fs::path("resources/background/BG.png"), m_speed);
-        if (!m_bg_background) throw std::runtime_error("Failed to load background");
+        if (!m_bg_background)
+            throw std::runtime_error("Failed to load background");
         m_bg_foreground = std::make_unique<Background>(fs::path("resources/background/FG.png"), m_speed);
-        if (!m_bg_foreground) throw std::runtime_error("Failed to load foreground");
+        if (!m_bg_foreground)
+            throw std::runtime_error("Failed to load foreground");
         m_bg_midground = std::make_unique<Background>(fs::path("resources/background/MG.png"), m_speed);
-        if (!m_bg_midground) throw std::runtime_error("Failed to load midground");
+        if (!m_bg_midground)
+            throw std::runtime_error("Failed to load midground");
         m_bg_sky = std::make_unique<Background>(fs::path("resources/background/Sky.png"), m_speed);
-        if (!m_bg_sky) throw std::runtime_error("Failed to load sky");
-        m_character = std::make_unique<Character>(
-            fs::path("resources/scarfy.png"),
-            m_speed
-        );
-        if (!m_character) throw std::runtime_error("Failed to load character");
+        if (!m_bg_sky)
+            throw std::runtime_error("Failed to load sky");
+        m_character = std::make_unique<Character>(fs::path("resources/scarfy.png"), m_speed);
+        if (!m_character)
+            throw std::runtime_error("Failed to load character");
 
         int codepointCount = 0;
         int *codepoints = LoadCodepoints(text, &codepointCount);
         m_replaySystem = std::make_unique<ReplaySystem>();
-        font = LoadFontEx("resources/fonts/GenShinGothic-Regular.ttf",
-                          constants::FONT_BASE_SIZE,
-                          codepoints,
+        font = LoadFontEx("resources/fonts/GenShinGothic-Regular.ttf", constants::FONT_BASE_SIZE, codepoints,
                           codepointCount);
         UnloadCodepoints(codepoints);
-    } catch (const std::exception &e) {
+    }
+    catch (const std::exception &e) {
         ERR("Error: " << e.what());
     }
     float platformX = constants::INITIAL_PLATFORM_X;
     float platformY = constants::INITIAL_PLATFORM_Y;
     m_platforms_bottom.push_back(std::make_unique<Platform>(m_speed, platformX, platformY, 1.0f));
-    m_platforms_bottom.push_back(std::make_unique<Platform>(m_speed,
-                                platformX + constants::PLATFORM_GAP,
-                                platformY, 1.0f));
+    m_platforms_bottom.push_back(
+            std::make_unique<Platform>(m_speed, platformX + constants::PLATFORM_GAP, platformY, 1.0f));
     m_startTime = std::chrono::steady_clock::now();
     if (config::snow) {
         m_snow = std::make_unique<Snow>(100, config::SCREEN_WIDTH, config::SCREEN_HEIGHT);
@@ -48,7 +47,7 @@ GameScreen::GameScreen(StateMachine &sm)
 }
 
 GameScreen::~GameScreen() {
-    if(!replay) {
+    if (!replay) {
         m_replaySystem->saveToFile("history.dat");
     }
     m_bg_background.reset();
@@ -58,16 +57,16 @@ GameScreen::~GameScreen() {
     m_character.reset();
     m_interface.reset();
     UnloadFont(font);
-    for (auto &cloud : m_clouds) {
+    for (auto &cloud: m_clouds) {
         cloud.reset();
     }
-    for (auto &platform : m_platforms_bottom) {
+    for (auto &platform: m_platforms_bottom) {
         platform.reset();
     }
-    for (auto &platform : m_platforms_top) {
+    for (auto &platform: m_platforms_top) {
         platform.reset();
     }
-    for (auto &star : m_stars) {
+    for (auto &star: m_stars) {
         star.reset();
     }
     m_snow.reset();
@@ -109,7 +108,8 @@ auto GameScreen::update() -> void {
             Vector2 popPos{m_character->getCollisionRect().x, m_character->getCollisionRect().y};
             m_popouts.push_back(std::make_unique<StarPopout>(popPos, text, font));
             it = m_stars.erase(it);
-        } else {
+        }
+        else {
             ++it;
         }
     }
@@ -117,7 +117,8 @@ auto GameScreen::update() -> void {
         (*it)->update();
         if ((*it)->isExpired()) {
             it = m_popouts.erase(it);
-        } else {
+        }
+        else {
             ++it;
         }
     }
@@ -128,36 +129,30 @@ auto GameScreen::update() -> void {
         m_bg_foreground->applyDashBoost(dashBoost);
         m_bg_midground->applyDashBoost(dashBoost);
         m_bg_sky->applyDashBoost(dashBoost);
-        for (auto &cloud : m_clouds) {
+        for (auto &cloud: m_clouds) {
             cloud->applyDashBoost(dashBoost);
         }
-        for (auto &platform : m_platforms_bottom) {
+        for (auto &platform: m_platforms_bottom) {
             platform->applyDashBoost(dashBoost);
         }
-        for (auto &platform : m_platforms_top) {
+        for (auto &platform: m_platforms_top) {
             platform->applyDashBoost(dashBoost);
         }
-        for (auto &star : m_stars) {
+        for (auto &star: m_stars) {
             star->applyDashBoost(dashBoost);
         }
     }
     m_clouds.erase(std::remove_if(m_clouds.begin(), m_clouds.end(),
-                  [this](const std::unique_ptr<Cloud> &cloud) {
-                      return !cloud->update();
-                  }),
-                  m_clouds.end());
-    m_platforms_bottom.erase(std::remove_if(m_platforms_bottom.begin(),
-                           m_platforms_bottom.end(),
-                           [this](const std::unique_ptr<Platform> &platform) {
-                               return !platform->update();
-                           }),
-                           m_platforms_bottom.end());
-    m_platforms_top.erase(std::remove_if(m_platforms_top.begin(),
-                        m_platforms_top.end(),
-                        [this](const std::unique_ptr<Platform> &platform) {
-                            return !platform->update();
-                        }),
-                        m_platforms_top.end());
+                                  [this](const std::unique_ptr<Cloud> &cloud) { return !cloud->update(); }),
+                   m_clouds.end());
+    m_platforms_bottom.erase(
+            std::remove_if(m_platforms_bottom.begin(), m_platforms_bottom.end(),
+                           [this](const std::unique_ptr<Platform> &platform) { return !platform->update(); }),
+            m_platforms_bottom.end());
+    m_platforms_top.erase(
+            std::remove_if(m_platforms_top.begin(), m_platforms_top.end(),
+                           [this](const std::unique_ptr<Platform> &platform) { return !platform->update(); }),
+            m_platforms_top.end());
     m_bg_background->update();
     m_bg_foreground->update();
     m_bg_midground->update();
@@ -175,13 +170,13 @@ auto GameScreen::render() -> void {
     m_bg_midground->draw(m_bg_midground->getX());
     m_bg_midground->draw(m_bg_midground->getWidth() * 2 + m_bg_midground->getX());
 
-    for (auto &platform : m_platforms_bottom) {
+    for (auto &platform: m_platforms_bottom) {
         platform->draw();
     }
-    for (auto &platform : m_platforms_top) {
+    for (auto &platform: m_platforms_top) {
         platform->draw();
     }
-    for (auto &star : m_stars) {
+    for (auto &star: m_stars) {
         star->draw();
     }
 
@@ -190,7 +185,7 @@ auto GameScreen::render() -> void {
     m_bg_foreground->draw(m_bg_foreground->getX());
     m_bg_foreground->draw(m_bg_foreground->getWidth() * 2 + m_bg_foreground->getX());
 
-    for (auto &popout : m_popouts) {
+    for (auto &popout: m_popouts) {
         popout->draw();
     }
 
@@ -199,7 +194,7 @@ auto GameScreen::render() -> void {
         DrawRectangle(0, 0, config::SCREEN_WIDTH, config::SCREEN_HEIGHT, fogColor);
     }
 
-    for (auto &cloud : m_clouds) {
+    for (auto &cloud: m_clouds) {
         cloud->draw();
     }
 
@@ -212,11 +207,12 @@ auto GameScreen::render() -> void {
         int fontSize = 40;
         Color borderColor = BLACK;
         Color mainColor = RED;
-        Vector2 pos {static_cast<float>(config::SCREEN_WIDTH / 2 - 100),
-                     static_cast<float>(config::SCREEN_HEIGHT / 2 - 50)};
+        Vector2 pos{static_cast<float>(config::SCREEN_WIDTH / 2 - 100),
+                    static_cast<float>(config::SCREEN_HEIGHT / 2 - 50)};
         for (int dx = -2; dx <= 2; dx++) {
             for (int dy = -2; dy <= 2; dy++) {
-                if (dx == 0 && dy == 0) continue;
+                if (dx == 0 && dy == 0)
+                    continue;
                 DrawText(msg, pos.x + dx, pos.y + dy, fontSize, borderColor);
             }
         }
@@ -246,18 +242,14 @@ auto GameScreen::spawnClouds() -> void {
             try {
                 int spawnY = Random::get(constants::CLOUD_MIN_Y, constants::CLOUD_MAX_Y);
                 m_clouds.push_back(std::make_unique<Cloud>(
-                    fs::path("resources/clouds/Cloud_" +
-                             std::to_string(Random::get(constants::CLOUD_MIN_TYPE,
-                                                         constants::CLOUD_MAX_TYPE)) +
-                             ".png"),
-                    m_speed,
-                    Random::get(constants::CLOUD_MIN_SCALE, constants::CLOUD_MAX_SCALE),
-                    config::SCREEN_WIDTH,
-                    spawnY,
-                    Random::get(constants::CLOUD_MIN_SPEED_FACTOR,
-                                constants::CLOUD_MAX_SPEED_FACTOR)
-                ));
-            } catch (const std::exception &e) {
+                        fs::path("resources/clouds/Cloud_" +
+                                 std::to_string(Random::get(constants::CLOUD_MIN_TYPE, constants::CLOUD_MAX_TYPE)) +
+                                 ".png"),
+                        m_speed, Random::get(constants::CLOUD_MIN_SCALE, constants::CLOUD_MAX_SCALE),
+                        config::SCREEN_WIDTH, spawnY,
+                        Random::get(constants::CLOUD_MIN_SPEED_FACTOR, constants::CLOUD_MAX_SPEED_FACTOR)));
+            }
+            catch (const std::exception &e) {
                 ERR("Error: " << e.what());
             }
         }
@@ -267,21 +259,21 @@ auto GameScreen::spawnClouds() -> void {
 auto GameScreen::spawnPlatforms(std::vector<std::unique_ptr<Platform>> &platforms, bool bottom) -> void {
     if (platforms.size() < config::MAX_PLATFORMS) {
         int lastX = platforms.empty() ? 0 : platforms.back()->getX();
-        if ((bottom && (platforms.empty() ||
-             lastX < config::SCREEN_WIDTH - config::PLATFORM_WIDTH * constants::BOTTOM_PLATFORM_GAP_MULTIPLIER)) ||
-            (!bottom && (platforms.empty() ||
-             lastX < config::SCREEN_WIDTH - config::PLATFORM_WIDTH * constants::TOP_PLATFORM_GAP_MULTIPLIER))) {
+        if ((bottom &&
+             (platforms.empty() ||
+              lastX < config::SCREEN_WIDTH - config::PLATFORM_WIDTH * constants::BOTTOM_PLATFORM_GAP_MULTIPLIER)) ||
+            (!bottom &&
+             (platforms.empty() ||
+              lastX < config::SCREEN_WIDTH - config::PLATFORM_WIDTH * constants::TOP_PLATFORM_GAP_MULTIPLIER))) {
             try {
-                int spawnY = bottom
-                    ? Random::get(constants::PLATFORM_BOTTOM_MIN,
-                                  config::SCREEN_HEIGHT - constants::PLATFORM_BOTTOM_MAX_OFFSET)
-                    : Random::get(0, constants::PLATFORM_TOP_MAX);
-                auto newPlatform = std::make_unique<Platform>(m_speed,
-                    config::SCREEN_WIDTH,
-                    static_cast<float>(spawnY),
-                    1.0f);
+                int spawnY = bottom ? Random::get(constants::PLATFORM_BOTTOM_MIN,
+                                                  config::SCREEN_HEIGHT - constants::PLATFORM_BOTTOM_MAX_OFFSET)
+                                    : Random::get(0, constants::PLATFORM_TOP_MAX);
+                auto newPlatform =
+                        std::make_unique<Platform>(m_speed, config::SCREEN_WIDTH, static_cast<float>(spawnY), 1.0f);
                 platforms.push_back(std::move(newPlatform));
-            } catch (const std::exception &e) {
+            }
+            catch (const std::exception &e) {
                 ERR("Error: " << e.what());
             }
         }
@@ -292,9 +284,8 @@ auto GameScreen::spawnStars() -> void {
     if (m_stars.size() < config::MAX_STARS && GetRandomValue(0, 100) < 100) {
         float spawnX = static_cast<float>(config::SCREEN_WIDTH);
         float spawnWidth = constants::CLOUD_SPAWN_MARGIN;
-        Rectangle spawnArea = {spawnX, 0, spawnWidth,
-                               static_cast<float>(config::SCREEN_HEIGHT)};
-        Star* newStar = Star::SpawnRandom(spawnArea, m_platforms_bottom);
+        Rectangle spawnArea = {spawnX, 0, spawnWidth, static_cast<float>(config::SCREEN_HEIGHT)};
+        Star *newStar = Star::SpawnRandom(spawnArea, m_platforms_bottom);
         if (newStar) {
             m_stars.push_back(std::unique_ptr<Star>(newStar));
         }
@@ -306,25 +297,25 @@ auto GameScreen::updateSpeedBasedOnTime(std::chrono::steady_clock::time_point st
     auto diff = currentTime - start_time;
     if (m_game_over) {
         m_speed = constants::SPEED_GAME_OVER;
-    } else {
-        m_speed = constants::BASE_SPEED +
-                  config::e * std::chrono::duration_cast<std::chrono::seconds>(diff).count();
+    }
+    else {
+        m_speed = constants::BASE_SPEED + config::e * std::chrono::duration_cast<std::chrono::seconds>(diff).count();
     }
     m_bg_background->changeSpeed(m_speed);
     m_bg_foreground->changeSpeed(m_speed);
     m_bg_midground->changeSpeed(m_speed);
     m_bg_sky->changeSpeed(m_speed);
     m_character->changeSpeed(m_speed);
-    for (auto &cloud : m_clouds) {
+    for (auto &cloud: m_clouds) {
         cloud->changeSpeed(m_speed);
     }
-    for (auto &platform : m_platforms_bottom) {
+    for (auto &platform: m_platforms_bottom) {
         platform->changeSpeed(m_speed);
     }
-    for (auto &platform : m_platforms_top) {
+    for (auto &platform: m_platforms_top) {
         platform->changeSpeed(m_speed);
     }
-    for (auto &star : m_stars) {
+    for (auto &star: m_stars) {
         star->changeSpeed(m_speed);
     }
 }

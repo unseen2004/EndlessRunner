@@ -16,7 +16,8 @@ Game::~Game() {
         try {
             fs::remove_all(replayDir);
             LOG("Replays directory deleted successfully.");
-        } catch (const fs::filesystem_error &e) {
+        }
+        catch (const fs::filesystem_error &e) {
             ERR("Error deleting replays directory: " << e.what());
         }
     }

@@ -1,9 +1,9 @@
 #ifndef GAME_HPP
 #define GAME_HPP
 
+#include "Config.hpp"
 #include "StateMachine.hpp"
 #include "WelcomeScreen.hpp"
-#include "Config.hpp"
 
 class Game {
 private:

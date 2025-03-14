@@ -12,7 +12,7 @@ public:
     auto handleInput() -> void;
     auto update() -> void;
     auto render() -> void;
-    [[nodiscard]] auto getName() const -> const char* { return "ReplayGameScreen"; }
+    [[nodiscard]] auto getName() const -> const char * { return "ReplayGameScreen"; }
 
 private:
     bool m_replayFinished = false;

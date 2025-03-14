@@ -5,10 +5,6 @@ auto Cloud::update() -> bool {
     return m_x > -m_texture.width;
 }
 
-auto Cloud::draw() -> void {
-    Background::draw(m_x, m_y, 0.0f, m_scale);
-}
+auto Cloud::draw() -> void { Background::draw(m_x, m_y, 0.0f, m_scale); }
 
-auto Cloud::changeSpeed(float speed) -> void {
-    m_speed = speed;
-}
+auto Cloud::changeSpeed(float speed) -> void { m_speed = speed; }

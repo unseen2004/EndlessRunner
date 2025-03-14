@@ -2,9 +2,9 @@
 #define PLATFORM_HPP
 
 #include <filesystem>
-#include "raylib.h"
 #include "Background.hpp"
 #include "Random.hpp"
+#include "raylib.h"
 
 class Platform : public Background {
     static auto getRandomPlatformPath() -> std::filesystem::path;

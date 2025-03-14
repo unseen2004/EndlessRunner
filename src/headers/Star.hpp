@@ -1,10 +1,10 @@
 #ifndef STAR_HPP
 #define STAR_HPP
 
-#include <vector>
 #include <memory>
-#include "raylib.h"
+#include <vector>
 #include "Platform.hpp"
+#include "raylib.h"
 
 class Star {
 public:
@@ -25,7 +25,7 @@ public:
     auto collect() -> void;
 
     static auto SpawnRandom(const Rectangle &spawnBounds,
-                            const std::vector<std::unique_ptr<Platform> > &platforms) -> Star *;
+                            const std::vector<std::unique_ptr<Platform>> &platforms) -> Star *;
 
     static auto getCollectedCount() -> int;
 

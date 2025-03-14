@@ -20,6 +20,6 @@ namespace config {
 
     inline bool fog = false;
     inline bool snow = false;
-}
+} // namespace config
 
 #endif // CONFIG_HPP

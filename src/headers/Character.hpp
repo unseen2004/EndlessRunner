@@ -3,35 +3,27 @@
 
 #include <filesystem>
 #include <vector>
-#include "raylib.h"
 #include "Config.hpp"
 #include "Platform.hpp"
+#include "raylib.h"
 
 namespace character_const {
     constexpr int NUM_FRAMES_PER_LINE = 5;
     constexpr int NUM_LINES = 5;
     constexpr int MAX_SPEED = 10;
     constexpr int GRAVITY = 1;
-};
+}; // namespace character_const
 
 class Character {
 public:
-    Character(std::filesystem::path path1,
-              float speed = 0.1F,
-              float x = config::CHARACTER_START_X,
-              float y = 0.0f,
-              int currentFrame = 0,
-              int framesCounter = 0,
-              int framesSpeed = 8,
-              int currentLine = 0,
+    Character(std::filesystem::path path1, float speed = 0.1F, float x = config::CHARACTER_START_X, float y = 0.0f,
+              int currentFrame = 0, int framesCounter = 0, int framesSpeed = 8, int currentLine = 0,
               bool is_jumping = false);
 
     ~Character();
 
-    auto update(bool input_jump,
-                bool input_dash,
-                const std::vector<std::unique_ptr<Platform> > &bottomPlatforms,
-                const std::vector<std::unique_ptr<Platform> > &topPlatforms) -> bool;
+    auto update(bool input_jump, bool input_dash, const std::vector<std::unique_ptr<Platform>> &bottomPlatforms,
+                const std::vector<std::unique_ptr<Platform>> &topPlatforms) -> bool;
 
     auto draw() -> void;
 
@@ -61,11 +53,11 @@ private:
 
     auto roll() -> void;
 
-    auto checkGrounded(const std::vector<std::unique_ptr<Platform> > &platforms) -> bool;
+    auto checkGrounded(const std::vector<std::unique_ptr<Platform>> &platforms) -> bool;
 
-    auto checkRightCollision(const std::vector<std::unique_ptr<Platform> > &platforms) -> bool;
+    auto checkRightCollision(const std::vector<std::unique_ptr<Platform>> &platforms) -> bool;
 
-    auto checkTopCollision(const std::vector<std::unique_ptr<Platform> > &platforms) -> bool;
+    auto checkTopCollision(const std::vector<std::unique_ptr<Platform>> &platforms) -> bool;
 
     Vector2 m_position;
     int m_currentFrame;

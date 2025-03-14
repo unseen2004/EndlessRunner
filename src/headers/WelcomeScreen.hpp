@@ -1,11 +1,11 @@
 #ifndef WELCOMESCREEN_HPP
 #define WELCOMESCREEN_HPP
 
-#include "raylib.h"
-#include "State.hpp"
-#include "StateMachine.hpp"
 #include "GameScreen.hpp"
 #include "ReplayScreen.hpp"
+#include "State.hpp"
+#include "StateMachine.hpp"
+#include "raylib.h"
 
 class WelcomeScreen : public State {
     StateMachine &stateMachine;

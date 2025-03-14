@@ -13,21 +13,14 @@ protected:
     std::filesystem::path m_texturePath;
 
 public:
-    explicit Background(const std::filesystem::path &path,
-                        float speed = 0.1F,
-                        float x = 0.0f,
-                        float y = 0.0f,
+    explicit Background(const std::filesystem::path &path, float speed = 0.1F, float x = 0.0f, float y = 0.0f,
                         float scale = 2.0f) noexcept;
 
     ~Background() noexcept;
 
     auto resetIfOutsite() -> void;
 
-    auto draw(float x = 0.0f,
-              float y = 0.0f,
-              float rotation = 0.0f,
-              float scale = 2.0f,
-              Color color = WHITE) -> void;
+    auto draw(float x = 0.0f, float y = 0.0f, float rotation = 0.0f, float scale = 2.0f, Color color = WHITE) -> void;
 
     [[nodiscard]] auto getX() const -> float;
 
@@ -39,10 +32,7 @@ public:
 
     auto update() -> void;
 
-    auto applyDashBoost(float dashBoost) -> void {
-        m_x -= dashBoost;
-    }
+    auto applyDashBoost(float dashBoost) -> void { m_x -= dashBoost; }
 };
-
 
 #endif

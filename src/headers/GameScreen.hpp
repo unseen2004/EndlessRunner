@@ -1,24 +1,24 @@
 #ifndef GAMESCREEN_HPP
 #define GAMESCREEN_HPP
 
-#include <vector>
-#include <memory>
+#include <algorithm>
 #include <chrono>
 #include <filesystem>
-#include <algorithm>
-#include "raylib.h"
+#include <memory>
+#include <vector>
 #include "Background.hpp"
-#include "Platform.hpp"
+#include "Character.hpp"
 #include "Cloud.hpp"
 #include "DeadScreen.hpp"
-#include "StateMachine.hpp"
-#include "Character.hpp"
-#include "Star.hpp"
 #include "Interface.hpp"
-#include "Snow.hpp"
-#include "StarPopout.hpp"
+#include "Platform.hpp"
 #include "ReplaySystem.hpp"
+#include "Snow.hpp"
+#include "Star.hpp"
+#include "StarPopout.hpp"
 #include "State.hpp"
+#include "StateMachine.hpp"
+#include "raylib.h"
 
 namespace fs = std::filesystem;
 
@@ -48,8 +48,8 @@ private:
     bool m_game_over = false;
     float m_death_timer = 0.0F;
     float m_death_delay = 2.0F;
-    std::vector<std::unique_ptr<Star> > m_stars;
-    std::vector<std::unique_ptr<StarPopout> > m_popouts;
+    std::vector<std::unique_ptr<Star>> m_stars;
+    std::vector<std::unique_ptr<StarPopout>> m_popouts;
     const char *text = "+1 ポイント";
     Font font;
     float m_invulnerability_timer = 0.5F;
@@ -58,9 +58,9 @@ private:
     std::unique_ptr<Background> m_bg_foreground;
     std::unique_ptr<Background> m_bg_midground;
     std::unique_ptr<Background> m_bg_sky;
-    std::vector<std::unique_ptr<Cloud> > m_clouds;
-    std::vector<std::unique_ptr<Platform> > m_platforms_bottom;
-    std::vector<std::unique_ptr<Platform> > m_platforms_top;
+    std::vector<std::unique_ptr<Cloud>> m_clouds;
+    std::vector<std::unique_ptr<Platform>> m_platforms_bottom;
+    std::vector<std::unique_ptr<Platform>> m_platforms_top;
     std::unique_ptr<Character> m_character;
     int m_stars_collected = 0;
     std::unique_ptr<Interface> m_interface;
@@ -74,7 +74,7 @@ private:
 
     void spawnClouds();
 
-    void spawnPlatforms(std::vector<std::unique_ptr<Platform> > &platforms, bool bottom);
+    void spawnPlatforms(std::vector<std::unique_ptr<Platform>> &platforms, bool bottom);
 
     void updateSpeedBasedOnTime(std::chrono::steady_clock::time_point start_time);
 };

@@ -1,13 +1,13 @@
 #ifndef REPLAYSCREEN_HPP
 #define REPLAYSCREEN_HPP
 
-#include <vector>
+#include <filesystem>
 #include <string>
 #include <utility>
-#include "raylib.h"
-#include <filesystem>
+#include <vector>
 #include "State.hpp"
 #include "StateMachine.hpp"
+#include "raylib.h"
 
 class ReplayScreen : public State {
 public:
@@ -25,7 +25,7 @@ public:
 
 private:
     StateMachine &m_stateMachine;
-    std::vector<std::pair<std::string, std::string> > m_savedGames;
+    std::vector<std::pair<std::string, std::string>> m_savedGames;
     int m_selectedIndex;
     bool m_inReplay;
 
