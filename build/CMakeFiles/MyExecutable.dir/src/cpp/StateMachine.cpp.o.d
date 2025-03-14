@@ -165,4 +165,5 @@ CMakeFiles/MyExecutable.dir/src/cpp/StateMachine.cpp.o: \
  /usr/include/c++/14.2.1/backward/auto_ptr.h \
  /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/14.2.1/pstl/execution_defs.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/State.hpp
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/State.hpp \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/DebugLog.hpp

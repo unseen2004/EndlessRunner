@@ -1,4 +1,5 @@
 #include "../headers/StateMachine.hpp"
+#include "../headers/DebugLog.hpp"
 
 void StateMachine::changeState(std::unique_ptr<State> newState) {
     // Instead of switching state immediately, store it as pending
@@ -7,9 +8,9 @@ void StateMachine::changeState(std::unique_ptr<State> newState) {
 
 void StateMachine::processPendingState() {
     if (pendingState) {
-        std::cout << "Changing state from "
-                  << (currentState ? currentState->getName() : "nullptr")
-                  << " to " << pendingState->getName() << std::endl;
+        LOG("Changing state from "
+            << (currentState ? currentState->getName() : "nullptr")
+            << " to " << pendingState->getName());
         currentState = std::move(pendingState);
     }
 }
