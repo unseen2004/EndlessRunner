@@ -5,10 +5,13 @@ class State {
 public:
     virtual ~State() = default;
 
-    virtual void handleInput() = 0;
-    virtual void update() = 0;
-    virtual void render() = 0;
-    virtual const char *getName() const = 0;
+    virtual auto handleInput() -> void = 0;
+
+    virtual auto update() -> void = 0;
+
+    virtual auto render() -> void = 0;
+
+    virtual auto getName() const -> const char * = 0;
 };
 
 #endif // STATE_HPP

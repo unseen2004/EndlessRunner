@@ -8,16 +8,18 @@ class StarPopout {
 public:
     StarPopout(Vector2 pos, const std::string &text, const Font &font);
 
-    void update();
-    void draw();
-    bool isExpired() const;
+    auto update() -> void;
+
+    auto draw() -> void;
+
+    auto isExpired() const -> bool;
 
 private:
     Vector2 m_position;
     std::string m_text;
     float m_timer;
     float m_duration;
-    const Font m_font;
+    Font m_font;
 };
 
 #endif // STARPOPOUT_HPP

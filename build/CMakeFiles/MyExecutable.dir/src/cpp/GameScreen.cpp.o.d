@@ -223,7 +223,6 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/DeadScreen.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/State.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/StateMachine.hpp \
- /usr/include/c++/14.2.1/iostream \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/WelcomeScreen.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/GameScreen.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/ReplayScreen.hpp \
@@ -241,4 +240,5 @@ CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o: \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/14.2.1/bits/fstream.tcc \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Constants.hpp \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/DebugLog.hpp
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/DebugLog.hpp \
+ /usr/include/c++/14.2.1/iostream

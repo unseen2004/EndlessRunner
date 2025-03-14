@@ -7,92 +7,85 @@ int Star::s_collectedStars = 0;
 Star::Star(Vector2 position)
     : m_position(position), m_numFrames(constants::STAR_FRAMES), m_currentFrame(0),
       m_animationTimer(0.0f), m_animationInterval(constants::STAR_ANIMATION_INTERVAL),
-      m_collected(false), m_scale(constants::STAR_SCALE) {
+      m_collected(false), m_scale(constants::STAR_SCALE), m_speed(0.0f),
+      m_rotation(0.0f), m_spinSpeed(0.0f) {
     m_texture = LoadTexture("resources/star.png");
     m_frameRec.x = 0;
     m_frameRec.y = 0;
     m_frameRec.width = m_texture.width / m_numFrames;
     m_frameRec.height = m_texture.height;
-    LOG("Star created at position (" << position.x << ", " << position.y << ")");
-}
-
-void Star::update() {
-    applyMovement(m_speed);
-    LOG("Star speed: " << m_speed << ", position: " << m_position.x);
-}
-
-void Star::changeSpeed(float n) {
-    m_speed = n;
-    LOG("Star speed changed to " << n);
-}
-
-void Star::draw() {
-    DrawTextureEx(m_texture, m_position, constants::STAR_ROTATION, m_scale, WHITE);
-}
-
-void Star::applyMovement(float speed) {
-    // Move the star left by the game speed.
-    m_position.x -= speed;
 }
 
 Star::~Star() {
     UnloadTexture(m_texture);
-    LOG("Star destroyed");
 }
 
-Rectangle Star::getBoundingBox() const {
-    return Rectangle{ m_position.x, m_position.y,
-                     m_frameRec.width * m_scale, m_frameRec.height * m_scale };
+auto Star::update() -> void {
+    applyMovement(m_speed);
 }
 
-void Star::applyDashBoost(float dashBoost) {
-    m_position.x -= dashBoost;
+auto Star::changeSpeed(float n) -> void {
+    m_speed = n;
 }
 
-bool Star::isCollected() const {
+auto Star::draw() -> void {
+    DrawTextureEx(m_texture, m_position, constants::STAR_ROTATION, m_scale, WHITE);
+}
+
+auto Star::getBoundingBox() const -> Rectangle {
+    return { m_position.x, m_position.y,
+             m_frameRec.width * m_scale, m_frameRec.height * m_scale };
+}
+
+auto Star::isCollected() const -> bool {
     return m_collected;
 }
 
-void Star::collect() {
+auto Star::collect() -> void {
     if (!m_collected) {
         m_collected = true;
         s_collectedStars++;
-        LOG("Star collected. Total stars: " << s_collectedStars);
     }
 }
 
-int Star::getCollectedCount() {
-    return s_collectedStars;
-}
-
-Star* Star::SpawnRandom(const Rectangle &spawnBounds,
-                      const std::vector<std::unique_ptr<Platform>> &platforms) {
-    const int maxAttempts = constants::STAR_SPAWN_MAX_ATTEMPTS;
-    for(int attempt = 0; attempt < maxAttempts; attempt++) {
+auto Star::SpawnRandom(
+    const Rectangle &spawnBounds,
+    const std::vector<std::unique_ptr<Platform>> &platforms
+) -> Star* {
+    for (int attempt = 0; attempt < constants::STAR_SPAWN_MAX_ATTEMPTS; attempt++) {
         float x = spawnBounds.x + GetRandomValue(0, static_cast<int>(spawnBounds.width));
         float y = spawnBounds.y + GetRandomValue(0, static_cast<int>(spawnBounds.height));
-        Vector2 pos = { x, y };
-        Star* potentialStar = new Star(pos);
+        Star* potentialStar = new Star({ x, y });
         Rectangle starRect = potentialStar->getBoundingBox();
         bool valid = true;
-        for (const auto &platform : platforms) {
+        for (auto const &platform : platforms) {
             Rectangle platRect = {
                 platform->getX(),
                 platform->getY(),
                 static_cast<float>(platform->getTexture().width) * platform->getScale(),
                 static_cast<float>(platform->getTexture().height) * platform->getScale()
             };
-            if(CheckCollisionRecs(starRect, platRect)) {
+            if (CheckCollisionRecs(starRect, platRect)) {
                 valid = false;
                 break;
             }
         }
-        if(valid) {
-            LOG("Successfully spawned star at attempt " << attempt);
+        if (valid) {
             return potentialStar;
         }
         delete potentialStar;
     }
-    LOG("Failed to spawn star after " << maxAttempts << " attempts");
     return nullptr;
+}
+
+auto Star::getCollectedCount() -> int {
+    return s_collectedStars;
+}
+
+auto Star::applyDashBoost(float dashBoost) -> void {
+    m_position.x -= dashBoost;
+}
+
+auto Star::applyMovement(float speed) -> void {
+    m_position.x -= speed;
 }

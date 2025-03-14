@@ -1,31 +1,25 @@
 #include "../headers/StateMachine.hpp"
 #include "../headers/DebugLog.hpp"
 
-void StateMachine::changeState(std::unique_ptr<State> newState) {
-    // Instead of switching state immediately, store it as pending
+auto StateMachine::changeState(std::unique_ptr<State> newState) -> void {
     pendingState = std::move(newState);
 }
 
-void StateMachine::processPendingState() {
+auto StateMachine::processPendingState() -> void {
     if (pendingState) {
-        LOG("Changing state from "
-            << (currentState ? currentState->getName() : "nullptr")
-            << " to " << pendingState->getName());
+        LOG("Changing state");
         currentState = std::move(pendingState);
     }
 }
 
-void StateMachine::handleInput() {
-    if (currentState)
-        currentState->handleInput();
+auto StateMachine::handleInput() -> void {
+    if (currentState) currentState->handleInput();
 }
 
-void StateMachine::update() {
-    if (currentState)
-        currentState->update();
+auto StateMachine::update() -> void {
+    if (currentState) currentState->update();
 }
 
-void StateMachine::render() {
-    if (currentState)
-        currentState->render();
+auto StateMachine::render() -> void {
+    if (currentState) currentState->render();
 }

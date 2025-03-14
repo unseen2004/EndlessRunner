@@ -120,6 +120,8 @@ CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o: \
  /usr/include/c++/14.2.1/backward/auto_ptr.h \
  /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/14.2.1/pstl/execution_defs.h \
+ /usr/local/include/raylib.h \
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.hpp \
  /usr/include/c++/14.2.1/filesystem /usr/include/c++/14.2.1/bits/fs_fwd.h \
  /usr/include/c++/14.2.1/system_error \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
@@ -184,9 +186,7 @@ CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o: \
  /usr/include/c++/14.2.1/bits/istream.tcc \
  /usr/include/c++/14.2.1/bits/sstream.tcc /usr/include/c++/14.2.1/codecvt \
  /usr/include/c++/14.2.1/bits/fs_dir.h \
- /usr/include/c++/14.2.1/bits/fs_ops.h /usr/include/c++/14.2.1/iostream \
- /usr/local/include/raylib.h \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/Platform.hpp \
+ /usr/include/c++/14.2.1/bits/fs_ops.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Background.hpp \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Random.hpp \
  /usr/include/c++/14.2.1/chrono /usr/include/c++/14.2.1/random \
@@ -216,4 +216,5 @@ CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o: \
  /usr/include/c++/14.2.1/bits/stl_numeric.h \
  /usr/include/c++/14.2.1/pstl/glue_numeric_defs.h \
  /home/maks/Programming/EndlessRunner/src/cpp/../headers/Constants.hpp \
- /home/maks/Programming/EndlessRunner/src/cpp/../headers/DebugLog.hpp
+ /home/maks/Programming/EndlessRunner/src/cpp/../headers/DebugLog.hpp \
+ /usr/include/c++/14.2.1/iostream

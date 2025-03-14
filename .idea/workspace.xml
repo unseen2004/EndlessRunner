@@ -25,12 +25,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cpp/ReplayGameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplayGameScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/ReplayScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplayScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/ReplaySystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplaySystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/ReplayGameScreen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/ReplayGameScreen.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/ReplayScreen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/ReplayScreen.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/ReplaySystem.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/ReplaySystem.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Snow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Snow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Star.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Star.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/StarPopout.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/StarPopout.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/StateMachine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/StateMachine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/WelcomeScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/WelcomeScreen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Snow.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Snow.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Star.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Star.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/StarPopout.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/StarPopout.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/State.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/State.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/StateMachine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/StateMachine.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/WelcomeScreen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/WelcomeScreen.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

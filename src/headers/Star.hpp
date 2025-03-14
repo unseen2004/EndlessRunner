@@ -3,9 +3,6 @@
 
 #include <vector>
 #include <memory>
-#include <filesystem>
-#include <cstdlib>
-#include <iostream>
 #include "raylib.h"
 #include "Platform.hpp"
 
@@ -15,27 +12,28 @@ public:
 
     ~Star();
 
-    void update();
+    auto update() -> void;
 
-    void applyMovement(float speed);
+    auto changeSpeed(float n) -> void;
 
-    void draw();
+    auto draw() -> void;
 
-    Rectangle getBoundingBox() const;
+    auto getBoundingBox() const -> Rectangle;
 
-    bool isCollected() const;
+    auto isCollected() const -> bool;
 
-    void collect();
+    auto collect() -> void;
 
-    static Star *SpawnRandom(const Rectangle &spawnBounds, const std::vector<std::unique_ptr<Platform> > &platforms);
+    static auto SpawnRandom(const Rectangle &spawnBounds,
+                            const std::vector<std::unique_ptr<Platform> > &platforms) -> Star *;
 
-    static int getCollectedCount();
+    static auto getCollectedCount() -> int;
 
-    void changeSpeed(float n);
-
-    void applyDashBoost(float dashBoost);
+    auto applyDashBoost(float dashBoost) -> void;
 
 private:
+    auto applyMovement(float speed) -> void;
+
     Vector2 m_position;
     Texture2D m_texture;
     Rectangle m_frameRec;

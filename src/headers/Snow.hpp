@@ -13,8 +13,9 @@ class Snow {
 public:
     Snow(int count, int screenWidth, int screenHeight);
 
-    void update();
-    void draw();
+    auto update() -> void;
+
+    auto draw() -> void;
 
 private:
     int m_screenWidth;

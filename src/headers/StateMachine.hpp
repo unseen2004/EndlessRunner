@@ -1,21 +1,20 @@
 #ifndef STATEMACHINE_HPP
 #define STATEMACHINE_HPP
 
-#include <iostream>
 #include <memory>
 #include "State.hpp"
 
 class StateMachine {
 public:
-    void changeState(std::unique_ptr<State> newState);
+    auto changeState(std::unique_ptr<State> newState) -> void;
 
-    void processPendingState();
+    auto processPendingState() -> void;
 
-    void handleInput();
+    auto handleInput() -> void;
 
-    void update();
+    auto update() -> void;
 
-    void render();
+    auto render() -> void;
 
 private:
     std::unique_ptr<State> currentState = nullptr;

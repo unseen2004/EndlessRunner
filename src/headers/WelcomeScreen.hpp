@@ -16,13 +16,13 @@ public:
 
     ~WelcomeScreen();
 
-    void handleInput() override;
+    auto handleInput() -> void override;
 
-    void update() override;
+    auto update() -> void override;
 
-    void render() override;
+    auto render() -> void override;
 
-    const char *getName() const override { return "WelcomeScreen"; }
+    auto getName() const -> const char * override { return "WelcomeScreen"; }
 };
 
 #endif // WELCOMESCREEN_HPP
