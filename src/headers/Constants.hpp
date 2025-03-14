@@ -95,32 +95,7 @@ namespace constants {
     constexpr float REPLAY_FINISHED_ALPHA = 0.7f;
     constexpr int REPLAY_FINISHED_TEXT_OFFSET = 15;
 
-    // GameScreen.cpp constants
-    constexpr float INVULNERABILITY_TIMER = 0.5f;
-    constexpr float SPEED_GAME_OVER = 0.0f;
-    constexpr float BASE_SPEED = 3.0f;
-    constexpr int CLOUD_MIN_Y = 0;
-    constexpr int CLOUD_MAX_Y = 100;
-    constexpr int CLOUD_MIN_TYPE = 1;
-    constexpr int CLOUD_MAX_TYPE = 3;
-    constexpr float CLOUD_MIN_SCALE = 1.0f;
-    constexpr float CLOUD_MAX_SCALE = 2.0f;
-    constexpr float CLOUD_MIN_SPEED_FACTOR = 0.3f;
-    constexpr float CLOUD_MAX_SPEED_FACTOR = 0.5f;
-    constexpr int BOTTOM_PLATFORM_GAP_MULTIPLIER = 2;
-    constexpr int TOP_PLATFORM_GAP_MULTIPLIER = 3;
-    constexpr int PLATFORM_BOTTOM_MIN = 700;
-    constexpr int PLATFORM_BOTTOM_MAX_OFFSET = 300;
-    constexpr int PLATFORM_TOP_MAX = 100;
-    constexpr int INITIAL_PLATFORM_X = 300;
-    constexpr int INITIAL_PLATFORM_Y = 300;
-    constexpr int PLATFORM_GAP = 600;
-    constexpr int FONT_BASE_SIZE = 36;
-    constexpr const char* DEATH_MESSAGE = "GAME OVER";
-    constexpr int DEATH_MSG_OFFSET_X = 100;
-    constexpr int DEATH_MSG_OFFSET_Y = 20;
-    constexpr int DEATH_MSG_BORDER = 2;
-    constexpr int DEATH_MSG_FONT_SIZE = 40;
+
 
     // Interface.cpp constants
     constexpr int UI_POSITION_X = 20;
@@ -138,6 +113,35 @@ namespace constants {
     constexpr float PLATFORM_SCALE = 1.0f;
     constexpr int MIN_PLATFORM_TYPE = 1;
     constexpr int MAX_PLATFORM_TYPE = 5;
+
+    // GameScreen.cpp constants
+    constexpr float INVULNERABILITY_TIMER = 0.5f;          // Already exists
+    constexpr float SPEED_GAME_OVER = 0.0f;                // Already exists
+    constexpr float BASE_SPEED = 3.0f;                     // Already exists
+    constexpr int CLOUD_MIN_Y = 0;                         // Already exists
+    constexpr int CLOUD_MAX_Y = 100;                       // Already exists
+    constexpr int CLOUD_MIN_TYPE = 1;                      // Already exists
+    constexpr int CLOUD_MAX_TYPE = 3;                      // Already exists
+    constexpr float CLOUD_MIN_SCALE = 1.0f;                // Already exists
+    constexpr float CLOUD_MAX_SCALE = 2.0f;                // Already exists
+    constexpr float CLOUD_MIN_SPEED_FACTOR = 0.3f;         // Already exists
+    constexpr float CLOUD_MAX_SPEED_FACTOR = 0.5f;         // Already exists
+    constexpr int BOTTOM_PLATFORM_GAP_MULTIPLIER = 2;      // New
+    constexpr int TOP_PLATFORM_GAP_MULTIPLIER = 3;         // New
+    constexpr int PLATFORM_BOTTOM_MIN = 700;               // New
+    constexpr int PLATFORM_BOTTOM_MAX_OFFSET = 300;        // New
+    constexpr int PLATFORM_TOP_MAX = 100;                  // New
+    constexpr int INITIAL_PLATFORM_X = 300;                // New
+    constexpr int INITIAL_PLATFORM_Y = 300;                // New
+    constexpr int PLATFORM_GAP = 600;                      // New
+    constexpr int FONT_BASE_SIZE = 36;                     // New
+    constexpr const char* DEATH_MESSAGE = "GAME OVER";     // New
+    constexpr int DEATH_MSG_OFFSET_X = 100;                // New
+    constexpr int DEATH_MSG_OFFSET_Y = 20;                 // New
+    constexpr int DEATH_MSG_BORDER = 2;                    // New
+    constexpr int DEATH_MSG_FONT_SIZE = 40;                // New
+    constexpr float CLOUD_SPAWN_MARGIN = 300.0f;
+
 }
 
 #endif // CONSTANTS_HPP

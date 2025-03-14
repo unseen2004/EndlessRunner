@@ -25,30 +25,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Background.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/DeadScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Interface.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayGameScreen.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplayScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/ReplaySystem.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Snow.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/StarPopout.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/WelcomeScreen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/MyExecutable" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replays/replay_20250314_185820_time6.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/Interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Interface.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/Platform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Platform.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/ReplayGameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/ReplayGameScreen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/headers/Constants.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Constants.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
