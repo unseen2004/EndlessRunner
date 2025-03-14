@@ -13,13 +13,13 @@ public:
 
     ~DeadScreen();
 
-    void handleInput() override;
+    auto handleInput() -> void override;
 
-    void update() override;
+    auto update() -> void override;
 
-    void render() override;
+    auto render() -> void override;
 
-    const char *getName() const override { return "DeadScreen"; }
+    auto getName() const -> const char * override { return "DeadScreen"; }
 };
 
-#endif // DEADSCREEN_HPP
+#endif

@@ -3,10 +3,11 @@
 #include "../headers/Constants.hpp"
 
 extern bool g_exitGame;
+
 DeadScreen::DeadScreen(StateMachine &sm) : stateMachine(sm) {}
 DeadScreen::~DeadScreen() {}
 
-void DeadScreen::handleInput() {
+auto DeadScreen::handleInput() -> void {
     if (IsKeyPressed(KEY_ENTER)) {
         stateMachine.changeState(std::make_unique<WelcomeScreen>(stateMachine));
     }
@@ -15,11 +16,11 @@ void DeadScreen::handleInput() {
     }
 }
 
-void DeadScreen::update() {
-    // Dead screen update logic
+auto DeadScreen::update() -> void {
+    // No update logic changed
 }
 
-void DeadScreen::render() {
+auto DeadScreen::render() -> void {
     BeginDrawing();
     ClearBackground(GetColor(0x052c46ff));
     DrawText("Dead Screen - Press Enter to Continue, E to Exit",

@@ -1,15 +1,14 @@
 #include "../headers/Cloud.hpp"
 
-
-bool Cloud::update() {
+auto Cloud::update() -> bool {
     m_x -= m_speed * m_random_val;
     return m_x > -m_texture.width;
 }
 
-void Cloud::draw() {
+auto Cloud::draw() -> void {
     Background::draw(m_x, m_y, 0.0f, m_scale);
 }
 
-void Cloud::changeSpeed(float speed) {
+auto Cloud::changeSpeed(float speed) -> void {
     m_speed = speed;
 }

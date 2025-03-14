@@ -7,20 +7,24 @@ class Cloud : public Background {
     float m_random_val;
 
 public:
-    Cloud(const std::filesystem::path &path, float speed, float random_val, float x, float y, float scale)
-        : Background(path, speed, x, y, scale) {
-        m_random_val = random_val;
+    Cloud(const std::filesystem::path &path,
+          float speed,
+          float random_val,
+          float x,
+          float y,
+          float scale)
+        : Background(path, speed, x, y, scale), m_random_val(random_val) {
     }
 
-    void draw();
+    auto draw() -> void;
 
-    bool update();
+    auto update() -> bool;
 
-    void changeSpeed(float speed);
+    auto changeSpeed(float speed) -> void;
 
-    void applyDashBoost(float dashBoost) {
+    auto applyDashBoost(float dashBoost) -> void {
         m_x -= dashBoost;
     }
 };
 
-#endif // CLOUD_HPP
+#endif
