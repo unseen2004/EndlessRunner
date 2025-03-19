@@ -49,7 +49,7 @@ auto Platform::isOutsite() -> bool {
 
 auto Platform::getRandomPlatformPath() -> std::filesystem::path {
     int randomIndex = Random::get(constants::MIN_PLATFORM_TYPE, constants::MAX_PLATFORM_TYPE);
-    std::string path = "resources/platforms/platform_" + std::to_string(randomIndex) + ".png";
+    std::string path = "../resources/platforms/platform_" + std::to_string(randomIndex) + ".png";
     LOG("Selected random platform path: " << path);
     return std::filesystem::path(path);
 }

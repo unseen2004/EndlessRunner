@@ -26,15 +26,19 @@
   <component name="ChangeListManager">
     <list default="true" id="bf81e0b6-baf9-40d5-8979-00abf4f67d0e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Character.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.31.6/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.6/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/compiler_depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/GameScreen.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Platform.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/MyExecutable.dir/src/cpp/Star.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/MyExecutable" beforeDir="false" afterPath="$PROJECT_DIR$/build/MyExecutable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/explosion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sound/boom.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp/Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Character.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replays/replay_20250314_202659_time16.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/GameScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/Character.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Character.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/GameScreen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/GameScreen.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Platform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Platform.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpp/Star.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp/Star.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Includes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Includes.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +157,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;trunk&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/maks/Programming/AlgoLib&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/maks/Programming/Studies/Algo/lab1&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -345,6 +349,8 @@
       <workItem from="1741868007730" duration="8358000" />
       <workItem from="1741948441973" duration="18461000" />
       <workItem from="1741971034762" duration="2114000" />
+      <workItem from="1741988676351" duration="153000" />
+      <workItem from="1742379869766" duration="1501000" />
     </task>
     <servers />
   </component>

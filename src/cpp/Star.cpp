@@ -9,7 +9,7 @@ Star::Star(Vector2 position)
       m_animationTimer(0.0f), m_animationInterval(constants::STAR_ANIMATION_INTERVAL),
       m_collected(false), m_scale(constants::STAR_SCALE), m_speed(0.0f),
       m_rotation(0.0f), m_spinSpeed(0.0f) {
-    m_texture = LoadTexture("resources/star.png");
+    m_texture = LoadTexture("../resources/star.png");
     m_frameRec.x = 0;
     m_frameRec.y = 0;
     m_frameRec.width = m_texture.width / m_numFrames;

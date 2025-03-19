@@ -6,18 +6,17 @@ extern bool g_exitGame;
 
 GameScreen::GameScreen(StateMachine &sm)
     : m_stateMachine(sm) {
-    m_invulnerability_timer = constants::INVULNERABILITY_TIMER;
     try {
-        m_bg_background = std::make_unique<Background>(fs::path("resources/background/BG.png"), m_speed);
+        m_bg_background = std::make_unique<Background>(fs::path("../resources/background/BG.png"), m_speed);
         if (!m_bg_background) throw std::runtime_error("Failed to load background");
-        m_bg_foreground = std::make_unique<Background>(fs::path("resources/background/FG.png"), m_speed);
+        m_bg_foreground = std::make_unique<Background>(fs::path("../resources/background/FG.png"), m_speed);
         if (!m_bg_foreground) throw std::runtime_error("Failed to load foreground");
-        m_bg_midground = std::make_unique<Background>(fs::path("resources/background/MG.png"), m_speed);
+        m_bg_midground = std::make_unique<Background>(fs::path("../resources/background/MG.png"), m_speed);
         if (!m_bg_midground) throw std::runtime_error("Failed to load midground");
-        m_bg_sky = std::make_unique<Background>(fs::path("resources/background/Sky.png"), m_speed);
+        m_bg_sky = std::make_unique<Background>(fs::path("../resources/background/Sky.png"), m_speed);
         if (!m_bg_sky) throw std::runtime_error("Failed to load sky");
         m_character = std::make_unique<Character>(
-            fs::path("resources/scarfy.png"),
+            fs::path("../resources/scarfy.png"),
             m_speed
         );
         if (!m_character) throw std::runtime_error("Failed to load character");
@@ -25,7 +24,7 @@ GameScreen::GameScreen(StateMachine &sm)
         int codepointCount = 0;
         int *codepoints = LoadCodepoints(text, &codepointCount);
         m_replaySystem = std::make_unique<ReplaySystem>();
-        font = LoadFontEx("resources/fonts/GenShinGothic-Regular.ttf",
+        font = LoadFontEx("../resources/fonts/GenShinGothic-Regular.ttf",
                           constants::FONT_BASE_SIZE,
                           codepoints,
                           codepointCount);
@@ -246,7 +245,7 @@ auto GameScreen::spawnClouds() -> void {
             try {
                 int spawnY = Random::get(constants::CLOUD_MIN_Y, constants::CLOUD_MAX_Y);
                 m_clouds.push_back(std::make_unique<Cloud>(
-                    fs::path("resources/clouds/Cloud_" +
+                    fs::path("../resources/clouds/Cloud_" +
                              std::to_string(Random::get(constants::CLOUD_MIN_TYPE,
                                                          constants::CLOUD_MAX_TYPE)) +
                              ".png"),
