@@ -8,6 +8,8 @@
 
 ---
 
+![ER Image](./gameImg/ER.png)
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
