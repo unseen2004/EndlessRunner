@@ -1,4 +1,4 @@
-#ifndef INCLUDES_HPPe
+#ifndef INCLUDES_HPP
 #define INCLUDES_HPP
 
 #include "raylib.h"
