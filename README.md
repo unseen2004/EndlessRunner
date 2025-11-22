@@ -1,10 +1,6 @@
-# Endless Runner 🎮
+# Endless Runner
 
-<p align="center">
-  <img src="https://img.shields.io/badge/C%2B%2B-20-blue?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++20" />
-  <img src="https://img.shields.io/badge/CMake-3.20+-brightgreen?style=for-the-badge" alt="CMake" />
-  <img src="https://img.shields.io/badge/SFML-2.5-blue?style=for-the-badge&logo=sfml" alt="SFML" />
-</p>
+
 
 ---
 
@@ -13,11 +9,9 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
-- [Project Structure](#project-structure)
 - [Build & Installation](#build--installation)
 - [Running the Application](#running-the-application)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
 - [License](#license)
 
 ---
@@ -36,26 +30,6 @@
 
 ---
 
-## Project Structure
-
-```plaintext
-.
-├── build                 # CMake build directory (generated)
-│   └── ...               # Build artifacts, caches, and compiled object files
-├── CMakeLists.txt        # Main CMake configuration file
-├── resources             # Game/media assets
-│   ├── background        # Background images (BG, FG, MG, Sky, etc.)
-│   ├── clouds            # Cloud images
-│   ├── fonts             # Font files (e.g., GenShinGothic-Regular.ttf)
-│   ├── platforms         # Platform images (p1.png, p2.png, etc.)
-│   ├── rocks             # Rock images
-│   ├── scarfy.png        # Game character image
-│   └── star.png          # Star image
-└── src                   # Source code
-    ├── cpp               # Implementation files (e.g., Game.cpp, Character.cpp)
-    └── headers           # Header files (e.g., Background.hpp, Game.hpp)
-...
-```
 
 ---
 
